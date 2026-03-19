@@ -477,8 +477,14 @@ def build_publish_payload(snapshot: dict[str, Any]) -> dict[str, Any]:
         unique_events.append(evt)
     normalized_events = unique_events
 
-    # 过滤不相关事件：只保留 is_relevant 为 True 的事件
-    normalized_events = [e for e in normalized_events if e.get("is_relevant") is True]
+    # 过滤不相关事件：移除 is_relevant 明确为 False 或标题明显不相关的事件
+    _IRRELEVANT_KEYWORDS = ["行车记录仪", "车队管理", "DIY", "hardware", "meetup"]
+    def _is_event_relevant(evt: dict) -> bool:
+        if evt.get("is_relevant") is False:
+            return False
+        title = str(evt.get("title", ""))
+        return not any(kw in title for kw in _IRRELEVANT_KEYWORDS)
+    normalized_events = [e for e in normalized_events if _is_event_relevant(e)]
 
     # urgent 区平台均衡：当单一平台占比超 60% 时，从 daily 提升跨境通用事件
     _urgent = [e for e in normalized_events if e.get("category") == "urgent"]
