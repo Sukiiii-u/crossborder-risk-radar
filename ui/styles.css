@@ -840,6 +840,58 @@ a {
   .inbox-filters-bar {
     padding: 12px 16px;
   }
+
+  /* 手机端给底部导航留空间 */
+  .app-main {
+    padding-bottom: 80px;
+  }
+}
+
+/* 手机端底部导航栏 */
+.mobile-bottom-nav {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .mobile-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid var(--border-light);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 8px;
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+
+  .mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--text-muted);
+    font-size: 0.625rem;
+    font-weight: 500;
+  }
+
+  .mobile-nav-item.active {
+    color: var(--accent-blue);
+    background: rgba(79, 70, 229, 0.08);
+  }
+
+  .mobile-nav-item svg {
+    stroke: currentColor;
+  }
 }
 
 /* ======== 今日行动项面板 ======== */

@@ -13,7 +13,7 @@ TYPE_LABELS = {
     "tariff": "关税与税务",
     "policy": "平台政策",
     "platform_rule": "平台政策",
-    "platform": "平台政策",
+    "platform": "平台动态",
     "logistics": "物流运输",
     "compliance": "合规标准",
     "environment": "合规标准",

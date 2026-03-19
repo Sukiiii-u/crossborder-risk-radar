@@ -718,6 +718,10 @@ function switchView(viewId) {
   document.querySelectorAll('.nav-item').forEach(nav => {
     nav.classList.toggle('active', nav.getAttribute('data-view') === viewId);
   });
+  // 同步手机端底部导航
+  document.querySelectorAll('.mobile-nav-item').forEach(nav => {
+    nav.classList.toggle('active', nav.getAttribute('data-view') === viewId);
+  });
 
   // Update views
   document.querySelectorAll('.page-view').forEach(view => {
@@ -738,6 +742,14 @@ function switchView(viewId) {
 }
 
 document.querySelectorAll('.nav-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const viewId = item.getAttribute('data-view');
+    if (viewId) switchView(viewId);
+  });
+});
+
+// 手机端底部导航栏
+document.querySelectorAll('.mobile-nav-item').forEach(item => {
   item.addEventListener('click', () => {
     const viewId = item.getAttribute('data-view');
     if (viewId) switchView(viewId);

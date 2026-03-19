@@ -20,7 +20,8 @@ EVENT_TYPE_KEYWORDS = {
     "compliance": ["compliance", "合规", "regulation", "认证", "监管", "标签要求", "counterfeit", "假冒", "fake", "伪冒", "知识产权", "trademark", "品牌侵权", "seized", "扣押", "走私", "违禁品"],
     "logistics": ["logistics", "shipping", "port", "物流", "航运", "延误", "港口", "罢工", "locomotive", "列车", "铁路"],
     "holiday": ["holiday", "节假日", "旺季", "peak season", "促销季"],
-    "policy": ["政策", "公告", "规则", "措施", "carnet", "manifest"],
+    "policy": ["立法", "法案", "法规", "禁令", "ban", "制裁", "sanction", "行政令", "executive order", "carnet", "manifest"],
+    "platform": ["launch", "推出", "上线", "新功能", "feature", "update", "升级", "alexa", "algorithm", "算法", "佣金", "commission", "fee change", "marketplace", "seller central", "卖家中心", "政策", "公告", "规则", "措施"],
 }
 
 IMPACT_MAP = {
@@ -30,6 +31,7 @@ IMPACT_MAP = {
     "logistics": ["supply_chain", "inventory"],
     "holiday": ["demand", "inventory"],
     "policy": ["cost", "compliance"],
+    "platform": ["demand", "pricing", "compliance"],
 }
 
 ACTIONS_MAP = {
@@ -63,9 +65,14 @@ ACTIONS_MAP = {
         "先确认影响对象、执行时间和适用品类",
         "只对高敏感 SKU 做预排查",
     ],
+    "platform": [
+        "关注平台功能变更对流量和转化的影响",
+        "评估是否需要适配新功能或调整运营策略",
+        "监控竞品是否已利用新功能抢占优势",
+    ],
 }
 
-EVENT_TYPES = {"tariff", "environment", "compliance", "logistics", "holiday", "policy"}
+EVENT_TYPES = {"tariff", "environment", "compliance", "logistics", "holiday", "policy", "platform"}
 REGIONS = {"US", "EU", "UK", "Other"}
 RISK_LEVELS = {"low", "medium", "high"}
 CONFIDENCE_LEVELS = {"low", "medium", "high"}
@@ -124,7 +131,7 @@ def detect_event_type(text: str) -> str:
     for event_type, words in EVENT_TYPE_KEYWORDS.items():
         scores[event_type] = sum(1 for word in words if signal_in_text(word, lower))
     best = max(scores, key=lambda k: scores[k])
-    return best if scores[best] > 0 else "policy"
+    return best if scores[best] > 0 else "platform"
 
 
 def detect_region(text: str, region_hint: str | None = None) -> str:
@@ -284,7 +291,7 @@ def summarize_title(text: str, max_len: int = 80) -> str:
 def summarize_event(text: str, event_type: str, region: str, relevant: bool) -> str:
     prefix = "潜在" if any(k in text.lower() for k in ["可能", "拟", "讨论", "rumor", "传闻"]) else "已监测到"
     region_zh = {"US": "美国", "EU": "欧洲", "UK": "英国", "Other": "其他地区"}.get(region, "相关区域")
-    event_type_zh = {"tariff": "关税", "environment": "环保", "compliance": "合规", "logistics": "物流", "holiday": "节假日", "policy": "政策"}.get(event_type, "行业")
+    event_type_zh = {"tariff": "关税", "environment": "环保", "compliance": "合规", "logistics": "物流", "holiday": "节假日", "policy": "政策", "platform": "平台动态"}.get(event_type, "行业")
     if not relevant:
         return f"{prefix} {region_zh} {event_type_zh} 动态，但目前尚未解析出对跨境经营核心链路的实质性风险。"
     return f"{prefix} {region_zh} {event_type_zh} 事件，可能会影响当前的跨境履约、利润或合规操作。"
@@ -522,7 +529,7 @@ def generate_actions(event_type: str, confidence: str, relevant: bool, seller_pr
 
     if confidence == "low":
         return build_low_confidence_actions(event_type, seller_profile, text)
-    return ACTIONS_MAP.get(event_type, ACTIONS_MAP["policy"])[:3]
+    return ACTIONS_MAP.get(event_type, ACTIONS_MAP["platform"])[:3]
 
 
 def build_output(input_data: dict[str, Any]) -> dict[str, Any]:
@@ -598,7 +605,7 @@ def build_output(input_data: dict[str, Any]) -> dict[str, Any]:
 
 
 def normalize_output(result: dict[str, Any]) -> dict[str, Any]:
-    result["event_type"] = result["event_type"] if result["event_type"] in EVENT_TYPES else "policy"
+    result["event_type"] = result["event_type"] if result["event_type"] in EVENT_TYPES else "platform"
     result["region"] = result["region"] if result["region"] in REGIONS else "Other"
     result["risk_level"] = result["risk_level"] if result["risk_level"] in RISK_LEVELS else "medium"
     result["confidence"] = result["confidence"] if result["confidence"] in CONFIDENCE_LEVELS else "low"
