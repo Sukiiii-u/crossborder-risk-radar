@@ -581,11 +581,17 @@ def build_output(input_data: dict[str, Any]) -> dict[str, Any]:
             llm_title = str(llm_analysis.get("title", "")).strip()
             if llm_title:
                 title = llm_title
+            # 提取 LLM 生成的路径级 SOP
+            llm_sop = llm_analysis.get("sop")
+            if isinstance(llm_sop, dict):
+                _llm_sop_data = llm_sop
             logger.debug("LLM 深度分析成功")
         if not impact_reasoning or "暂未解析" in impact_reasoning:
             # Fallback：模板拼接
             summary_hint = summary[:120].strip("。").strip() + "..." if len(summary) > 120 else summary.strip("。")
             impact_reasoning = f"【雷达研判】该事件将从 {', '.join(impact_zh_list)} 维度冲击 {platform_hint} 业务。关键细节提示：{summary_hint}。这将直接导致 {model_hint} 链路的稳定性受挫，建议立即启动 SOP 响应。"
+    # 收集 LLM SOP（如无则为空 dict）
+    _llm_sop_result = _llm_sop_data if '_llm_sop_data' in dir() else {}
     return {
         "event_title": title,
         "event_summary": summary,
@@ -601,6 +607,7 @@ def build_output(input_data: dict[str, Any]) -> dict[str, Any]:
         "suggested_actions": suggested_actions,
         "confidence": relevance_confidence,
         "sources": build_sources(validated.get("url")),
+        "llm_sop": _llm_sop_result,
     }
 
 

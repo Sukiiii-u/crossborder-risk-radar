@@ -216,11 +216,11 @@ def generate_risk_analysis(
     region: str,
     platform: str = "全平台",
     fulfillment_model: str = "跨境",
-    max_tokens: int = 1500,
+    max_tokens: int = 2000,
 ) -> dict[str, Any] | None:
-    """基于事件内容，使用 LLM 生成深度风险研判。
+    """基于事件内容，使用 LLM 生成深度风险研判 + 动态 SOP。
 
-    返回包含 title、impact、actions 的 dict，失败时返回 None。
+    返回包含 title、impact、actions、sop 的 dict，失败时返回 None。
     """
     messages = [
         {
@@ -230,7 +230,19 @@ def generate_risk_analysis(
                 "要求：\n"
                 "1. title：精炼的中文标题（≤40 字），直击卖家痛点\n"
                 "2. impact：核心影响分析（2-3 句话），必须具体到利润、库存、合规等维度\n"
-                "3. actions：3 条具体行动建议（数组），每条 ≤30 字，以动作动词开头\n\n"
+                "3. actions：3 条具体行动建议（数组），每条 ≤30 字，以动作动词开头\n"
+                "4. sop：针对三条履约路径的差异化应急建议（对象），包含：\n"
+                "   - direct_mail：跨境直邮路径（小包直发、邮政渠道）\n"
+                "     - actions: 2 条针对该路径的具体行动（数组）\n"
+                "     - watchout: 1 条该路径的关键注意事项（字符串）\n"
+                "   - platform_led：平台仓配路径（FBA/全托管）\n"
+                "     - actions: 2 条针对该路径的具体行动（数组）\n"
+                "     - watchout: 1 条该路径的关键注意事项（字符串）\n"
+                "   - merchant_led：卖家自发货/海外仓路径（半托管/3PL）\n"
+                "     - actions: 2 条针对该路径的具体行动（数组）\n"
+                "     - watchout: 1 条该路径的关键注意事项（字符串）\n\n"
+                "每条行动 ≤35 字，以动作动词开头，必须与该事件直接相关。\n"
+                "注意事项要具体到该路径最脆弱的环节，不要写通用套话。\n\n"
                 "输出纯 JSON，不要 Markdown 代码块包裹。"
             ),
         },
