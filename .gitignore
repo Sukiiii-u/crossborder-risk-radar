@@ -8,7 +8,7 @@ runtime/runs/
 runtime/latest_run.json
 runtime/latest_rendered.txt
 runtime/data/
-ui/radar-data.js
+# ui/radar-data.js  # 不再忽略，需要推送到 GitHub Pages
 
 # === 本地监控环境 ===
 monitoring/changedetection-data/

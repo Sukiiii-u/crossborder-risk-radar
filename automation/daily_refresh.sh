@@ -48,4 +48,19 @@ fi
 # 清理超过7天的旧日志
 find "$LOG_DIR" -name "daily_refresh_*.log" -mtime +7 -delete 2>/dev/null || true
 
+# 步骤4：自动推送到 GitHub（触发 GitHub Pages 部署）
+log "步骤4：推送到 GitHub..."
+cd "$SKILL_ROOT"
+if git diff --quiet "ui/radar-data.js" 2>/dev/null; then
+    log "ℹ️ radar-data.js 无变化，跳过推送"
+else
+    git add "ui/radar-data.js"
+    git commit -m "数据更新：$(date '+%Y-%m-%d %H:%M')" --no-verify 2>>"$LOG_FILE" || true
+    if git push origin main >>"$LOG_FILE" 2>&1; then
+        log "✅ 已推送到 GitHub，Pages 将自动更新"
+    else
+        log "⚠️ 推送失败（可能是网络问题，下次重试）"
+    fi
+fi
+
 log "===== 每日数据刷新完成 ====="
