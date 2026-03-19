@@ -1,7 +1,7 @@
 window.RADAR_UI_DATA = {
   "meta": {
-    "run_id": "radar-20260319-090333-7c5236c3",
-    "generated_at": "2026-03-19T09:03:33Z",
+    "run_id": "radar-20260319-093416-0d03a7bc",
+    "generated_at": "2026-03-19T09:34:16Z",
     "source_mode": "real",
     "snapshot_reason": "fresh",
     "snapshot_usable": true,
@@ -17,7 +17,7 @@ window.RADAR_UI_DATA = {
       "event_title": "【Amazon Seller Forums - News and Announcements】国际物流与履约链路风险更新",
       "event_type": "logistics",
       "risk_level": "high",
-      "seller_angle": "美国卖家失去高价值商品退货豁免权，退款周期缩短一半但资金冻结风险翻倍；2月8日后未使用APRL的订单将面临合规处罚或账户健康度下降；超大/危险品等豁免品类需重新确认，避免误操作导致拒付。"
+      "seller_angle": "2026年2月8日起所有卖家必须使用APRL，高价值商品豁免取消，退货运费成本直接上升；退款周期从14天缩短至7天，加速资金回笼但也缩短了争议处理窗口；需确认产品是否属于豁免类别，违规可能引发账户健康问题。"
     },
     "active_profile_modifier": {
       "platform": "全平台扫描",
@@ -25,7 +25,7 @@ window.RADAR_UI_DATA = {
     }
   },
   "dashboard": {
-    "high_priority_count": 3,
+    "high_priority_count": 2,
     "top_story": {
       "title": "【Amazon Seller Forums - News and Announcements】国际物流与履约链路风险更新",
       "risk_type": "logistics",
@@ -33,10 +33,10 @@ window.RADAR_UI_DATA = {
     },
     "risk_type_distribution": [
       "platform×7",
-      "logistics×3",
+      "logistics×4",
       "compliance×2",
-      "tariff×2",
-      "policy×1"
+      "policy×1",
+      "tariff×1"
     ],
     "cards": [
       {
@@ -45,7 +45,7 @@ window.RADAR_UI_DATA = {
         "risk_type": "logistics",
         "priority": "high",
         "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "核查SKU是否属于Handmade、危险品等豁免品类，及时在后台标记"
+        "action": "确认产品是否属于豁免类别，手表、危险品等已豁免"
       },
       {
         "rank": 2,
@@ -53,123 +53,123 @@ window.RADAR_UI_DATA = {
         "risk_type": "logistics",
         "priority": "medium",
         "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "立即核算现有高价值商品退货成本，预留额外预算应对运费增加"
+        "action": "增加履约和补货缓冲时间"
       },
       {
         "rank": 3,
         "title": "美国关税退款：卖家如何申请退还已缴关税",
         "risk_type": "tariff",
         "priority": "high",
-        "who_to_watch": "受影响的进口商可通过法律途径申请关税退款，有望挽回部分成本损失；但需注意裁定适用范围和时效要求，建议立即梳理历史关税缴纳记录以确认退款资格。",
-        "action": "核查2025-2026年关税缴纳记录，确认是否存在裁定范围内的非法关税"
+        "who_to_watch": "受影响的进口关税可获退款，预计可挽回2%-15%的采购成本；需在裁决生效后180天内提交申请，逾期视为放弃；未来关税政策不确定性增加，建议缩短备货周期以降低风险。",
+        "action": "核查2025年起相关进口记录是否在退款范围内"
       },
       {
         "rank": 4,
-        "title": "商务部：继续发挥好中美经贸磋商机制作用加强对话沟通",
-        "risk_type": "tariff",
-        "priority": "high",
-        "who_to_watch": "关税政策预期向好但尚未落地，卖家备货需关注税率动态；建立工作机制或为后续关税谈判提供渠道，当前仍处观望阶段；双边经贸关系趋稳有望降低合规风险但需持续跟踪。",
-        "action": "密切关注后续关税政策细化及执行时间表"
-      },
-      {
-        "rank": 5,
         "title": "Amazon Big Spring Sale 清库存窗口期即将开启",
         "risk_type": "platform",
         "priority": "medium",
-        "who_to_watch": "该活动为卖家提供清理过剩库存的机会，但促销价格可能压缩利润空间。Outlet deals可降低仓储费并改善现金流，建议优先处理高仓储费商品。",
-        "action": "检查库存确定可参与Outlet的产品"
+        "who_to_watch": "FBA卖家可通过Outlet deals清理过剩库存，但需在3月20日前提交；参与活动可提升销量、改善现金流，但需注意价格竞争力与利润率平衡；未及时清理的库存将持续产生长期仓储费。",
+        "action": "立即筛选FBA可用库存，优先处理超180天滞销品"
       },
       {
-        "rank": 6,
+        "rank": 5,
         "title": "Amazon 调整卖家自发货退款处理流程",
         "risk_type": "platform",
         "priority": "medium",
-        "who_to_watch": "从2026年1月26日起，FBM卖家处理退货时间从2个工作日缩短至4个日历日，未及时处理将被自动退款且失去SAFE-T索赔资格，导致无法追偿损失。",
-        "action": "立即调整内部退货处理SOP，确保4天内完成审核和退款"
+        "who_to_watch": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+        "action": "关注平台功能变更对流量和转化的影响"
       },
       {
-        "rank": 7,
+        "rank": 6,
         "title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
         "risk_type": "platform",
         "priority": "medium",
-        "who_to_watch": "卖家可通过捐赠证书获取税务抵扣凭证，优化年度税务规划；同时提供合规渠道清理冗余库存，降低长期仓储费用；建议保留完整捐赠记录以满足合规审计要求。",
-        "action": "登录亚马逊卖家中心下载2025年度捐赠证书"
+        "who_to_watch": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+        "action": "关注平台功能变更对流量和转化的影响"
       },
       {
-        "rank": 8,
-        "title": "欧盟电商合规指南+链接",
+        "rank": 7,
+        "title": "欧盟电商合规指南 + 链接",
         "risk_type": "compliance",
         "priority": "medium",
         "who_to_watch": "本地履约-平台主导（平台修正：全平台扫描 / 市场修正：EU / 重点看定价、补货、平台仓规则）",
-        "action": "立即核查目标市场VAT注册状态及申报义务"
+        "action": "立即对照新规自查在售产品，排查VAT、产品安全、标签合规等风险点"
       },
       {
-        "rank": 9,
+        "rank": 8,
         "title": "长三角企业国际化合作发展交流会暨新华·中国企业出海合作中心（长三角）在宁启幕",
         "risk_type": "compliance",
         "priority": "medium",
         "who_to_watch": "本地履约-平台主导（平台修正：全平台扫描 / 市场修正：EU / 重点看定价、补货、平台仓规则）",
-        "action": "主动对接中心获取目标市场合规政策与准入指南"
+        "action": "对接出海合作中心，获取品牌建设与合规管理专项指导"
       },
       {
-        "rank": 10,
+        "rank": 9,
         "title": "USPS 国际线路服务告警",
         "risk_type": "logistics",
         "priority": "medium",
         "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "立即排查待发货订单，暂停USPS至暂停国家的配送"
+        "action": "立即排查待发往 Bermuda、Afghanistan、Iran 等6国的订单，暂停发货并通知买家"
       },
       {
-        "rank": 11,
+        "rank": 10,
         "title": "杂货商面临州和联邦立法者对“监控定价”的审查",
         "risk_type": "policy",
         "priority": "medium",
-        "who_to_watch": "使用消费者数据进行个性化定价将受限，可能压缩利润空间；电子货架标签可能面临禁令，需调整零售技术投资；数据收集和使用面临更严格监管，合规成本将显著上升。",
-        "action": "立即审计现有定价模型，移除或调整基于消费者数据的动态定价功能"
+        "who_to_watch": "【雷达研判】该事件将从 硬性运营与履约成本攀升, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 政策 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+        "action": "补充更多政策细节后再判断"
+      },
+      {
+        "rank": 11,
+        "title": "Doba为dropshipping卖家新增Walmart Marketplace集成",
+        "risk_type": "platform",
+        "priority": "medium",
+        "who_to_watch": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+        "action": "关注平台功能变更对流量和转化的影响"
       },
       {
         "rank": 12,
-        "title": "Doba为代发货卖家新增沃尔玛市场平台集成",
-        "risk_type": "platform",
-        "priority": "medium",
-        "who_to_watch": "更多dropshipper可通过Doba进入Walmart，平台竞争将迅速加剧，利润空间面临压缩风险。自动化同步虽提升效率，但库存数据延迟或错误可能导致超卖、差评，影响店铺合规评分。",
-        "action": "立即评估产品利润空间及Walmart平台合规要求，制定差异化定价策略"
-      },
-      {
-        "rank": 13,
         "title": "Amazon 春季促销活动更新",
         "risk_type": "platform",
         "priority": "medium",
-        "who_to_watch": "家居健康品类竞争白热化，卖家面临严峻价格战压力，利润率或被大幅压缩。35+品类同步促销导致流量分散，非重点品类曝光下降，库存周转承压。平台促销期间合规审查趋严，虚构原价等违规促销将触发处罚。",
-        "action": "立即核查库存并测算安全库存量，确保爆款备货充足"
+        "who_to_watch": "促销期间平台流量向home和wellness品类集中，未参与deal的卖家可能被边缘化。35+品类同时促销导致价格竞争加剧，卖家利润空间被压缩。7天持续促销对库存周转和物流时效提出更高要求，断货或延迟将直接导致排名下滑。",
+        "action": "立即检查Home/Wellness相关ASIN库存，提前7天增补FBA或海外仓库存"
       },
       {
-        "rank": 14,
+        "rank": 13,
         "title": "美国海关收紧进口商资质规则",
         "risk_type": "platform",
         "priority": "medium",
-        "who_to_watch": "美国海关检查重点从货物转向进口商实体，5H检查导致大量货物被扣留或退货。若进口商资质不合规，货物将面临清关延误甚至销毁风险，卖家利润和库存周转将受到严重冲击。",
-        "action": "立即核查合作进口商的IOR资质和海关信用评级是否达标"
+        "who_to_watch": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 美国 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+        "action": "关注平台功能变更对流量和转化的影响"
       },
       {
-        "rank": 15,
+        "rank": 14,
         "title": "物流科技公司广告合规纠纷",
         "risk_type": "platform",
         "priority": "medium",
-        "who_to_watch": "该案虽主要影响B2B市场，但3030万美元判赔和ITC专利审查结果将直接影响同类AI硬件产品在美销售合规性，涉及广告宣传合规审查和潜在进口风险。",
-        "action": "审查产品广告文案，确保AI功能宣传有实际研究数据支撑"
+        "who_to_watch": "该仲裁裁决对销售车队管理设备、AI行车记录仪的跨境卖家具有警示意义。涉及广告宣传中使用\"研究数据\"\"对比测试\"等营销话术的产品需立即排查，虚假声称可能面临高额赔偿。同时ITC专利案的终结避免了产品进口禁令，但其他pending案件仍存不确定性，可能引发行业合规审查趋严。",
+        "action": "立即审查产品listing中的性能数据、研究引用、竞品对比声称，移除无法验证的营销表述"
+      },
+      {
+        "rank": 15,
+        "title": "FedEx 关闭部分包裹处理中心",
+        "risk_type": "logistics",
+        "priority": "medium",
+        "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
+        "action": "增加履约和补货缓冲时间"
       }
     ]
   },
   "today_actions": [
-    "核查SKU是否属于Handmade、危险品等豁免品类，及时在后台标记",
-    "立即核算现有高价值商品退货成本，预留额外预算应对运费增加",
-    "核查2025-2026年关税缴纳记录，确认是否存在裁定范围内的非法关税"
+    "确认产品是否属于豁免类别，手表、危险品等已豁免",
+    "增加履约和补货缓冲时间",
+    "核查2025年起相关进口记录是否在退款范围内"
   ],
   "watch_items": [
-    "调整退货退款SOP，将退款处理窗口从14天压缩至7天",
-    "检查产品类目是否在豁免范围内，对符合条件的 SKU 建立分类标签",
-    "通过WePayTheTariffs等渠道了解具体退款申请流程和所需材料"
+    "核算退货标签成本，调整产品定价或运费策略",
+    "复核当前物流方案的时效风险",
+    "准备提单、报关单、付款凭证等完整进口文件"
   ],
   "hold_line": "先别一上来就把首页绑定成某个默认画像；先看事件级别，再决定切去哪个画像深挖。",
   "fulfillment_actions": [
@@ -178,16 +178,11 @@ window.RADAR_UI_DATA = {
       "path_label": "跨境直发",
       "path_description": "包裹从境外直发到目标市场，先看税费、到手价、签收和退款链路。",
       "actions": [
-        "先重算税后到手价、毛利率和退款缓冲，别让低客单 SKU 悄悄转负。",
-        "把高风险 SKU 标成直发预警名单，今天就评估是否切去本地仓/更换物流方案。",
-        "紧盯 【Amazon Seller Forums - News and Announcements】国际物流与履约链路风险更新 的正式细则和执行时间，避免广告继续把亏损放大。",
-        "TikTok 专项：立即复核‘达人建联’准入门槛，针对新政策调整佣金池，防止投流惯性亏损。",
-        "合规专项：针对 TikTok Shop EU 的最新认证要求，启动‘备选白牌’链路申报，确保时效安全。",
-        "运营动作：调整直播间/短视频关键词，避开合规敏感区，并核算最新‘含税到手价’。"
+        "检查现有小包渠道是否支持APRL标签对接",
+        "评估退货标签成本对低客单价产品利润的冲击"
       ],
       "watchouts": [
-        "密切关注 【Amazon Seller Forums - News and Announcements】国际物流与履约链路风险更新 的最终执行日期和适用品类；如尚未落地，保持周频追踪。",
-        "直邮链路的税费和时效最脆弱 — 一旦政策落地，立即重算到手价，避免广告投放打水漂。"
+        "小包直发需确保退货标签能通过原渠道寄回，地址标签生成可能存在技术对接障碍"
       ],
       "modifier": "平台修正：general / 市场修正：EU"
     },
@@ -196,16 +191,11 @@ window.RADAR_UI_DATA = {
       "path_label": "本地履约-平台主导",
       "path_description": "平台托管/半托管/FBA 一类，本地仓配能缓冲一部分冲击，但要盯价格带、补货和平台规则。",
       "actions": [
-        "先复核平台仓配链路的价格带、补货节奏和承诺时效，确认安全垫还在不在。",
-        "检查平台托管/FBA 规则有没有同步变化，避免平台抽成、尾程或绩效门槛一起抬头。",
-        "把 logistics 风险翻译成平台内动作：提价、控量、调补货，不要只看新闻标题。",
-        "Amazon 专项：核查 FBA 库容与冗余库存，针对政策变动优化‘配送费’阶梯，保住利润底线。",
-        "合规专项：复核欧盟/美国站点的保险、认证等硬门槛，防止由于文件缺失导致的‘链接变狗’。",
-        "备货动作：针对物流链路波动，微调 FBA 补货节奏，并同步更新卖家自发货（FBM）的备选渠道。"
+        "确认FBA库存产品是否受此政策影响",
+        "检查产品分类是否属于豁免范围，如手工艺品、认证二手手表"
       ],
       "watchouts": [
-        "留意平台是否因 【Amazon Seller Forums - News and Announcements】国际物流与履约链路风险更新 调整仓配规则、提高绩效门槛或修改补货频率限制。",
-        "平台仓（FBA/全托管）的库容和合规文件是核心风险点 — 提前排查认证到期和库存健康度。"
+        "FBA仓配退货由亚马逊处理，但卖家需承担标签费用，账户健康度将更直接影响店铺运营"
       ],
       "modifier": "平台修正：general / 市场修正：EU"
     },
@@ -214,16 +204,11 @@ window.RADAR_UI_DATA = {
       "path_label": "本地履约-3PL/商家主导",
       "path_description": "商家自控海外仓或 3PL，本地履约更稳，但仓储、清关和尾程协同压力更高。",
       "actions": [
-        "海外仓专项：针对 Temu 半托管或三方仓，立即盘点站点在途库存与库容利用率，防范由于政策突变引发的仓储费‘背刺’。",
-        "履约协同：核对 3PL 承运商的‘旺季附加费’最新调价表，同步在前端进行‘售价阶梯化’对冲。",
-        "应急预案：针对 【Amazon Seller Forums - News and Announcements】国际物流与履约链路风险更新 预留备用清关行联系方式，并评估是否将部分核心 SKU 从跨境仓向本地仓前置拨备。",
-        "Temu 专项：立即盘点‘半托管’在途库存，针对海关严查预留 7-10 天时效冗余。",
-        "履约专项：核对 3PL 旺季附加费，同步在 Temu 后台更新‘阶梯定价’，对冲物流波动。",
-        "风控动作：检查全托管/半托管质量绩效分，避免由于备货延迟引发的平台强制下架。"
+        "海外仓/自发货需在2月8日前完成APRL系统配置",
+        "评估退货运费成本，必要时调整半托管服务条款"
       ],
       "watchouts": [
-        "自发货/海外仓路径优先关注 【Amazon Seller Forums - News and Announcements】国际物流与履约链路风险更新 对清关和尾程时效的影响，准备备选物流方案。",
-        "3PL 旺季附加费和仓储费可能同步上涨 — 提前锁定费率或切换供应商。"
+        "自发货退货需卖家自行承担标签费用并处理收货，高价值商品可通过SAFE-T主张非责任退货索赔"
       ],
       "modifier": "平台修正：general / 市场修正：EU"
     }
@@ -261,7 +246,7 @@ window.RADAR_UI_DATA = {
         "name": "欧盟委员会（European Commission）",
         "url": "https://taxation-customs.ec.europa.eu/news/e-commerce-150-eur-customs-duty-exemption-threshold-be-removed-2026-2025-11-13_en"
       },
-      "timestamp": "2026-03-19T08:48:32.057170+00:00",
+      "timestamp": "2026-03-19T09:33:58.307821+00:00",
       "effective_date": "2026-07-01",
       "monitor_until": "2028-12-31",
       "brief_rank": 1,
@@ -274,7 +259,7 @@ window.RADAR_UI_DATA = {
       "display_order": 3,
       "title": "美国关税退款：卖家如何申请退还已缴关税",
       "raw_title": "美国关税退款：卖家如何申请退还已缴关税",
-      "summary": "E636: 获取关税退款你必须知道的事。WePayTheTariffs的Dan Anthony解析最高法院裁定某些关税违法的最新判决，详解受影响进口商的退款流程及电商卖家后续应采取的步骤。最高法院近日推翻特朗普总统关税，意味着有好消息也有坏消息。",
+      "summary": "美国最高法院裁定部分关税违法，WePayTheTariffs的Dan Anthony详解受影响进口商退款流程及跨境电商卖家后续应采取的步骤。",
       "level": "high",
       "type": "tariff",
       "typeLabel": "关税与税务",
@@ -287,9 +272,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "受影响的进口商可通过法律途径申请关税退款，有望挽回部分成本损失；但需注意裁定适用范围和时效要求，建议立即梳理历史关税缴纳记录以确认退款资格。",
+      "impact": "受影响的进口关税可获退款，预计可挽回2%-15%的采购成本；需在裁决生效后180天内提交申请，逾期视为放弃；未来关税政策不确定性增加，建议缩短备货周期以降低风险。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "核查2025-2026年关税缴纳记录，确认是否存在裁定范围内的非法关税",
+      "action": "核查2025年起相关进口记录是否在退款范围内",
       "source": {
         "name": "EcomCrew",
         "url": "https://www.ecomcrew.com/e636-tariff-refunds/"
@@ -299,44 +284,13 @@ window.RADAR_UI_DATA = {
       "ranking_score": 213
     },
     {
-      "id": "商务部：继续发挥好中美经贸磋商机制作用加强对话沟通",
-      "category": "macro",
-      "scope": "global",
-      "display_order": 4,
-      "title": "商务部：继续发挥好中美经贸磋商机制作用加强对话沟通",
-      "raw_title": "商务部：继续发挥好中美经贸磋商机制作用加强对话沟通",
-      "summary": "商务部：继续发挥好中美经贸磋商机制作用加强对话沟通 商务部新闻发言人何咏前在回答关于中美巴黎经贸磋商的提问时说，双方以中美两国元首重要共识为引领，围绕关税安排、促进双边贸易投资、维护已有磋商共识等彼此关心的经贸议题，进行了坦诚深入、建设性的交流磋商，形成了一些新的共识，并将继续保",
-      "level": "high",
-      "type": "tariff",
-      "typeLabel": "关税与税务",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "关税政策预期向好但尚未落地，卖家备货需关注税率动态；建立工作机制或为后续关税谈判提供渠道，当前仍处观望阶段；双边经贸关系趋稳有望降低合规风险但需持续跟踪。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "密切关注后续关税政策细化及执行时间表",
-      "source": {
-        "name": "36氪科技",
-        "url": "https://36kr.com/newsflashes/3729553938824585?f=rss"
-      },
-      "timestamp": "2026-03-19 15:38:27 +0800",
-      "brief_rank": 4,
-      "ranking_score": 191
-    },
-    {
       "id": "【Amazon Seller Forums - News and Announcements】国际物流与履约链路风险更新",
       "category": "urgent",
       "scope": "platform",
       "display_order": 1,
       "title": "【Amazon Seller Forums - News and Announcements】国际物流与履约链路风险更新",
       "raw_title": "【Amazon Seller Forums - News and Announcements】国际物流与履约链路风险更新",
-      "summary": "亚马逊美国站通知：自2026年2月8日起，所有美国卖家必须使用亚马逊预付退货标签(APRL)项目处理客户退货，取消此前高价值商品豁免。此举旨在统一退货体验、加快退款处理并降低客服压力。建议相关卖家提前了解APRL项目操作流程。",
+      "summary": "亚马逊美国站自2026年2月8日起取消高价值商品退货豁免，所有卖家必须使用APRL预付费退货标签计划，为客户提供统一的预付费退货标签，以加快退款处理并降低客服成本。",
       "level": "high",
       "type": "logistics",
       "typeLabel": "物流运输",
@@ -349,9 +303,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-watchlist",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "美国卖家失去高价值商品退货豁免权，退款周期缩短一半但资金冻结风险翻倍；2月8日后未使用APRL的订单将面临合规处罚或账户健康度下降；超大/危险品等豁免品类需重新确认，避免误操作导致拒付。",
+      "impact": "2026年2月8日起所有卖家必须使用APRL，高价值商品豁免取消，退货运费成本直接上升；退款周期从14天缩短至7天，加速资金回笼但也缩短了争议处理窗口；需确认产品是否属于豁免类别，违规可能引发账户健康问题。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "核查SKU是否属于Handmade、危险品等豁免品类，及时在后台标记",
+      "action": "确认产品是否属于豁免类别，手表、危险品等已豁免",
       "source": {
         "name": "Amazon Seller Forums - News and Announcements",
         "url": "http://127.0.0.1:5002/diff/60221fa4-13b3-4718-a9cd-112afb5b2a50"
@@ -387,7 +341,7 @@ window.RADAR_UI_DATA = {
         "name": "美国海关与边境保护局（CBP）",
         "url": "https://www.cbp.gov/trade/basic-import-export/e-commerce"
       },
-      "timestamp": "2026-03-19T08:48:32.057170+00:00",
+      "timestamp": "2026-03-19T09:33:58.307821+00:00",
       "effective_date": null,
       "monitor_until": null,
       "brief_rank": 2,
@@ -400,7 +354,7 @@ window.RADAR_UI_DATA = {
       "display_order": 2,
       "title": "Amazon 要求高货值商品使用预付退货标签",
       "raw_title": "Amazon 要求高货值商品使用预付退货标签",
-      "summary": "2026年2月8日起，亚马逊美国站卖家须为所有客户退货使用预付退货标签（APRL），取消高价值商品豁免。该服务通过Buy Shipping自动生成预付标签，退款周期从14天缩短至7天，并减少客服沟通。手工艺品、认证二手商品等类别豁免继续适用。",
+      "summary": "2026年2月8日起，美国卖家所有商品退货必须使用亚马逊预付费退货标签（APRL），取消原高价值商品豁免。此举将退款周期从14天缩短至7天，减少客服沟通。手工制作、认证二手商品等类别继续豁免。",
       "level": "medium",
       "type": "logistics",
       "typeLabel": "物流运输",
@@ -413,9 +367,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "取消高价值商品豁免后，卖家需为所有退货承担 prepaid 运费，退货成本预计增加 30%-50%；合规风险上升，未使用 APRL 的订单可能被判定违规并影响店铺绩效；7天快速退款虽提升客户体验，但缩短资金占用周期，可能影响现金流周转。",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 美国 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即核算现有高价值商品退货成本，预留额外预算应对运费增加",
+      "action": "增加履约和补货缓冲时间",
       "source": {
         "name": "Amazon Seller Forums - News and Announcements Content",
         "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/c1eae42b-ead4-4c63-a007-aefbca44a867"
@@ -491,6 +445,37 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
+      "id": "Amazon Big Spring Sale 清库存窗口期即将开启",
+      "category": "urgent",
+      "scope": "platform",
+      "display_order": 4,
+      "title": "Amazon Big Spring Sale 清库存窗口期即将开启",
+      "raw_title": "Amazon Big Spring Sale 清库存窗口期即将开启",
+      "summary": "亚马逊Big Spring Sale 2026将于3月25-31日举行，持续7天覆盖35+品类，卖家可通过提交Outlet deals清过剩库存，提升销售速度、改善现金流、降低仓储费并获得额外推广曝光。",
+      "level": "medium",
+      "type": "platform",
+      "typeLabel": "平台动态",
+      "platforms": [
+        "Amazon"
+      ],
+      "regions": [
+        "Other"
+      ],
+      "source_layer": "official-content",
+      "source_type": "platform-official",
+      "source_priority": "P0",
+      "impact": "FBA卖家可通过Outlet deals清理过剩库存，但需在3月20日前提交；参与活动可提升销量、改善现金流，但需注意价格竞争力与利润率平衡；未及时清理的库存将持续产生长期仓储费。",
+      "subject": "布局 EU 市场的 general mixed 卖家",
+      "action": "立即筛选FBA可用库存，优先处理超180天滞销品",
+      "source": {
+        "name": "Amazon Seller Forums - News and Announcements Content",
+        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/912589ea-a61d-41e9-ab87-fea55be45804"
+      },
+      "timestamp": "2026-03-18T20:41:57.172Z",
+      "brief_rank": 4,
+      "ranking_score": 185
+    },
+    {
       "id": "tiktok-creator-commission-seed",
       "category": "urgent",
       "scope": "platform",
@@ -526,13 +511,13 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
-      "id": "Amazon Big Spring Sale 清库存窗口期即将开启",
+      "id": "Amazon 调整卖家自发货退款处理流程",
       "category": "urgent",
       "scope": "platform",
       "display_order": 5,
-      "title": "Amazon Big Spring Sale 清库存窗口期即将开启",
-      "raw_title": "Amazon Big Spring Sale 清库存窗口期即将开启",
-      "summary": "亚马逊Big Spring Sale将于2026年3月25-31日举行，为期7天，覆盖35+品类。这是清理过剩库存的最佳时机，卖家可通过提交Outlet deals提高销售周转、改善现金流、降低仓储费，活动期间还可获得额外促销曝光。",
+      "title": "Amazon 调整卖家自发货退款处理流程",
+      "raw_title": "Amazon 调整卖家自发货退款处理流程",
+      "summary": "亚马逊FBM退款流程更新：2026年1月26日起，退款处理窗口从2个工作日延长至4个日历日，收到退货后需在4天内处理退款，逾期将自动退款且无法申请SAFE-T索赔（特定情况除外），建议卖家及时处理退货以保障权益。",
       "level": "medium",
       "type": "platform",
       "typeLabel": "平台动态",
@@ -545,16 +530,16 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "该活动为卖家提供清理过剩库存的机会，但促销价格可能压缩利润空间。Outlet deals可降低仓储费并改善现金流，建议优先处理高仓储费商品。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "检查库存确定可参与Outlet的产品",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "Amazon Seller Forums - News and Announcements Content",
-        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/912589ea-a61d-41e9-ab87-fea55be45804"
+        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/11268c92-5a5c-4125-9e59-49e433d0d151"
       },
-      "timestamp": "2026-03-18T20:41:57.172Z",
+      "timestamp": "2026-03-17T15:49:59.800Z",
       "brief_rank": 5,
-      "ranking_score": 185
+      "ranking_score": 181
     },
     {
       "id": "temu-turkey-restructure-seed",
@@ -590,13 +575,13 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
-      "id": "Amazon 调整卖家自发货退款处理流程",
+      "id": "Amazon FBA 捐赠计划开放捐赠凭证下载",
       "category": "urgent",
       "scope": "platform",
       "display_order": 6,
-      "title": "Amazon 调整卖家自发货退款处理流程",
-      "raw_title": "Amazon 调整卖家自发货退款处理流程",
-      "summary": "亚马逊FBM退款政策更新：2026年1月26日起，退款处理窗口从2个工作日延长至4个日历日，卖家有更多时间审核退货；若未在4天内处理退款将自动退款，且大部分情况下无法申请SAFE-T索赔。",
+      "title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
+      "raw_title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
+      "summary": "使用FBA Donations的卖家现在可获取捐赠证书。2025年通过FBA Donations捐赠产品的卖家，可从非营利合作伙伴处获取捐赠证书，显示上一年度捐赠的库存信息。",
       "level": "medium",
       "type": "platform",
       "typeLabel": "平台动态",
@@ -609,16 +594,16 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "从2026年1月26日起，FBM卖家处理退货时间从2个工作日缩短至4个日历日，未及时处理将被自动退款且失去SAFE-T索赔资格，导致无法追偿损失。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即调整内部退货处理SOP，确保4天内完成审核和退款",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
-        "name": "Amazon Seller Forums - News and Announcements Content",
-        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/11268c92-5a5c-4125-9e59-49e433d0d151"
+        "name": "Amazon Seller News / Announcements Content",
+        "url": "https://sell.amazon.com/blog/announcements/fba-donation-certificate"
       },
-      "timestamp": "2026-03-17T15:49:59.800Z",
+      "timestamp": "2026-03-09T17:36:00",
       "brief_rank": 6,
-      "ranking_score": 181
+      "ranking_score": 171
     },
     {
       "id": "temu-semi-managed-expansion-seed",
@@ -655,44 +640,13 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
-      "id": "Amazon FBA 捐赠计划开放捐赠凭证下载",
-      "category": "urgent",
-      "scope": "platform",
-      "display_order": 7,
-      "title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
-      "raw_title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
-      "summary": "亚马逊物流捐赠项目现已向卖家提供捐赠证书。2025年通过FBA Donations捐赠产品的卖家，可通过亚马逊非营利合作伙伴获取年度库存捐赠报告证书。",
-      "level": "medium",
-      "type": "platform",
-      "typeLabel": "平台动态",
-      "platforms": [
-        "Amazon"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "official-content",
-      "source_type": "platform-official",
-      "source_priority": "P0",
-      "impact": "卖家可通过捐赠证书获取税务抵扣凭证，优化年度税务规划；同时提供合规渠道清理冗余库存，降低长期仓储费用；建议保留完整捐赠记录以满足合规审计要求。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "登录亚马逊卖家中心下载2025年度捐赠证书",
-      "source": {
-        "name": "Amazon Seller News / Announcements Content",
-        "url": "https://sell.amazon.com/blog/announcements/fba-donation-certificate"
-      },
-      "timestamp": "2026-03-09T17:36:00",
-      "brief_rank": 7,
-      "ranking_score": 171
-    },
-    {
       "id": "USPS 国际线路服务告警",
       "category": "urgent",
       "scope": "global",
-      "display_order": 10,
+      "display_order": 9,
       "title": "USPS 国际线路服务告警",
       "raw_title": "USPS 国际线路服务告警",
-      "summary": "USPS发布国际邮件服务暂停通知，临时停止接受发往百慕大、阿富汗、伊朗、塞舌尔、亚美尼亚、伊拉克、南苏丹、巴林、以色列、苏丹等国家的邮件，原因系运输选项不足或目的国服务中断。提醒跨境卖家留意相关国家路向的物流服务状态。",
+      "summary": "美国邮政服务（USPS）因运输选项不足及部分国家服务中断，临时暂停接受发往阿富汗、伊朗、塞舌尔、亚美尼亚、伊拉克、南苏丹、巴林、以色列及苏丹等国家的国际邮件。中国跨境卖家请注意避免向上述目的地发货，恢复时间另行通知。",
       "level": "medium",
       "type": "logistics",
       "typeLabel": "物流运输",
@@ -705,25 +659,25 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "carrier-official",
       "source_priority": "P1",
-      "impact": "美国邮政即日起暂停接收发往百慕大、阿富汗、伊朗等10国的邮件，卖家订单无法通过USPS履约。若已发货至目的国，可能面临退件或滞留在途；未发货订单需紧急切换其他物流渠道，否则将产生库存积压和客户投诉。",
+      "impact": "使用USPS渠道的直邮包裹将无法发往受影响国家，已发货可能滞留或退回；部分中东、非洲航线运力紧张，物流成本将短期上升；需立即排查受影响订单并启用替代渠道。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即排查待发货订单，暂停USPS至暂停国家的配送",
+      "action": "立即排查待发往 Bermuda、Afghanistan、Iran 等6国的订单，暂停发货并通知买家",
       "source": {
         "name": "USPS International Service Alerts Content",
         "url": "https://about.usps.com/newsroom/service-alerts/international/"
       },
       "timestamp": "2026-03-13T00:00:00Z",
-      "brief_rank": 10,
+      "brief_rank": 9,
       "ranking_score": 132
     },
     {
       "id": "美国海关收紧进口商资质规则",
       "category": "urgent",
       "scope": "global",
-      "display_order": 14,
+      "display_order": 13,
       "title": "美国海关收紧进口商资质规则",
       "raw_title": "美国海关收紧进口商资质规则",
-      "summary": "美国海关加强进口商记录（IOR）规定，检查重点从货物转向进口实体。近期“5H检查”导致大量货物被扣留退运，跨境卖家中美清关风险显著上升，需密切关注IOR合规要求。",
+      "summary": "美国海关检查重点从货物转向进口实体责任方。\"5H检查\"实施后，扣留退运案例增多，跨境贸易商焦虑加剧。进口商记录(IOR)规定近期发生重大变化。",
       "level": "medium",
       "type": "platform",
       "typeLabel": "平台动态",
@@ -736,25 +690,56 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "美国海关检查重点从货物转向进口商实体，5H检查导致大量货物被扣留或退货。若进口商资质不合规，货物将面临清关延误甚至销毁风险，卖家利润和库存周转将受到严重冲击。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 美国 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即核查合作进口商的IOR资质和海关信用评级是否达标",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "EcomCrew",
         "url": "https://www.ecomcrew.com/u-s-customs-tightens-importer-of-record-rules/"
       },
       "timestamp": "Tue, 17 Mar 2026 22:10:34 +0000",
-      "brief_rank": 14,
+      "brief_rank": 13,
       "ranking_score": 104
     },
     {
-      "id": "欧盟电商合规指南+链接",
+      "id": "FedEx 关闭部分包裹处理中心",
+      "category": "urgent",
+      "scope": "global",
+      "display_order": 15,
+      "title": "FedEx 关闭部分包裹处理中心",
+      "raw_title": "FedEx 关闭部分包裹处理中心",
+      "summary": "FedEx将关闭纽约9个包裹中心，并额外关闭10个配送站，正整合两个独立配送网络以实现统一高效运营。卖家需关注尾程配送可能受影响，建议提前调整物流方案。",
+      "level": "medium",
+      "type": "logistics",
+      "typeLabel": "物流运输",
+      "platforms": [
+        "跨境通用"
+      ],
+      "regions": [
+        "Other"
+      ],
+      "source_layer": "base-feed",
+      "source_type": "",
+      "source_priority": "",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 其他地区 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+      "subject": "布局 EU 市场的 general mixed 卖家",
+      "action": "增加履约和补货缓冲时间",
+      "source": {
+        "name": "FreightWaves",
+        "url": "https://www.freightwaves.com/news/fedex-to-shutter-9-new-york-parcel-centers"
+      },
+      "timestamp": "Wed, 18 Mar 2026 16:26:06 +0000",
+      "brief_rank": 15,
+      "ranking_score": 84
+    },
+    {
+      "id": "欧盟电商合规指南 + 链接",
       "category": "daily",
       "scope": "global",
-      "display_order": 8,
-      "title": "欧盟电商合规指南+链接",
-      "raw_title": "欧盟电商合规指南+链接",
-      "summary": "欧盟电商合规指南：在欧盟线上销售不仅限于开店、添加支付方式和发货，想在欧盟合法运营的品牌必须满足一系列合规要求。卖家需关注 VAT 税务、产品安全标准、消费者权益保护、数据隐私法规（如 GDPR）及跨境销售限制等关键合规领域，确保业务合法合规运营。",
+      "display_order": 7,
+      "title": "欧盟电商合规指南 + 链接",
+      "raw_title": "欧盟电商合规指南 + 链接",
+      "summary": "欧盟电商合规指南：在欧盟线上销售不仅限于开店、添加支付方式和发货，想要在欧盟合法运营的品牌必须满足一系列合规要求，包括VAT税务、产品安全标准、消费者保护法规等。跨境卖家需仔细了解并遵守相关规定。",
       "level": "medium",
       "type": "compliance",
       "typeLabel": "合规标准",
@@ -767,22 +752,22 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "欧盟加强对电商合规监管，未满足VAT、GDPR、产品安全等要求将面临巨额罚款甚至店铺关停。混合履约模式涉及多国法规，需重新梳理供应链和清关流程以确保全链路合规。",
+      "impact": "['欧盟加强电商合规监管，不合规产品面临下架、扣货甚至法律处罚风险', '合规成本将显著增加，涵盖产品认证、VAT申报、消费者保护等多项支出', '平台将配合监管加强审核，混合履约模式的卖家需确保全链路合规']",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即核查目标市场VAT注册状态及申报义务",
+      "action": "立即对照新规自查在售产品，排查VAT、产品安全、标签合规等风险点",
       "source": {
         "name": "Cross-Border Magazine",
         "url": "https://cross-border-magazine.com/eu-e-commerce-compliance-guide/"
       },
       "timestamp": "Thu, 12 Mar 2026 08:59:10 +0000",
-      "brief_rank": 8,
+      "brief_rank": 7,
       "ranking_score": 144
     },
     {
       "id": "长三角企业国际化合作发展交流会暨新华·中国企业出海合作中心（长三角）在宁启幕",
       "category": "daily",
       "scope": "global",
-      "display_order": 9,
+      "display_order": 8,
       "title": "长三角企业国际化合作发展交流会暨新华·中国企业出海合作中心（长三角）在宁启幕",
       "raw_title": "长三角企业国际化合作发展交流会暨新华·中国企业出海合作中心（长三角）在宁启幕",
       "summary": "长三角企业国际化合作发展交流会暨新华·中国企业出海合作中心（长三角）在宁启幕 3月17日，以“从长三角到全球：共筑企业出海新航线”为主题的长三角企业国际化合作发展交流会暨“新华·中国企业出海合作中心（长三角）”启动仪式在南京新华国际会议中心隆重举行，活动由香港长三角企业家国际联盟",
@@ -798,25 +783,25 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "该中心整合政府、商协会及海外资源，提供品牌建设、合规管理等全链条服务，有望降低卖家合规成本。柬埔寨即将对华免签，越南市场合作深化，为长三角卖家布局东盟提供政策便利与官方保障通道。",
+      "impact": "官方出海服务平台启用，为跨境卖家提供品牌建设、合规管理等一站式支持。柬埔寨免签政策即将实施，东盟市场准入门槛降低。江苏省国际商会驻柬埔寨联络处设立，江苏卖家可优先获取当地政商资源与风险防控服务。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "主动对接中心获取目标市场合规政策与准入指南",
+      "action": "对接出海合作中心，获取品牌建设与合规管理专项指导",
       "source": {
         "name": "36氪科技",
         "url": "https://36kr.com/p/3729511818001799?f=rss"
       },
       "timestamp": "2026-03-19 14:55:53 +0800",
-      "brief_rank": 9,
+      "brief_rank": 8,
       "ranking_score": 133
     },
     {
       "id": "杂货商面临州和联邦立法者对“监控定价”的审查",
       "category": "daily",
       "scope": "global",
-      "display_order": 11,
+      "display_order": 10,
       "title": "杂货商面临州和联邦立法者对“监控定价”的审查",
       "raw_title": "杂货商面临州和联邦立法者对“监控定价”的审查",
-      "summary": "美国多州及联邦立法者正加强对零售商“监控定价”的审查，近期多项法案拟限制商家使用消费者数据定价，部分法案甚至要求禁用电子货架标签。跨境卖家需关注定价策略合规风险。",
+      "summary": "美国杂货商面临州和联邦立法者对“监控定价”的审查，多项新法案拟限制零售商使用消费者数据定价，部分法案甚至禁止电子货架标签。",
       "level": "medium",
       "type": "policy",
       "typeLabel": "平台政策",
@@ -829,25 +814,25 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "使用消费者数据进行个性化定价将受限，可能压缩利润空间；电子货架标签可能面临禁令，需调整零售技术投资；数据收集和使用面临更严格监管，合规成本将显著上升。",
+      "impact": "【雷达研判】该事件将从 硬性运营与履约成本攀升, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 政策 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即审计现有定价模型，移除或调整基于消费者数据的动态定价功能",
+      "action": "补充更多政策细节后再判断",
       "source": {
         "name": "Retail Dive",
         "url": "https://www.retaildive.com/news/surveillance-pricing-grocery-state-bills-house-senate-esl-ufcw/814961/"
       },
       "timestamp": "Wed, 18 Mar 2026 09:00:00 -0400",
-      "brief_rank": 11,
+      "brief_rank": 10,
       "ranking_score": 122
     },
     {
-      "id": "Doba为代发货卖家新增沃尔玛市场平台集成",
+      "id": "Doba为dropshipping卖家新增Walmart Marketplace集成",
       "category": "daily",
       "scope": "platform",
-      "display_order": 12,
-      "title": "Doba为代发货卖家新增沃尔玛市场平台集成",
-      "raw_title": "Doba为代发货卖家新增沃尔玛市场平台集成",
-      "summary": "Doba于3月18日宣布与Walmart Marketplace完成技术对接，代发货卖家可通过OAuth 2.0认证连接店铺，实现产品列表同步、库存实时更新和订单自动处理。",
+      "display_order": 11,
+      "title": "Doba为dropshipping卖家新增Walmart Marketplace集成",
+      "raw_title": "Doba为dropshipping卖家新增Walmart Marketplace集成",
+      "summary": "Doba平台3月18日宣布与Walmart Marketplace达成技术集成，允许卖家连接店铺并自动化核心电商功能，实现产品listing同步、库存实时更新及订单自动处理，采用OAuth 2.0认证。",
       "level": "medium",
       "type": "platform",
       "typeLabel": "平台动态",
@@ -860,25 +845,25 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "更多dropshipper可通过Doba进入Walmart，平台竞争将迅速加剧，利润空间面临压缩风险。自动化同步虽提升效率，但库存数据延迟或错误可能导致超卖、差评，影响店铺合规评分。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即评估产品利润空间及Walmart平台合规要求，制定差异化定价策略",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "Digital Commerce 360",
         "url": "https://www.digitalcommerce360.com/2026/03/18/doba-walmart-marketplace-integration-drop-shipping/"
       },
       "timestamp": "Wed, 18 Mar 2026 16:19:10 +0000",
-      "brief_rank": 12,
+      "brief_rank": 11,
       "ranking_score": 106
     },
     {
       "id": "Amazon 春季促销活动更新",
       "category": "daily",
       "scope": "platform",
-      "display_order": 13,
+      "display_order": 12,
       "title": "Amazon 春季促销活动更新",
       "raw_title": "Amazon 春季促销活动更新",
-      "summary": "亚马逊春季大促将于3月25日至31日回归，为期7天，覆盖35个以上品类。此次活动重点聚焦家居刷新和健康养生两大零售增长品类，面向这两类消费者推出优惠活动。",
+      "summary": "亚马逊Big Spring Sale将于3月25日至31日举行，为期7天，覆盖35个以上品类，重点布局家居和健康养生两大零售增长品类，旨在吸引有家居焕新和健康消费需求的用户群体。",
       "level": "medium",
       "type": "platform",
       "typeLabel": "平台动态",
@@ -891,25 +876,25 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "家居健康品类竞争白热化，卖家面临严峻价格战压力，利润率或被大幅压缩。35+品类同步促销导致流量分散，非重点品类曝光下降，库存周转承压。平台促销期间合规审查趋严，虚构原价等违规促销将触发处罚。",
+      "impact": "促销期间平台流量向home和wellness品类集中，未参与deal的卖家可能被边缘化。35+品类同时促销导致价格竞争加剧，卖家利润空间被压缩。7天持续促销对库存周转和物流时效提出更高要求，断货或延迟将直接导致排名下滑。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即核查库存并测算安全库存量，确保爆款备货充足",
+      "action": "立即检查Home/Wellness相关ASIN库存，提前7天增补FBA或海外仓库存",
       "source": {
         "name": "EcomCrew",
         "url": "https://www.ecomcrew.com/amazons-big-spring-sale-targets-home-and-wellness-shoppers-with-seven-days-of-deals/"
       },
       "timestamp": "Wed, 18 Mar 2026 03:15:26 +0000",
-      "brief_rank": 13,
-      "ranking_score": 105
+      "brief_rank": 12,
+      "ranking_score": 104
     },
     {
       "id": "物流科技公司广告合规纠纷",
       "category": "daily",
       "scope": "global",
-      "display_order": 15,
+      "display_order": 14,
       "title": "物流科技公司广告合规纠纷",
       "raw_title": "物流科技公司广告合规纠纷",
-      "summary": "Samsara在AI行车记录仪虚假广告案中获3000万美元仲裁赔偿；ITC判定Motive未侵犯专利，解除进口禁令威胁。相关案件仍在审理中，建议跨境卖家关注产品宣传合规性及专利风险。",
+      "summary": "Samsara在AI行车记录仪虚假广告仲裁中获赔3030万美元；Motive在ITC专利侵权案中胜诉，进口禁令威胁解除。相关案件仍在审理中。跨境卖家需关注美方知识产权及广告宣传合规风险。",
       "level": "medium",
       "type": "platform",
       "typeLabel": "平台动态",
@@ -922,15 +907,15 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "该案虽主要影响B2B市场，但3030万美元判赔和ITC专利审查结果将直接影响同类AI硬件产品在美销售合规性，涉及广告宣传合规审查和潜在进口风险。",
+      "impact": "该仲裁裁决对销售车队管理设备、AI行车记录仪的跨境卖家具有警示意义。涉及广告宣传中使用\"研究数据\"\"对比测试\"等营销话术的产品需立即排查，虚假声称可能面临高额赔偿。同时ITC专利案的终结避免了产品进口禁令，但其他pending案件仍存不确定性，可能引发行业合规审查趋严。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "审查产品广告文案，确保AI功能宣传有实际研究数据支撑",
+      "action": "立即审查产品listing中的性能数据、研究引用、竞品对比声称，移除无法验证的营销表述",
       "source": {
         "name": "FreightWaves",
         "url": "https://www.freightwaves.com/news/samsara-motive-lawsuit-arbitration-award-itc-ruling-2026"
       },
       "timestamp": "Mon, 16 Mar 2026 21:54:18 +0000",
-      "brief_rank": 15,
+      "brief_rank": 14,
       "ranking_score": 94
     }
   ],
@@ -967,7 +952,7 @@ window.RADAR_UI_DATA = {
         "name": "欧盟委员会（European Commission）",
         "url": "https://taxation-customs.ec.europa.eu/news/e-commerce-150-eur-customs-duty-exemption-threshold-be-removed-2026-2025-11-13_en"
       },
-      "timestamp": "2026-03-19T08:48:32.057170+00:00",
+      "timestamp": "2026-03-19T09:33:58.307821+00:00",
       "effective_date": "2026-07-01",
       "monitor_until": "2028-12-31",
       "brief_rank": 1,
@@ -980,7 +965,7 @@ window.RADAR_UI_DATA = {
       "display_order": 3,
       "title": "美国关税退款：卖家如何申请退还已缴关税",
       "raw_title": "美国关税退款：卖家如何申请退还已缴关税",
-      "summary": "E636: 获取关税退款你必须知道的事。WePayTheTariffs的Dan Anthony解析最高法院裁定某些关税违法的最新判决，详解受影响进口商的退款流程及电商卖家后续应采取的步骤。最高法院近日推翻特朗普总统关税，意味着有好消息也有坏消息。",
+      "summary": "美国最高法院裁定部分关税违法，WePayTheTariffs的Dan Anthony详解受影响进口商退款流程及跨境电商卖家后续应采取的步骤。",
       "level": "high",
       "type": "tariff",
       "typeLabel": "关税与税务",
@@ -993,9 +978,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "受影响的进口商可通过法律途径申请关税退款，有望挽回部分成本损失；但需注意裁定适用范围和时效要求，建议立即梳理历史关税缴纳记录以确认退款资格。",
+      "impact": "受影响的进口关税可获退款，预计可挽回2%-15%的采购成本；需在裁决生效后180天内提交申请，逾期视为放弃；未来关税政策不确定性增加，建议缩短备货周期以降低风险。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "核查2025-2026年关税缴纳记录，确认是否存在裁定范围内的非法关税",
+      "action": "核查2025年起相关进口记录是否在退款范围内",
       "source": {
         "name": "EcomCrew",
         "url": "https://www.ecomcrew.com/e636-tariff-refunds/"
@@ -1003,37 +988,6 @@ window.RADAR_UI_DATA = {
       "timestamp": "Mon, 16 Mar 2026 16:27:40 +0000",
       "brief_rank": 3,
       "ranking_score": 213
-    },
-    {
-      "id": "商务部：继续发挥好中美经贸磋商机制作用加强对话沟通",
-      "category": "macro",
-      "scope": "global",
-      "display_order": 4,
-      "title": "商务部：继续发挥好中美经贸磋商机制作用加强对话沟通",
-      "raw_title": "商务部：继续发挥好中美经贸磋商机制作用加强对话沟通",
-      "summary": "商务部：继续发挥好中美经贸磋商机制作用加强对话沟通 商务部新闻发言人何咏前在回答关于中美巴黎经贸磋商的提问时说，双方以中美两国元首重要共识为引领，围绕关税安排、促进双边贸易投资、维护已有磋商共识等彼此关心的经贸议题，进行了坦诚深入、建设性的交流磋商，形成了一些新的共识，并将继续保",
-      "level": "high",
-      "type": "tariff",
-      "typeLabel": "关税与税务",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "关税政策预期向好但尚未落地，卖家备货需关注税率动态；建立工作机制或为后续关税谈判提供渠道，当前仍处观望阶段；双边经贸关系趋稳有望降低合规风险但需持续跟踪。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "密切关注后续关税政策细化及执行时间表",
-      "source": {
-        "name": "36氪科技",
-        "url": "https://36kr.com/newsflashes/3729553938824585?f=rss"
-      },
-      "timestamp": "2026-03-19 15:38:27 +0800",
-      "brief_rank": 4,
-      "ranking_score": 191
     }
   ],
   "urgent_events": [
@@ -1044,7 +998,7 @@ window.RADAR_UI_DATA = {
       "display_order": 1,
       "title": "【Amazon Seller Forums - News and Announcements】国际物流与履约链路风险更新",
       "raw_title": "【Amazon Seller Forums - News and Announcements】国际物流与履约链路风险更新",
-      "summary": "亚马逊美国站通知：自2026年2月8日起，所有美国卖家必须使用亚马逊预付退货标签(APRL)项目处理客户退货，取消此前高价值商品豁免。此举旨在统一退货体验、加快退款处理并降低客服压力。建议相关卖家提前了解APRL项目操作流程。",
+      "summary": "亚马逊美国站自2026年2月8日起取消高价值商品退货豁免，所有卖家必须使用APRL预付费退货标签计划，为客户提供统一的预付费退货标签，以加快退款处理并降低客服成本。",
       "level": "high",
       "type": "logistics",
       "typeLabel": "物流运输",
@@ -1057,9 +1011,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-watchlist",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "美国卖家失去高价值商品退货豁免权，退款周期缩短一半但资金冻结风险翻倍；2月8日后未使用APRL的订单将面临合规处罚或账户健康度下降；超大/危险品等豁免品类需重新确认，避免误操作导致拒付。",
+      "impact": "2026年2月8日起所有卖家必须使用APRL，高价值商品豁免取消，退货运费成本直接上升；退款周期从14天缩短至7天，加速资金回笼但也缩短了争议处理窗口；需确认产品是否属于豁免类别，违规可能引发账户健康问题。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "核查SKU是否属于Handmade、危险品等豁免品类，及时在后台标记",
+      "action": "确认产品是否属于豁免类别，手表、危险品等已豁免",
       "source": {
         "name": "Amazon Seller Forums - News and Announcements",
         "url": "http://127.0.0.1:5002/diff/60221fa4-13b3-4718-a9cd-112afb5b2a50"
@@ -1095,7 +1049,7 @@ window.RADAR_UI_DATA = {
         "name": "美国海关与边境保护局（CBP）",
         "url": "https://www.cbp.gov/trade/basic-import-export/e-commerce"
       },
-      "timestamp": "2026-03-19T08:48:32.057170+00:00",
+      "timestamp": "2026-03-19T09:33:58.307821+00:00",
       "effective_date": null,
       "monitor_until": null,
       "brief_rank": 2,
@@ -1108,7 +1062,7 @@ window.RADAR_UI_DATA = {
       "display_order": 2,
       "title": "Amazon 要求高货值商品使用预付退货标签",
       "raw_title": "Amazon 要求高货值商品使用预付退货标签",
-      "summary": "2026年2月8日起，亚马逊美国站卖家须为所有客户退货使用预付退货标签（APRL），取消高价值商品豁免。该服务通过Buy Shipping自动生成预付标签，退款周期从14天缩短至7天，并减少客服沟通。手工艺品、认证二手商品等类别豁免继续适用。",
+      "summary": "2026年2月8日起，美国卖家所有商品退货必须使用亚马逊预付费退货标签（APRL），取消原高价值商品豁免。此举将退款周期从14天缩短至7天，减少客服沟通。手工制作、认证二手商品等类别继续豁免。",
       "level": "medium",
       "type": "logistics",
       "typeLabel": "物流运输",
@@ -1121,9 +1075,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "取消高价值商品豁免后，卖家需为所有退货承担 prepaid 运费，退货成本预计增加 30%-50%；合规风险上升，未使用 APRL 的订单可能被判定违规并影响店铺绩效；7天快速退款虽提升客户体验，但缩短资金占用周期，可能影响现金流周转。",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 美国 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即核算现有高价值商品退货成本，预留额外预算应对运费增加",
+      "action": "增加履约和补货缓冲时间",
       "source": {
         "name": "Amazon Seller Forums - News and Announcements Content",
         "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/c1eae42b-ead4-4c63-a007-aefbca44a867"
@@ -1199,6 +1153,37 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
+      "id": "Amazon Big Spring Sale 清库存窗口期即将开启",
+      "category": "urgent",
+      "scope": "platform",
+      "display_order": 4,
+      "title": "Amazon Big Spring Sale 清库存窗口期即将开启",
+      "raw_title": "Amazon Big Spring Sale 清库存窗口期即将开启",
+      "summary": "亚马逊Big Spring Sale 2026将于3月25-31日举行，持续7天覆盖35+品类，卖家可通过提交Outlet deals清过剩库存，提升销售速度、改善现金流、降低仓储费并获得额外推广曝光。",
+      "level": "medium",
+      "type": "platform",
+      "typeLabel": "平台动态",
+      "platforms": [
+        "Amazon"
+      ],
+      "regions": [
+        "Other"
+      ],
+      "source_layer": "official-content",
+      "source_type": "platform-official",
+      "source_priority": "P0",
+      "impact": "FBA卖家可通过Outlet deals清理过剩库存，但需在3月20日前提交；参与活动可提升销量、改善现金流，但需注意价格竞争力与利润率平衡；未及时清理的库存将持续产生长期仓储费。",
+      "subject": "布局 EU 市场的 general mixed 卖家",
+      "action": "立即筛选FBA可用库存，优先处理超180天滞销品",
+      "source": {
+        "name": "Amazon Seller Forums - News and Announcements Content",
+        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/912589ea-a61d-41e9-ab87-fea55be45804"
+      },
+      "timestamp": "2026-03-18T20:41:57.172Z",
+      "brief_rank": 4,
+      "ranking_score": 185
+    },
+    {
       "id": "tiktok-creator-commission-seed",
       "category": "urgent",
       "scope": "platform",
@@ -1234,13 +1219,13 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
-      "id": "Amazon Big Spring Sale 清库存窗口期即将开启",
+      "id": "Amazon 调整卖家自发货退款处理流程",
       "category": "urgent",
       "scope": "platform",
       "display_order": 5,
-      "title": "Amazon Big Spring Sale 清库存窗口期即将开启",
-      "raw_title": "Amazon Big Spring Sale 清库存窗口期即将开启",
-      "summary": "亚马逊Big Spring Sale将于2026年3月25-31日举行，为期7天，覆盖35+品类。这是清理过剩库存的最佳时机，卖家可通过提交Outlet deals提高销售周转、改善现金流、降低仓储费，活动期间还可获得额外促销曝光。",
+      "title": "Amazon 调整卖家自发货退款处理流程",
+      "raw_title": "Amazon 调整卖家自发货退款处理流程",
+      "summary": "亚马逊FBM退款流程更新：2026年1月26日起，退款处理窗口从2个工作日延长至4个日历日，收到退货后需在4天内处理退款，逾期将自动退款且无法申请SAFE-T索赔（特定情况除外），建议卖家及时处理退货以保障权益。",
       "level": "medium",
       "type": "platform",
       "typeLabel": "平台动态",
@@ -1253,16 +1238,16 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "该活动为卖家提供清理过剩库存的机会，但促销价格可能压缩利润空间。Outlet deals可降低仓储费并改善现金流，建议优先处理高仓储费商品。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "检查库存确定可参与Outlet的产品",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "Amazon Seller Forums - News and Announcements Content",
-        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/912589ea-a61d-41e9-ab87-fea55be45804"
+        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/11268c92-5a5c-4125-9e59-49e433d0d151"
       },
-      "timestamp": "2026-03-18T20:41:57.172Z",
+      "timestamp": "2026-03-17T15:49:59.800Z",
       "brief_rank": 5,
-      "ranking_score": 185
+      "ranking_score": 181
     },
     {
       "id": "temu-turkey-restructure-seed",
@@ -1298,13 +1283,13 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
-      "id": "Amazon 调整卖家自发货退款处理流程",
+      "id": "Amazon FBA 捐赠计划开放捐赠凭证下载",
       "category": "urgent",
       "scope": "platform",
       "display_order": 6,
-      "title": "Amazon 调整卖家自发货退款处理流程",
-      "raw_title": "Amazon 调整卖家自发货退款处理流程",
-      "summary": "亚马逊FBM退款政策更新：2026年1月26日起，退款处理窗口从2个工作日延长至4个日历日，卖家有更多时间审核退货；若未在4天内处理退款将自动退款，且大部分情况下无法申请SAFE-T索赔。",
+      "title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
+      "raw_title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
+      "summary": "使用FBA Donations的卖家现在可获取捐赠证书。2025年通过FBA Donations捐赠产品的卖家，可从非营利合作伙伴处获取捐赠证书，显示上一年度捐赠的库存信息。",
       "level": "medium",
       "type": "platform",
       "typeLabel": "平台动态",
@@ -1317,16 +1302,16 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "从2026年1月26日起，FBM卖家处理退货时间从2个工作日缩短至4个日历日，未及时处理将被自动退款且失去SAFE-T索赔资格，导致无法追偿损失。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即调整内部退货处理SOP，确保4天内完成审核和退款",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
-        "name": "Amazon Seller Forums - News and Announcements Content",
-        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/11268c92-5a5c-4125-9e59-49e433d0d151"
+        "name": "Amazon Seller News / Announcements Content",
+        "url": "https://sell.amazon.com/blog/announcements/fba-donation-certificate"
       },
-      "timestamp": "2026-03-17T15:49:59.800Z",
+      "timestamp": "2026-03-09T17:36:00",
       "brief_rank": 6,
-      "ranking_score": 181
+      "ranking_score": 171
     },
     {
       "id": "temu-semi-managed-expansion-seed",
@@ -1363,44 +1348,13 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
-      "id": "Amazon FBA 捐赠计划开放捐赠凭证下载",
-      "category": "urgent",
-      "scope": "platform",
-      "display_order": 7,
-      "title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
-      "raw_title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
-      "summary": "亚马逊物流捐赠项目现已向卖家提供捐赠证书。2025年通过FBA Donations捐赠产品的卖家，可通过亚马逊非营利合作伙伴获取年度库存捐赠报告证书。",
-      "level": "medium",
-      "type": "platform",
-      "typeLabel": "平台动态",
-      "platforms": [
-        "Amazon"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "official-content",
-      "source_type": "platform-official",
-      "source_priority": "P0",
-      "impact": "卖家可通过捐赠证书获取税务抵扣凭证，优化年度税务规划；同时提供合规渠道清理冗余库存，降低长期仓储费用；建议保留完整捐赠记录以满足合规审计要求。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "登录亚马逊卖家中心下载2025年度捐赠证书",
-      "source": {
-        "name": "Amazon Seller News / Announcements Content",
-        "url": "https://sell.amazon.com/blog/announcements/fba-donation-certificate"
-      },
-      "timestamp": "2026-03-09T17:36:00",
-      "brief_rank": 7,
-      "ranking_score": 171
-    },
-    {
       "id": "USPS 国际线路服务告警",
       "category": "urgent",
       "scope": "global",
-      "display_order": 10,
+      "display_order": 9,
       "title": "USPS 国际线路服务告警",
       "raw_title": "USPS 国际线路服务告警",
-      "summary": "USPS发布国际邮件服务暂停通知，临时停止接受发往百慕大、阿富汗、伊朗、塞舌尔、亚美尼亚、伊拉克、南苏丹、巴林、以色列、苏丹等国家的邮件，原因系运输选项不足或目的国服务中断。提醒跨境卖家留意相关国家路向的物流服务状态。",
+      "summary": "美国邮政服务（USPS）因运输选项不足及部分国家服务中断，临时暂停接受发往阿富汗、伊朗、塞舌尔、亚美尼亚、伊拉克、南苏丹、巴林、以色列及苏丹等国家的国际邮件。中国跨境卖家请注意避免向上述目的地发货，恢复时间另行通知。",
       "level": "medium",
       "type": "logistics",
       "typeLabel": "物流运输",
@@ -1413,25 +1367,25 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "carrier-official",
       "source_priority": "P1",
-      "impact": "美国邮政即日起暂停接收发往百慕大、阿富汗、伊朗等10国的邮件，卖家订单无法通过USPS履约。若已发货至目的国，可能面临退件或滞留在途；未发货订单需紧急切换其他物流渠道，否则将产生库存积压和客户投诉。",
+      "impact": "使用USPS渠道的直邮包裹将无法发往受影响国家，已发货可能滞留或退回；部分中东、非洲航线运力紧张，物流成本将短期上升；需立即排查受影响订单并启用替代渠道。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即排查待发货订单，暂停USPS至暂停国家的配送",
+      "action": "立即排查待发往 Bermuda、Afghanistan、Iran 等6国的订单，暂停发货并通知买家",
       "source": {
         "name": "USPS International Service Alerts Content",
         "url": "https://about.usps.com/newsroom/service-alerts/international/"
       },
       "timestamp": "2026-03-13T00:00:00Z",
-      "brief_rank": 10,
+      "brief_rank": 9,
       "ranking_score": 132
     },
     {
       "id": "美国海关收紧进口商资质规则",
       "category": "urgent",
       "scope": "global",
-      "display_order": 14,
+      "display_order": 13,
       "title": "美国海关收紧进口商资质规则",
       "raw_title": "美国海关收紧进口商资质规则",
-      "summary": "美国海关加强进口商记录（IOR）规定，检查重点从货物转向进口实体。近期“5H检查”导致大量货物被扣留退运，跨境卖家中美清关风险显著上升，需密切关注IOR合规要求。",
+      "summary": "美国海关检查重点从货物转向进口实体责任方。\"5H检查\"实施后，扣留退运案例增多，跨境贸易商焦虑加剧。进口商记录(IOR)规定近期发生重大变化。",
       "level": "medium",
       "type": "platform",
       "typeLabel": "平台动态",
@@ -1444,27 +1398,58 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "美国海关检查重点从货物转向进口商实体，5H检查导致大量货物被扣留或退货。若进口商资质不合规，货物将面临清关延误甚至销毁风险，卖家利润和库存周转将受到严重冲击。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 美国 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即核查合作进口商的IOR资质和海关信用评级是否达标",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "EcomCrew",
         "url": "https://www.ecomcrew.com/u-s-customs-tightens-importer-of-record-rules/"
       },
       "timestamp": "Tue, 17 Mar 2026 22:10:34 +0000",
-      "brief_rank": 14,
+      "brief_rank": 13,
       "ranking_score": 104
+    },
+    {
+      "id": "FedEx 关闭部分包裹处理中心",
+      "category": "urgent",
+      "scope": "global",
+      "display_order": 15,
+      "title": "FedEx 关闭部分包裹处理中心",
+      "raw_title": "FedEx 关闭部分包裹处理中心",
+      "summary": "FedEx将关闭纽约9个包裹中心，并额外关闭10个配送站，正整合两个独立配送网络以实现统一高效运营。卖家需关注尾程配送可能受影响，建议提前调整物流方案。",
+      "level": "medium",
+      "type": "logistics",
+      "typeLabel": "物流运输",
+      "platforms": [
+        "跨境通用"
+      ],
+      "regions": [
+        "Other"
+      ],
+      "source_layer": "base-feed",
+      "source_type": "",
+      "source_priority": "",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 其他地区 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+      "subject": "布局 EU 市场的 general mixed 卖家",
+      "action": "增加履约和补货缓冲时间",
+      "source": {
+        "name": "FreightWaves",
+        "url": "https://www.freightwaves.com/news/fedex-to-shutter-9-new-york-parcel-centers"
+      },
+      "timestamp": "Wed, 18 Mar 2026 16:26:06 +0000",
+      "brief_rank": 15,
+      "ranking_score": 84
     }
   ],
   "daily_events": [
     {
-      "id": "欧盟电商合规指南+链接",
+      "id": "欧盟电商合规指南 + 链接",
       "category": "daily",
       "scope": "global",
-      "display_order": 8,
-      "title": "欧盟电商合规指南+链接",
-      "raw_title": "欧盟电商合规指南+链接",
-      "summary": "欧盟电商合规指南：在欧盟线上销售不仅限于开店、添加支付方式和发货，想在欧盟合法运营的品牌必须满足一系列合规要求。卖家需关注 VAT 税务、产品安全标准、消费者权益保护、数据隐私法规（如 GDPR）及跨境销售限制等关键合规领域，确保业务合法合规运营。",
+      "display_order": 7,
+      "title": "欧盟电商合规指南 + 链接",
+      "raw_title": "欧盟电商合规指南 + 链接",
+      "summary": "欧盟电商合规指南：在欧盟线上销售不仅限于开店、添加支付方式和发货，想要在欧盟合法运营的品牌必须满足一系列合规要求，包括VAT税务、产品安全标准、消费者保护法规等。跨境卖家需仔细了解并遵守相关规定。",
       "level": "medium",
       "type": "compliance",
       "typeLabel": "合规标准",
@@ -1477,22 +1462,22 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "欧盟加强对电商合规监管，未满足VAT、GDPR、产品安全等要求将面临巨额罚款甚至店铺关停。混合履约模式涉及多国法规，需重新梳理供应链和清关流程以确保全链路合规。",
+      "impact": "['欧盟加强电商合规监管，不合规产品面临下架、扣货甚至法律处罚风险', '合规成本将显著增加，涵盖产品认证、VAT申报、消费者保护等多项支出', '平台将配合监管加强审核，混合履约模式的卖家需确保全链路合规']",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即核查目标市场VAT注册状态及申报义务",
+      "action": "立即对照新规自查在售产品，排查VAT、产品安全、标签合规等风险点",
       "source": {
         "name": "Cross-Border Magazine",
         "url": "https://cross-border-magazine.com/eu-e-commerce-compliance-guide/"
       },
       "timestamp": "Thu, 12 Mar 2026 08:59:10 +0000",
-      "brief_rank": 8,
+      "brief_rank": 7,
       "ranking_score": 144
     },
     {
       "id": "长三角企业国际化合作发展交流会暨新华·中国企业出海合作中心（长三角）在宁启幕",
       "category": "daily",
       "scope": "global",
-      "display_order": 9,
+      "display_order": 8,
       "title": "长三角企业国际化合作发展交流会暨新华·中国企业出海合作中心（长三角）在宁启幕",
       "raw_title": "长三角企业国际化合作发展交流会暨新华·中国企业出海合作中心（长三角）在宁启幕",
       "summary": "长三角企业国际化合作发展交流会暨新华·中国企业出海合作中心（长三角）在宁启幕 3月17日，以“从长三角到全球：共筑企业出海新航线”为主题的长三角企业国际化合作发展交流会暨“新华·中国企业出海合作中心（长三角）”启动仪式在南京新华国际会议中心隆重举行，活动由香港长三角企业家国际联盟",
@@ -1508,25 +1493,25 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "该中心整合政府、商协会及海外资源，提供品牌建设、合规管理等全链条服务，有望降低卖家合规成本。柬埔寨即将对华免签，越南市场合作深化，为长三角卖家布局东盟提供政策便利与官方保障通道。",
+      "impact": "官方出海服务平台启用，为跨境卖家提供品牌建设、合规管理等一站式支持。柬埔寨免签政策即将实施，东盟市场准入门槛降低。江苏省国际商会驻柬埔寨联络处设立，江苏卖家可优先获取当地政商资源与风险防控服务。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "主动对接中心获取目标市场合规政策与准入指南",
+      "action": "对接出海合作中心，获取品牌建设与合规管理专项指导",
       "source": {
         "name": "36氪科技",
         "url": "https://36kr.com/p/3729511818001799?f=rss"
       },
       "timestamp": "2026-03-19 14:55:53 +0800",
-      "brief_rank": 9,
+      "brief_rank": 8,
       "ranking_score": 133
     },
     {
       "id": "杂货商面临州和联邦立法者对“监控定价”的审查",
       "category": "daily",
       "scope": "global",
-      "display_order": 11,
+      "display_order": 10,
       "title": "杂货商面临州和联邦立法者对“监控定价”的审查",
       "raw_title": "杂货商面临州和联邦立法者对“监控定价”的审查",
-      "summary": "美国多州及联邦立法者正加强对零售商“监控定价”的审查，近期多项法案拟限制商家使用消费者数据定价，部分法案甚至要求禁用电子货架标签。跨境卖家需关注定价策略合规风险。",
+      "summary": "美国杂货商面临州和联邦立法者对“监控定价”的审查，多项新法案拟限制零售商使用消费者数据定价，部分法案甚至禁止电子货架标签。",
       "level": "medium",
       "type": "policy",
       "typeLabel": "平台政策",
@@ -1539,25 +1524,25 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "使用消费者数据进行个性化定价将受限，可能压缩利润空间；电子货架标签可能面临禁令，需调整零售技术投资；数据收集和使用面临更严格监管，合规成本将显著上升。",
+      "impact": "【雷达研判】该事件将从 硬性运营与履约成本攀升, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 政策 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即审计现有定价模型，移除或调整基于消费者数据的动态定价功能",
+      "action": "补充更多政策细节后再判断",
       "source": {
         "name": "Retail Dive",
         "url": "https://www.retaildive.com/news/surveillance-pricing-grocery-state-bills-house-senate-esl-ufcw/814961/"
       },
       "timestamp": "Wed, 18 Mar 2026 09:00:00 -0400",
-      "brief_rank": 11,
+      "brief_rank": 10,
       "ranking_score": 122
     },
     {
-      "id": "Doba为代发货卖家新增沃尔玛市场平台集成",
+      "id": "Doba为dropshipping卖家新增Walmart Marketplace集成",
       "category": "daily",
       "scope": "platform",
-      "display_order": 12,
-      "title": "Doba为代发货卖家新增沃尔玛市场平台集成",
-      "raw_title": "Doba为代发货卖家新增沃尔玛市场平台集成",
-      "summary": "Doba于3月18日宣布与Walmart Marketplace完成技术对接，代发货卖家可通过OAuth 2.0认证连接店铺，实现产品列表同步、库存实时更新和订单自动处理。",
+      "display_order": 11,
+      "title": "Doba为dropshipping卖家新增Walmart Marketplace集成",
+      "raw_title": "Doba为dropshipping卖家新增Walmart Marketplace集成",
+      "summary": "Doba平台3月18日宣布与Walmart Marketplace达成技术集成，允许卖家连接店铺并自动化核心电商功能，实现产品listing同步、库存实时更新及订单自动处理，采用OAuth 2.0认证。",
       "level": "medium",
       "type": "platform",
       "typeLabel": "平台动态",
@@ -1570,25 +1555,25 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "更多dropshipper可通过Doba进入Walmart，平台竞争将迅速加剧，利润空间面临压缩风险。自动化同步虽提升效率，但库存数据延迟或错误可能导致超卖、差评，影响店铺合规评分。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即评估产品利润空间及Walmart平台合规要求，制定差异化定价策略",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "Digital Commerce 360",
         "url": "https://www.digitalcommerce360.com/2026/03/18/doba-walmart-marketplace-integration-drop-shipping/"
       },
       "timestamp": "Wed, 18 Mar 2026 16:19:10 +0000",
-      "brief_rank": 12,
+      "brief_rank": 11,
       "ranking_score": 106
     },
     {
       "id": "Amazon 春季促销活动更新",
       "category": "daily",
       "scope": "platform",
-      "display_order": 13,
+      "display_order": 12,
       "title": "Amazon 春季促销活动更新",
       "raw_title": "Amazon 春季促销活动更新",
-      "summary": "亚马逊春季大促将于3月25日至31日回归，为期7天，覆盖35个以上品类。此次活动重点聚焦家居刷新和健康养生两大零售增长品类，面向这两类消费者推出优惠活动。",
+      "summary": "亚马逊Big Spring Sale将于3月25日至31日举行，为期7天，覆盖35个以上品类，重点布局家居和健康养生两大零售增长品类，旨在吸引有家居焕新和健康消费需求的用户群体。",
       "level": "medium",
       "type": "platform",
       "typeLabel": "平台动态",
@@ -1601,25 +1586,25 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "家居健康品类竞争白热化，卖家面临严峻价格战压力，利润率或被大幅压缩。35+品类同步促销导致流量分散，非重点品类曝光下降，库存周转承压。平台促销期间合规审查趋严，虚构原价等违规促销将触发处罚。",
+      "impact": "促销期间平台流量向home和wellness品类集中，未参与deal的卖家可能被边缘化。35+品类同时促销导致价格竞争加剧，卖家利润空间被压缩。7天持续促销对库存周转和物流时效提出更高要求，断货或延迟将直接导致排名下滑。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即核查库存并测算安全库存量，确保爆款备货充足",
+      "action": "立即检查Home/Wellness相关ASIN库存，提前7天增补FBA或海外仓库存",
       "source": {
         "name": "EcomCrew",
         "url": "https://www.ecomcrew.com/amazons-big-spring-sale-targets-home-and-wellness-shoppers-with-seven-days-of-deals/"
       },
       "timestamp": "Wed, 18 Mar 2026 03:15:26 +0000",
-      "brief_rank": 13,
-      "ranking_score": 105
+      "brief_rank": 12,
+      "ranking_score": 104
     },
     {
       "id": "物流科技公司广告合规纠纷",
       "category": "daily",
       "scope": "global",
-      "display_order": 15,
+      "display_order": 14,
       "title": "物流科技公司广告合规纠纷",
       "raw_title": "物流科技公司广告合规纠纷",
-      "summary": "Samsara在AI行车记录仪虚假广告案中获3000万美元仲裁赔偿；ITC判定Motive未侵犯专利，解除进口禁令威胁。相关案件仍在审理中，建议跨境卖家关注产品宣传合规性及专利风险。",
+      "summary": "Samsara在AI行车记录仪虚假广告仲裁中获赔3030万美元；Motive在ITC专利侵权案中胜诉，进口禁令威胁解除。相关案件仍在审理中。跨境卖家需关注美方知识产权及广告宣传合规风险。",
       "level": "medium",
       "type": "platform",
       "typeLabel": "平台动态",
@@ -1632,15 +1617,15 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "该案虽主要影响B2B市场，但3030万美元判赔和ITC专利审查结果将直接影响同类AI硬件产品在美销售合规性，涉及广告宣传合规审查和潜在进口风险。",
+      "impact": "该仲裁裁决对销售车队管理设备、AI行车记录仪的跨境卖家具有警示意义。涉及广告宣传中使用\"研究数据\"\"对比测试\"等营销话术的产品需立即排查，虚假声称可能面临高额赔偿。同时ITC专利案的终结避免了产品进口禁令，但其他pending案件仍存不确定性，可能引发行业合规审查趋严。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "审查产品广告文案，确保AI功能宣传有实际研究数据支撑",
+      "action": "立即审查产品listing中的性能数据、研究引用、竞品对比声称，移除无法验证的营销表述",
       "source": {
         "name": "FreightWaves",
         "url": "https://www.freightwaves.com/news/samsara-motive-lawsuit-arbitration-award-itc-ruling-2026"
       },
       "timestamp": "Mon, 16 Mar 2026 21:54:18 +0000",
-      "brief_rank": 15,
+      "brief_rank": 14,
       "ranking_score": 94
     }
   ]
