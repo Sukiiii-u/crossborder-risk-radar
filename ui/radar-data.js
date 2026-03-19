@@ -261,7 +261,7 @@ window.RADAR_UI_DATA = {
         "name": "欧盟委员会（European Commission）",
         "url": "https://taxation-customs.ec.europa.eu/news/e-commerce-150-eur-customs-duty-exemption-threshold-be-removed-2026-2025-11-13_en"
       },
-      "timestamp": "2026-03-19T08:26:59.605419+00:00",
+      "timestamp": "2026-03-19T08:48:32.057170+00:00",
       "effective_date": "2026-07-01",
       "monitor_until": "2028-12-31",
       "brief_rank": 1,
@@ -387,7 +387,7 @@ window.RADAR_UI_DATA = {
         "name": "美国海关与边境保护局（CBP）",
         "url": "https://www.cbp.gov/trade/basic-import-export/e-commerce"
       },
-      "timestamp": "2026-03-19T08:26:59.605419+00:00",
+      "timestamp": "2026-03-19T08:48:32.057170+00:00",
       "effective_date": null,
       "monitor_until": null,
       "brief_rank": 2,
@@ -967,7 +967,7 @@ window.RADAR_UI_DATA = {
         "name": "欧盟委员会（European Commission）",
         "url": "https://taxation-customs.ec.europa.eu/news/e-commerce-150-eur-customs-duty-exemption-threshold-be-removed-2026-2025-11-13_en"
       },
-      "timestamp": "2026-03-19T08:26:59.605419+00:00",
+      "timestamp": "2026-03-19T08:48:32.057170+00:00",
       "effective_date": "2026-07-01",
       "monitor_until": "2028-12-31",
       "brief_rank": 1,
@@ -1095,7 +1095,7 @@ window.RADAR_UI_DATA = {
         "name": "美国海关与边境保护局（CBP）",
         "url": "https://www.cbp.gov/trade/basic-import-export/e-commerce"
       },
-      "timestamp": "2026-03-19T08:26:59.605419+00:00",
+      "timestamp": "2026-03-19T08:48:32.057170+00:00",
       "effective_date": null,
       "monitor_until": null,
       "brief_rank": 2,
