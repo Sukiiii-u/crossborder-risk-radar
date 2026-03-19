@@ -1,0 +1,39 @@
+# === 依赖 ===
+node_modules/
+__pycache__/
+*.pyc
+
+# === 运行时产物 ===
+runtime/runs/
+runtime/latest_run.json
+runtime/latest_rendered.txt
+runtime/data/
+ui/radar-data.js
+
+# === 本地监控环境 ===
+monitoring/changedetection-data/
+monitoring/changedetection-venv/
+monitoring/rsshub-local/
+monitoring/*.log
+
+# === 环境与密钥 ===
+.env
+configs/llm_config.json
+configs/fetch_network.json
+configs/changedetection_source.json
+*.log
+nohup.out
+
+# === 系统垃圾 ===
+.DS_Store
+Thumbs.db
+
+# === 编辑器 ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === 构建产物 ===
+dist/
+build/

@@ -1,0 +1,6 @@
+{
+  "_comment": "LLM 配置文件 — 请复制为 llm_config.json 并填入真实 API Key",
+  "api_key": "在此填入你的 API Key",
+  "api_base": "https://api.minimaxi.com/anthropic",
+  "model": "MiniMax-M2.5"
+}

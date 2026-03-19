@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>ai.crossborder-risk-radar.ingest</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/opt/homebrew/opt/python@3.14/bin/python3.14</string>
+		<string>/Users/lisiqi/.openclaw/workspace/swarm/skills/crossborder-risk-radar/scripts/ingest_sources.py</string>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>/Users/lisiqi/.openclaw/workspace/swarm/skills/crossborder-risk-radar</string>
+	<key>StartInterval</key>
+	<integer>900</integer>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardOutPath</key>
+	<string>/Users/lisiqi/.openclaw/workspace/swarm/skills/crossborder-risk-radar/runtime/logs/ingest.out.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/lisiqi/.openclaw/workspace/swarm/skills/crossborder-risk-radar/runtime/logs/ingest.err.log</string>
+</dict>
+</plist>

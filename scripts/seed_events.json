@@ -1,0 +1,17 @@
+[
+  {
+    "id": "eu-small-parcel-tax",
+    "label": "欧盟小包税 / 低价值包裹税费压力",
+    "example_file": "demo_09_eu_small_parcel_direct_mail.json"
+  },
+  {
+    "id": "eu-packaging-rule",
+    "label": "欧盟包装与可回收要求",
+    "example_file": "demo_02_eu_packaging.json"
+  },
+  {
+    "id": "port-vote-logistics",
+    "label": "港口工会投票与物流不确定性",
+    "example_file": "demo_04_port_vote.json"
+  }
+]

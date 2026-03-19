@@ -1,0 +1,6 @@
+{
+  "_comment": "网络代理配置 — 请复制为 fetch_network.json 并填入实际代理（不需要代理时可删除此文件）",
+  "http_proxy": "",
+  "https_proxy": "",
+  "no_proxy": "localhost,127.0.0.1"
+}

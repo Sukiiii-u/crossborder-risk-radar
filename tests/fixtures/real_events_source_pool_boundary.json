@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-03-12T05:00:00+00:00",
+  "event_count": 6,
+  "events": [
+    {
+      "source_id": "reuters",
+      "source_label": "Reuters",
+      "source_topic": "tariff",
+      "source_trust_tier": "official",
+      "source_seller_signal_bias": "high",
+      "title": "EU weighs low-value parcel fee for imported packages",
+      "content": "EU officials are weighing a low-value parcel fee and tariff changes that could raise landed costs for direct-mail cross-border sellers shipping into the European Union.",
+      "url": "https://example.com/reuters-eu-parcel-fee",
+      "published_at": "Tue, 10 Mar 2026 00:00:00 +0000",
+      "fetched_at": "2026-03-10T00:00:01+00:00"
+    },
+    {
+      "source_id": "independent-site-regulators-cbp-ecommerce",
+      "source_label": "CBP Newsroom",
+      "source_topic": "policy",
+      "source_trust_tier": "official",
+      "source_seller_signal_bias": "high",
+      "title": "CBP updates de minimis entry guidance for parcel imports",
+      "content": "CBP updated de minimis and parcel entry guidance, affecting customs workflows, documentation, and cross-border seller compliance for low-value imports.",
+      "url": "https://example.com/cbp-de-minimis",
+      "published_at": "Tue, 10 Mar 2026 01:00:00 +0000",
+      "fetched_at": "2026-03-10T01:00:01+00:00"
+    },
+    {
+      "source_id": "independent-site-regulators-eu-customs",
+      "source_label": "EU Taxation and Customs Union News",
+      "source_topic": "policy",
+      "source_trust_tier": "official",
+      "source_seller_signal_bias": "high",
+      "title": "EU packaging compliance timeline moves forward",
+      "content": "EU officials advanced packaging compliance timelines that may raise packaging and materials costs for sellers shipping consumer goods into the EU.",
+      "url": "https://example.com/eu-packaging-timeline",
+      "published_at": "Tue, 10 Mar 2026 02:00:00 +0000",
+      "fetched_at": "2026-03-10T02:00:01+00:00"
+    },
+    {
+      "source_id": "freightwaves",
+      "source_label": "FreightWaves",
+      "source_topic": "logistics",
+      "source_trust_tier": "industry",
+      "source_seller_signal_bias": "medium",
+      "title": "Northern Europe congestion delays seller replenishment",
+      "content": "Port congestion across Northern Europe is delaying replenishment and raising delivery-time risk for cross-border sellers relying on imported inventory.",
+      "url": "https://example.com/freightwaves-congestion",
+      "published_at": "Tue, 10 Mar 2026 03:00:00 +0000",
+      "fetched_at": "2026-03-10T03:00:01+00:00"
+    },
+    {
+      "source_id": "freightwaves",
+      "source_label": "FreightWaves",
+      "source_topic": "logistics",
+      "source_trust_tier": "industry",
+      "source_seller_signal_bias": "medium",
+      "title": "Norfolk Southern to upgrade dozens of locomotives",
+      "content": "Norfolk Southern will upgrade dozens of locomotives as part of a rail efficiency program focused on network capacity and equipment modernization.",
+      "url": "https://example.com/norfolk-southern-locomotives",
+      "published_at": "Tue, 10 Mar 2026 04:00:00 +0000",
+      "fetched_at": "2026-03-10T04:00:01+00:00"
+    },
+    {
+      "source_id": "digitalcommerce360",
+      "source_label": "Digital Commerce 360",
+      "source_topic": "news",
+      "source_trust_tier": "industry",
+      "source_seller_signal_bias": "medium",
+      "title": "How Costco and B2B importers are rethinking oil-driven delivery costs",
+      "content": "Costco and other enterprise B2B importers are rethinking oil-driven delivery costs and quarterly planning amid macro shipping volatility.",
+      "url": "https://example.com/costco-b2b-oil",
+      "published_at": "Tue, 10 Mar 2026 05:00:00 +0000",
+      "fetched_at": "2026-03-10T05:00:01+00:00"
+    }
+  ],
+  "failures": []
+}

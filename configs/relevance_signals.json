@@ -1,0 +1,50 @@
+{
+  "_comment": "信号关键词配置 — 用于 classify_relevance 的数据驱动规则引擎。支持热更新（不改代码即可增减关键词）。",
+  "direct_operational_signals": [
+    "关税", "tariff", "税费", "duty", "税收", "征税", "加税", "免税",
+    "成本", "cost", "定价", "pricing", "费用", "fee", "fees", "surcharge",
+    "库存", "inventory", "物流", "shipping", "延误", "delay", "履约", "fulfillment", "补货", "replenishment",
+    "中断", "outage", "暂停", "suspend", "suspension", "service alert",
+    "合规", "regulation", "认证", "标签要求", "进口", "import", "清关", "clearance", "报关",
+    "低价值包裹", "parcel fee", "de minimis", "包装法", "包装合规", "包装要求",
+    "product standards", "epr", "cbam", "征收额外费用",
+    "退款", "refund", "refunds", "退货", "return", "returns", "退件", "索赔", "claim", "claims",
+    "赔付", "reimbursement", "safe-t", "seller assurance", "return label", "prepaid return",
+    "seller-fulfilled", "fbm", "buy shipping", "restocking fee",
+    "封号", "deactivate", "关店", "冻结", "资金冻结", "frozen", "下架", "remove", "take down",
+    "诉讼", "lawsuit", "被起诉", "罚款", "penalty", "fined"
+  ],
+  "environmental_signals": [
+    "包装", "packaging", "可回收", "plastic", "sustainability", "环保"
+  ],
+  "contextual_signals": [
+    "cbp", "customs", "海关", "卖家", "merchant", "seller", "marketplace seller"
+  ],
+  "policy_context_signals": [
+    "政策", "policy", "公告", "规则", "措施", "notice", "guidance"
+  ],
+  "regulatory_environment_context_signals": [
+    "compliance", "timeline", "timelines", "requirement", "requirements", "mandatory", "directive",
+    "law", "regulation", "official", "官方", "commission", "platform rule", "规则",
+    "标签要求", "要求", "更严格", "发布", "包装法", "包装合规", "product standards", "epr", "cbam"
+  ],
+  "weak_or_uncertain_signals": [
+    "讨论", "可能", "传闻", "rumor", "拟", "投票"
+  ],
+  "pr_or_non_risk_signals": [
+    "品牌形象", "消费者好感度", "营销", "推荐算法", "内容权重",
+    "品牌宣布", "品牌升级", "算法更新", "首页推荐"
+  ],
+  "corporate_operational_noise_signals": [
+    "reusable packaging", "reusable shipping boxes",
+    "closed-loop shipping", "closed loop shipping",
+    "distribution operations", "between facilities",
+    "handling efficiency", "returnity",
+    "b2b shipments", "introduced a design"
+  ],
+  "trade_system_maintenance_signals": [
+    "ace", "automated commercial environment", "carnet",
+    "manifest", "container seal", "data elements",
+    "transmission", "portal trade users"
+  ]
+}

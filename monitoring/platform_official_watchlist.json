@@ -1,0 +1,428 @@
+[
+  {
+    "id": "amazon-seller-announcements",
+    "platforms": [
+      "Amazon"
+    ],
+    "source_type": "platform-official",
+    "priority": "P0",
+    "title": "Amazon Seller News / Announcements",
+    "url": "https://sell.amazon.com/blog/announcements",
+    "monitoring_method": "changedetection",
+    "content_url": "https://sell.amazon.com/blog/announcements",
+    "content_method": "html_article_listing",
+    "article_url_prefix": "https://sell.amazon.com/blog/announcements/",
+    "article_fetch_limit": 3,
+    "keywords": [
+      "fee",
+      "reimbursement",
+      "account health",
+      "compliance",
+      "dangerous goods",
+      "returns",
+      "FBA"
+    ],
+    "why_it_matters": "直接影响 Amazon 卖家的费用、履约、违规与账号安全。",
+    "business_zone": [
+      "费用与毛利",
+      "FBA与补货",
+      "账号与合规"
+    ]
+  },
+  {
+    "id": "amazon-seller-forums-news",
+    "platforms": [
+      "Amazon"
+    ],
+    "source_type": "platform-official",
+    "priority": "P0",
+    "title": "Amazon Seller Forums - News and Announcements",
+    "url": "https://sellercentral.amazon.com/seller-forums/discussions?categories%5B0%5D=amzn1.spce.category.8b1ad9d2",
+    "monitoring_method": "changedetection",
+    "content_url": "https://sellercentral.amazon.com/seller-forums/discussions?categories%5B0%5D=amzn1.spce.category.8b1ad9d2",
+    "content_method": "html_forum_listing",
+    "keywords": [
+      "policy",
+      "fees",
+      "listing requirements",
+      "global selling",
+      "FBA",
+      "VAT",
+      "refund"
+    ],
+    "why_it_matters": "比 Amazon 博客更贴近卖家操作层，常有执行口径和补充说明。",
+    "business_zone": [
+      "Listing规则",
+      "退款与售后",
+      "全球开店"
+    ]
+  },
+  {
+    "id": "tiktok-shop-newsroom",
+    "zh_title": "TikTok Shop 卖家规则更新",
+    "platforms": [
+      "TikTok"
+    ],
+    "source_type": "platform-official",
+    "priority": "P0",
+    "title": "TikTok Shop Academy / Seller Updates",
+    "url": "https://seller-us.tiktok.com/university/home?lang=en",
+    "monitoring_method": "changedetection",
+    "keywords": [
+      "shop",
+      "seller",
+      "policy",
+      "fulfillment",
+      "compliance",
+      "returns",
+      "restricted products"
+    ],
+    "why_it_matters": "TikTok Shop 规则更新频繁，直接影响流量、履约、禁售和店铺安全。",
+    "business_zone": [
+      "店铺合规",
+      "履约时效",
+      "禁限售与达人链路"
+    ]
+  },
+  {
+    "id": "temu-seller-policy",
+    "zh_title": "Temu 商家规则更新",
+    "platforms": [
+      "Temu"
+    ],
+    "source_type": "platform-official",
+    "priority": "P0",
+    "title": "Temu Seller Policy / Rule Center",
+    "url": "https://seller.kuajingmaihuo.com/",
+    "monitoring_method": "changedetection",
+    "keywords": [
+      "seller rules",
+      "fulfillment",
+      "penalty",
+      "compliance",
+      "restricted",
+      "returns"
+    ],
+    "why_it_matters": "Temu 的平台规则、罚则和履约要求变化会直接影响利润和可售性。",
+    "business_zone": [
+      "平台罚则",
+      "履约与发货",
+      "商品合规"
+    ]
+  },
+  {
+    "id": "independent-site-regulators-eu-customs",
+    "zh_title": "欧盟海关与税务政策更新",
+    "platforms": [
+      "独立站",
+      "TikTok",
+      "Amazon",
+      "Temu"
+    ],
+    "source_type": "regulator-official",
+    "priority": "P0",
+    "title": "EU Taxation & Customs / Customs Reform",
+    "url": "https://taxation-customs.ec.europa.eu/customs/eu-customs-reform_en",
+    "monitoring_method": "changedetection",
+    "content_url": "https://taxation-customs.ec.europa.eu/node/2/rss_en",
+    "content_method": "rss",
+    "keywords": [
+      "e-commerce",
+      "parcel",
+      "customs reform",
+      "VAT",
+      "ICS2",
+      "tariff",
+      "de minimis"
+    ],
+    "why_it_matters": "欧盟税费、清关和小包政策会同时影响独立站、TikTok Shop、Amazon FBM 和 Temu。",
+    "business_zone": [
+      "税费与到手价",
+      "清关与履约",
+      "欧盟政策"
+    ]
+  },
+  {
+    "id": "independent-site-regulators-cbp-ecommerce",
+    "zh_title": "美国海关跨境清关政策更新",
+    "platforms": [
+      "独立站",
+      "TikTok",
+      "Amazon",
+      "Temu"
+    ],
+    "source_type": "regulator-official",
+    "priority": "P0",
+    "title": "CBP E-commerce / Trade Updates",
+    "url": "https://www.cbp.gov/trade/basic-import-export/e-commerce",
+    "monitoring_method": "changedetection",
+    "content_url": "https://www.cbp.gov/newsroom/announcements",
+    "content_method": "html_article_listing",
+    "article_url_prefix": "https://www.cbp.gov/newsroom/announcements/",
+    "article_fetch_limit": 3,
+    "keywords": [
+      "de minimis",
+      "T86",
+      "entry",
+      "customs",
+      "clearance",
+      "e-commerce",
+      "import"
+    ],
+    "why_it_matters": "美国海关规则变化会直接影响直邮小包、清关时效和退款风险。",
+    "business_zone": [
+      "美国清关",
+      "直邮小包",
+      "头程与尾程"
+    ]
+  },
+  {
+    "id": "independent-site-carrier-dhl-updates",
+    "zh_title": "DHL 国际承运与附加费更新",
+    "platforms": [
+      "独立站",
+      "TikTok",
+      "Amazon",
+      "Temu"
+    ],
+    "source_type": "carrier-official",
+    "priority": "P1",
+    "title": "DHL Express Important Information",
+    "url": "https://www.dhl.com/global-en/home/our-divisions/express/customer-service/important-information.html",
+    "monitoring_method": "changedetection",
+    "keywords": [
+      "service update",
+      "surcharge",
+      "delay",
+      "customs",
+      "peak season"
+    ],
+    "why_it_matters": "承运商服务变化通常是独立站和跨平台直邮卖家最早体感到的履约风险。",
+    "business_zone": [
+      "物流时效",
+      "附加费",
+      "国际承运商"
+    ]
+  },
+  {
+    "id": "independent-site-carrier-usps-international-alerts",
+    "zh_title": "USPS 国际线路与停收告警",
+    "platforms": [
+      "独立站",
+      "TikTok",
+      "Amazon",
+      "Temu"
+    ],
+    "source_type": "carrier-official",
+    "priority": "P1",
+    "title": "USPS International Service Alerts",
+    "url": "https://about.usps.com/newsroom/service-alerts/international/",
+    "monitoring_method": "changedetection",
+    "content_url": "https://about.usps.com/newsroom/service-alerts/international/",
+    "content_method": "html_page_snapshot",
+    "published_regex": "Updated:\\s*([A-Z][a-z]+ \\d{1,2}, \\d{4})",
+    "content_focus_regex": "International Mail Service Suspensions[\\s\\S]{0,2200}",
+    "keywords": [
+      "international",
+      "service suspension",
+      "mail acceptance",
+      "shipping",
+      "disruption",
+      "postal service"
+    ],
+    "why_it_matters": "USPS 国际停收和线路中断会直接影响低客单直邮、PO box、军邮及尾程履约承诺。",
+    "business_zone": [
+      "物流时效",
+      "国际邮政线路",
+      "直邮小包"
+    ]
+  },
+  {
+    "id": "shopee-seller-announcements",
+    "zh_title": "Shopee 卖家中心公告",
+    "platforms": [
+      "Shopee",
+      "独立站"
+    ],
+    "source_type": "platform-official",
+    "priority": "P0",
+    "title": "Shopee Seller Announcements",
+    "url": "https://seller.shopee.cn/edu/announcement",
+    "monitoring_method": "changedetection",
+    "keywords": [
+      "policy",
+      "penalty",
+      "shipping",
+      "logistics",
+      "fee",
+      "sls",
+      "commission"
+    ],
+    "why_it_matters": "Shopee 的物流（SLS）和藏价规则更新频繁，直接影响东南亚及拉美卖家的利润率。",
+    "business_zone": [
+      "订单与履约",
+      "费用与藏价",
+      "店铺政策"
+    ]
+  },
+  {
+    "id": "aliexpress-rules",
+    "zh_title": "速卖通平台规则更新",
+    "platforms": [
+      "AliExpress"
+    ],
+    "source_type": "platform-official",
+    "priority": "P0",
+    "title": "AliExpress Seller Rules",
+    "url": "https://gsp.aliexpress.com/apps/notice",
+    "monitoring_method": "changedetection",
+    "keywords": [
+      "rules",
+      "logistics",
+      "choice",
+      "compliance",
+      "penalty",
+      "fulfillment"
+    ],
+    "why_it_matters": "速卖通的全托管/半托管模式变更及物流升级，是影响俄罗斯、中东与欧洲市场履约的核心要素。",
+    "business_zone": [
+      "托管模式",
+      "物流时效",
+      "平台罚则"
+    ]
+  },
+  {
+    "id": "walmart-seller-news",
+    "zh_title": "Walmart 卖家中心新闻",
+    "platforms": [
+      "Walmart"
+    ],
+    "source_type": "platform-official",
+    "priority": "P0",
+    "title": "Walmart Seller Center News",
+    "url": "https://sellerhelp.walmart.com/s/news",
+    "monitoring_method": "changedetection",
+    "keywords": [
+      "wfs",
+      "fees",
+      "requirements",
+      "compliance",
+      "referral fee",
+      "shipping"
+    ],
+    "why_it_matters": "沃尔玛是北美第二大平台，其 WFS 履约及平台佣金调整对卖家利润和排名有决定性影响。",
+    "business_zone": [
+      "WFS履约",
+      "平台佣金",
+      "上架合规"
+    ]
+  },
+  {
+    "id": "shopify-changelog",
+    "zh_title": "Shopify 官方重大更新",
+    "platforms": [
+      "独立站"
+    ],
+    "source_type": "platform-official",
+    "priority": "P0",
+    "title": "Shopify Changelog",
+    "url": "https://changelog.shopify.com/",
+    "monitoring_method": "changedetection",
+    "content_url": "https://changelog.shopify.com/feed.xml",
+    "content_method": "rss",
+    "keywords": [
+      "checkout",
+      "payment",
+      "shipping",
+      "tax",
+      "markets",
+      "app",
+      "customs",
+      "fulfillment"
+    ],
+    "why_it_matters": "前端支付转化率、税费自动计算以及物流履约连系的系统级更新，直系独立站卖家命脉。",
+    "business_zone": [
+      "支付与结账",
+      "全球市场",
+      "建站生态"
+    ]
+  },
+  {
+    "id": "ebay-seller-updates",
+    "zh_title": "eBay 卖家重大更新",
+    "platforms": [
+      "eBay"
+    ],
+    "source_type": "platform-official",
+    "priority": "P0",
+    "title": "eBay Seller Updates",
+    "url": "https://community.ebay.com/t5/Announcements/bg-p/Announcements",
+    "monitoring_method": "changedetection",
+    "keywords": [
+      "seller update",
+      "fees",
+      "promoted listings",
+      "shipping",
+      "authentication",
+      "returns"
+    ],
+    "why_it_matters": "eBay 的广告算法变化（Promoted Listings）及全球运费项目调整，直接关系老牌精品卖家的存亡。",
+    "business_zone": [
+      "广告与流量",
+      "物流与运费",
+      "平台费率"
+    ]
+  },
+  {
+    "id": "lazada-seller-center",
+    "zh_title": "Lazada 卖家中心公告",
+    "platforms": ["Lazada"],
+    "source_type": "platform-official",
+    "priority": "P0",
+    "title": "Lazada Seller Center Announcements",
+    "url": "https://sellercenter.lazada.com/",
+    "monitoring_method": "changedetection",
+    "keywords": ["policy", "shipping", "fees", "commission", "logistics", "penalty", "compliance"],
+    "why_it_matters": "Lazada 是东南亚第二大电商平台，物流（LGS）和佣金政策变化直接影响东南亚卖家利润。",
+    "business_zone": ["东南亚物流", "平台佣金", "卖家合规"]
+  },
+  {
+    "id": "mercadolibre-seller-news",
+    "zh_title": "Mercado Libre 卖家公告",
+    "platforms": ["Mercado Libre"],
+    "source_type": "platform-official",
+    "priority": "P1",
+    "title": "Mercado Libre Seller News",
+    "url": "https://vendedores.mercadolibre.com.mx/notas",
+    "monitoring_method": "changedetection",
+    "keywords": ["seller", "fees", "shipping", "fulfillment", "policy", "mercado envíos"],
+    "why_it_matters": "Mercado Libre 是拉美最大电商平台（覆盖墨西哥/巴西/阿根廷），物流和佣金变化影响拉美卖家。",
+    "business_zone": ["拉美物流", "平台佣金", "跨境拉美"]
+  },
+  {
+    "id": "ustr-press-releases",
+    "zh_title": "美国贸易代表办公室政策公告",
+    "platforms": ["Amazon", "TikTok", "Temu", "独立站", "AliExpress", "SHEIN"],
+    "source_type": "regulator-official",
+    "priority": "P0",
+    "title": "USTR Press Releases",
+    "url": "https://ustr.gov/about-us/policy-offices/press-office/press-releases",
+    "monitoring_method": "changedetection",
+    "keywords": ["tariff", "China", "trade", "Section 301", "de minimis", "duty", "import"],
+    "why_it_matters": "USTR 是美国对华加征关税和 de minimis 政策调整的第一手信息源，直接决定跨境卖家的关税成本。",
+    "business_zone": ["美中贸易", "关税政策", "de minimis"]
+  },
+  {
+    "id": "uk-hmrc-customs",
+    "zh_title": "英国 HMRC 海关与进口政策",
+    "platforms": ["Amazon", "独立站", "TikTok", "eBay"],
+    "source_type": "regulator-official",
+    "priority": "P1",
+    "title": "UK HMRC Customs & Import Updates",
+    "url": "https://www.gov.uk/government/collections/customs-and-excise-notices",
+    "monitoring_method": "changedetection",
+    "keywords": ["customs", "import", "VAT", "duty", "tariff", "border", "declaration"],
+    "why_it_matters": "英国脱欧后独立关税体系，进口 VAT 和清关规则变更直接影响对英出口卖家。",
+    "business_zone": ["英国清关", "进口VAT", "脱欧政策"]
+  }
+]

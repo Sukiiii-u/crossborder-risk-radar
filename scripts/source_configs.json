@@ -1,0 +1,801 @@
+[
+  {
+    "id": "ecommercebytes",
+    "label": "EcommerceBytes",
+    "type": "rss",
+    "url": "https://www.ecommercebytes.com/feed/",
+    "topic": "news",
+    "platforms": [
+      "Amazon",
+      "TikTok",
+      "Temu",
+      "独立站"
+    ],
+    "trust_tier": "industry",
+    "seller_signal_bias": "high",
+    "freshness_days": 10,
+    "max_items": 8,
+    "include_keywords": [
+      "international shipping",
+      "shipping",
+      "mail",
+      "suspends",
+      "fees",
+      "ad fees",
+      "policy",
+      "policies",
+      "marketplace",
+      "tariff",
+      "customs",
+      "cross-border",
+      "de minimis",
+      "etsy",
+      "ebay",
+      "amazon sellers",
+      "seller update",
+      "seller protection",
+      "outage",
+      "ban",
+      "restriction",
+      "new regulation",
+      "compliance",
+      "customs clearance",
+      "inspection",
+      "prohibited",
+      "seized"
+    ],
+    "exclude_patterns": [
+      "podcast",
+      "newsletter",
+      "sale",
+      "spring sale",
+      "new ai tool",
+      "drill into sales data",
+      "webinar",
+      "youtube",
+      "streaming"
+    ]
+  },
+  {
+    "id": "digitalcommerce360",
+    "label": "Digital Commerce 360",
+    "type": "rss",
+    "url": "https://www.digitalcommerce360.com/feed/",
+    "topic": "news",
+    "platforms": [
+      "Amazon",
+      "TikTok",
+      "Temu",
+      "独立站"
+    ],
+    "trust_tier": "industry",
+    "seller_signal_bias": "medium",
+    "freshness_days": 10,
+    "max_items": 6,
+    "include_keywords": [
+      "tariff",
+      "delivery",
+      "shipping",
+      "cross-border",
+      "import",
+      "export",
+      "logistics",
+      "oil",
+      "marketplace",
+      "customs",
+      "compliance",
+      "regulation",
+      "policy changes",
+      "ban",
+      "restriction",
+      "new rules",
+      "enforcement"
+    ],
+    "exclude_patterns": [
+      "podcast",
+      "newsletter",
+      "funding",
+      "sales up",
+      "raises",
+      "profit",
+      "fashion",
+      "transportation procurement platform",
+      "checkout plans"
+    ]
+  },
+  {
+    "id": "freightwaves",
+    "label": "FreightWaves",
+    "type": "rss",
+    "url": "https://www.freightwaves.com/news/feed",
+    "topic": "logistics",
+    "platforms": [
+      "Amazon",
+      "TikTok",
+      "Temu",
+      "独立站"
+    ],
+    "trust_tier": "industry",
+    "seller_signal_bias": "medium",
+    "freshness_days": 14,
+    "max_items": 6,
+    "include_keywords": [
+      "shipping",
+      "logistics",
+      "port",
+      "freight",
+      "container",
+      "warehouse",
+      "customs",
+      "inspection",
+      "supply chain",
+      "parcel",
+      "middle east",
+      "surcharge",
+      "ocean",
+      "air cargo",
+      "import ban",
+      "trade restriction",
+      "customs regulation",
+      "compliance"
+    ],
+    "exclude_patterns": [
+      "podcast",
+      "newsletter",
+      "autonomous trucking",
+      "diesel",
+      "truckers",
+      "trucking",
+      "roadcheck",
+      "ltl"
+    ]
+  },
+  {
+    "id": "ecomcrew",
+    "label": "EcomCrew",
+    "type": "rss",
+    "url": "https://www.ecomcrew.com/feed/",
+    "topic": "news",
+    "platforms": [
+      "Amazon",
+      "TikTok",
+      "Temu",
+      "Walmart",
+      "独立站"
+    ],
+    "trust_tier": "seller-community",
+    "seller_signal_bias": "high",
+    "freshness_days": 14,
+    "max_items": 6,
+    "include_keywords": [
+      "amazon",
+      "seller",
+      "fba",
+      "sourcing",
+      "tariff",
+      "import",
+      "supply chain",
+      "fees",
+      "policy",
+      "suspension",
+      "listing",
+      "tiktok",
+      "temu"
+    ],
+    "exclude_patterns": [
+      "podcast",
+      "income report",
+      "personal update"
+    ]
+  },
+  {
+    "id": "pymnts-cross-border",
+    "label": "PYMNTS Cross-Border",
+    "type": "rss",
+    "url": "https://www.pymnts.com/category/cross-border-commerce/feed/",
+    "topic": "policy",
+    "platforms": [
+      "Amazon",
+      "TikTok",
+      "Temu",
+      "独立站",
+      "AliExpress"
+    ],
+    "trust_tier": "media",
+    "seller_signal_bias": "medium",
+    "freshness_days": 7,
+    "max_items": 5,
+    "include_keywords": [
+      "cross-border",
+      "payment",
+      "tariff",
+      "customs",
+      "regulation",
+      "tax",
+      "compliance",
+      "ecommerce"
+    ],
+    "exclude_patterns": [
+      "b2b",
+      "funding",
+      "crypto",
+      "blockchain",
+      "web3"
+    ]
+  },
+  {
+    "id": "supplychaindive",
+    "label": "Supply Chain Dive",
+    "type": "rss",
+    "url": "https://www.supplychaindive.com/feeds/news/",
+    "topic": "logistics",
+    "platforms": [
+      "Amazon",
+      "TikTok",
+      "Temu",
+      "独立站",
+      "Walmart",
+      "Shopee"
+    ],
+    "trust_tier": "industry",
+    "seller_signal_bias": "medium",
+    "freshness_days": 10,
+    "max_items": 5,
+    "include_keywords": [
+      "freight",
+      "logistics",
+      "shipping",
+      "parcel",
+      "warehouse",
+      "customs",
+      "supply chain",
+      "last mile"
+    ],
+    "exclude_patterns": [
+      "podcast",
+      "executive",
+      "hiring",
+      "c-suite",
+      "sustainability report"
+    ]
+  },
+  {
+    "id": "junglescout-blog",
+    "label": "Jungle Scout Blog",
+    "type": "rss",
+    "url": "https://www.junglescout.com/blog/feed/",
+    "topic": "news",
+    "platforms": [
+      "Amazon"
+    ],
+    "trust_tier": "seller-community",
+    "seller_signal_bias": "high",
+    "freshness_days": 30,
+    "max_items": 6,
+    "include_keywords": [
+      "amazon",
+      "seller",
+      "fba",
+      "fees",
+      "policy",
+      "listing",
+      "ppc",
+      "brand registry",
+      "account health",
+      "suspension",
+      "reimbursement",
+      "product research",
+      "ranking",
+      "algorithm"
+    ],
+    "exclude_patterns": [
+      "podcast",
+      "webinar",
+      "how to start",
+      "beginner guide",
+      "case study",
+      "success story"
+    ]
+  },
+  {
+    "id": "sellerapp-blog",
+    "label": "SellerApp Blog",
+    "type": "rss",
+    "url": "https://www.sellerapp.com/blog/feed/",
+    "topic": "news",
+    "platforms": [
+      "Amazon"
+    ],
+    "trust_tier": "seller-community",
+    "seller_signal_bias": "high",
+    "freshness_days": 30,
+    "max_items": 5,
+    "include_keywords": [
+      "amazon",
+      "seller",
+      "policy",
+      "fees",
+      "fba",
+      "listing",
+      "account",
+      "ppc",
+      "algorithm",
+      "update",
+      "change"
+    ],
+    "exclude_patterns": [
+      "tutorial",
+      "beginner",
+      "how to sell",
+      "step by step"
+    ]
+  },
+  {
+    "id": "modern-retail",
+    "label": "Modern Retail",
+    "type": "rss",
+    "url": "https://www.modernretail.co/feed/",
+    "topic": "news",
+    "platforms": [
+      "TikTok",
+      "Temu",
+      "Amazon",
+      "SHEIN"
+    ],
+    "trust_tier": "media",
+    "seller_signal_bias": "high",
+    "freshness_days": 10,
+    "max_items": 6,
+    "include_keywords": [
+      "tiktok shop",
+      "temu",
+      "shein",
+      "amazon",
+      "marketplace",
+      "seller",
+      "cross-border",
+      "tariff",
+      "fulfillment",
+      "social commerce",
+      "live shopping",
+      "ban",
+      "regulation"
+    ],
+    "exclude_patterns": [
+      "podcast",
+      "earnings",
+      "q1 results",
+      "q2 results",
+      "q3 results",
+      "q4 results",
+      "investor"
+    ]
+  },
+  {
+    "id": "tamebay",
+    "label": "Tamebay",
+    "type": "rss",
+    "url": "https://tamebay.com/feed",
+    "topic": "news",
+    "platforms": [
+      "Amazon",
+      "eBay",
+      "TikTok",
+      "Temu",
+      "独立站"
+    ],
+    "trust_tier": "industry",
+    "seller_signal_bias": "high",
+    "freshness_days": 10,
+    "max_items": 6,
+    "include_keywords": [
+      "seller",
+      "marketplace",
+      "amazon",
+      "ebay",
+      "tiktok",
+      "shipping",
+      "fee",
+      "policy",
+      "tariff",
+      "cross-border",
+      "returns",
+      "vat",
+      "customs"
+    ],
+    "exclude_patterns": [
+      "podcast",
+      "deals",
+      "coupon"
+    ]
+  },
+  {
+    "id": "36kr-tech",
+    "label": "36氪科技",
+    "type": "rss",
+    "url": "https://36kr.com/feed",
+    "topic": "news",
+    "platforms": [
+      "Amazon",
+      "TikTok",
+      "Temu",
+      "独立站",
+      "AliExpress",
+      "SHEIN",
+      "Shopee"
+    ],
+    "trust_tier": "media",
+    "seller_signal_bias": "medium",
+    "freshness_days": 7,
+    "max_items": 6,
+    "include_keywords": [
+      "跨境",
+      "电商",
+      "亚马逊",
+      "tiktok",
+      "temu",
+      "shein",
+      "关税",
+      "物流",
+      "出海",
+      "封号",
+      "合规",
+      "海关",
+      "平台政策"
+    ],
+    "exclude_patterns": [
+      "融资",
+      "上市",
+      "IPO",
+      "招聘",
+      "AI大模型",
+      "芯片"
+    ]
+  },
+  {
+    "id": "retaildive",
+    "label": "Retail Dive",
+    "type": "rss",
+    "url": "https://www.retaildive.com/feeds/news/",
+    "topic": "news",
+    "platforms": [
+      "Amazon",
+      "TikTok",
+      "Temu",
+      "独立站",
+      "Walmart"
+    ],
+    "trust_tier": "industry",
+    "seller_signal_bias": "medium",
+    "freshness_days": 10,
+    "max_items": 6,
+    "include_keywords": [
+      "amazon",
+      "temu",
+      "tiktok",
+      "shein",
+      "walmart",
+      "tariff",
+      "import",
+      "marketplace",
+      "e-commerce",
+      "seller",
+      "fulfillment",
+      "ban",
+      "regulation"
+    ],
+    "exclude_patterns": [
+      "store opening",
+      "hiring",
+      "CEO",
+      "earnings",
+      "grocery",
+      "fashion trend"
+    ]
+  },
+  {
+    "id": "helium10-blog",
+    "label": "Helium 10 Blog",
+    "type": "rss",
+    "url": "https://www.helium10.com/blog/feed/",
+    "topic": "news",
+    "platforms": ["Amazon"],
+    "trust_tier": "seller-community",
+    "seller_signal_bias": "high",
+    "freshness_days": 14,
+    "max_items": 6,
+    "include_keywords": ["amazon", "seller", "fba", "fees", "policy", "listing", "ppc", "account health", "suspension", "refund", "tariff", "compliance"],
+    "exclude_patterns": ["tutorial", "beginner", "how to start", "demo", "webinar"]
+  },
+  {
+    "id": "marketplace-pulse",
+    "label": "Marketplace Pulse",
+    "type": "rss",
+    "url": "https://www.marketplacepulse.com/feed",
+    "topic": "news",
+    "platforms": ["Amazon", "TikTok", "Temu", "SHEIN", "eBay", "Walmart"],
+    "trust_tier": "industry",
+    "seller_signal_bias": "high",
+    "freshness_days": 14,
+    "max_items": 8,
+    "include_keywords": ["amazon", "temu", "tiktok", "shein", "marketplace", "seller", "tariff", "fees", "shipping", "cross-border", "fulfillment", "ban", "regulation", "policy"],
+    "exclude_patterns": ["podcast", "newsletter"]
+  },
+  {
+    "id": "hugo-crossborder",
+    "label": "雨果跨境",
+    "type": "rss",
+    "url": "https://www.cifnews.com/rss",
+    "topic": "news",
+    "platforms": ["Amazon", "TikTok", "Temu", "SHEIN", "AliExpress", "Shopee", "独立站"],
+    "trust_tier": "industry",
+    "seller_signal_bias": "high",
+    "freshness_days": 10,
+    "min_content_length": 10,
+    "max_items": 8,
+    "include_keywords": ["跨境", "电商", "亚马逊", "tiktok", "temu", "shein", "关税", "物流", "出海", "封号", "合规", "海关", "平台政策", "退款", "listing"],
+    "exclude_patterns": ["融资", "IPO", "招聘", "培训课程", "直播预告"]
+  },
+  {
+    "id": "techcrunch-tiktok",
+    "label": "TechCrunch TikTok",
+    "type": "rss",
+    "url": "https://techcrunch.com/tag/tiktok/feed/",
+    "topic": "news",
+    "platforms": [
+      "TikTok"
+    ],
+    "trust_tier": "media",
+    "seller_signal_bias": "medium",
+    "freshness_days": 14,
+    "max_items": 6,
+    "include_keywords": [
+      "tiktok shop",
+      "tiktok",
+      "ban",
+      "seller",
+      "e-commerce",
+      "commerce",
+      "live shopping",
+      "fulfillment",
+      "regulation",
+      "policy",
+      "shipping"
+    ],
+    "exclude_patterns": [
+      "podcast",
+      "newsletter",
+      "funding round",
+      "venture",
+      "AI model",
+      "music",
+      "creator fund"
+    ]
+  },
+  {
+    "id": "theverge-tiktok",
+    "label": "The Verge TikTok",
+    "type": "rss",
+    "url": "https://www.theverge.com/rss/tiktok/index.xml",
+    "topic": "news",
+    "platforms": [
+      "TikTok"
+    ],
+    "trust_tier": "media",
+    "seller_signal_bias": "medium",
+    "freshness_days": 14,
+    "max_items": 5,
+    "include_keywords": [
+      "tiktok shop",
+      "tiktok",
+      "ban",
+      "seller",
+      "commerce",
+      "regulation",
+      "policy",
+      "shipping",
+      "fulfillment",
+      "us ban",
+      "bytedance"
+    ],
+    "exclude_patterns": [
+      "podcast",
+      "music",
+      "creator",
+      "memes",
+      "algorithm feed",
+      "video editing"
+    ]
+  },
+  {
+    "id": "baijing-crossborder",
+    "label": "白鲸出海",
+    "type": "rss",
+    "url": "https://www.baijing.cn/feed",
+    "topic": "news",
+    "platforms": [
+      "TikTok",
+      "Temu",
+      "SHEIN",
+      "AliExpress"
+    ],
+    "trust_tier": "industry",
+    "seller_signal_bias": "high",
+    "freshness_days": 10,
+    "min_content_length": 10,
+    "max_items": 8,
+    "include_keywords": [
+      "tiktok",
+      "temu",
+      "shein",
+      "跨境",
+      "出海",
+      "电商",
+      "合规",
+      "封号",
+      "政策",
+      "物流",
+      "关税",
+      "平台规则"
+    ],
+    "exclude_patterns": [
+      "融资",
+      "IPO",
+      "招聘",
+      "游戏出海",
+      "应用推广"
+    ]
+  },
+  {
+    "id": "pandaily-tech",
+    "label": "Pandaily",
+    "type": "rss",
+    "url": "https://pandaily.com/feed/",
+    "topic": "news",
+    "platforms": [
+      "TikTok",
+      "Temu",
+      "SHEIN",
+      "AliExpress"
+    ],
+    "trust_tier": "media",
+    "seller_signal_bias": "medium",
+    "freshness_days": 10,
+    "max_items": 6,
+    "include_keywords": [
+      "tiktok",
+      "temu",
+      "shein",
+      "pinduoduo",
+      "cross-border",
+      "e-commerce",
+      "ban",
+      "regulation",
+      "tariff",
+      "seller",
+      "logistics"
+    ],
+    "exclude_patterns": [
+      "AI model",
+      "autonomous",
+      "chip",
+      "semiconductor",
+      "startup funding"
+    ]
+  },
+  {
+    "id": "crossborder-magazine",
+    "label": "Cross-Border Magazine",
+    "type": "rss",
+    "url": "https://cross-border-magazine.com/feed/",
+    "topic": "news",
+    "platforms": [
+      "Amazon",
+      "TikTok",
+      "Temu",
+      "独立站",
+      "SHEIN"
+    ],
+    "trust_tier": "industry",
+    "seller_signal_bias": "high",
+    "freshness_days": 14,
+    "max_items": 6,
+    "include_keywords": [
+      "cross-border",
+      "marketplace",
+      "seller",
+      "tariff",
+      "shipping",
+      "logistics",
+      "customs",
+      "regulation",
+      "fulfillment",
+      "returns",
+      "VAT",
+      "temu",
+      "tiktok",
+      "shein"
+    ],
+    "exclude_patterns": [
+      "podcast",
+      "webinar",
+      "event recap"
+    ]
+  },
+  {
+    "id": "ecommercenews-eu",
+    "label": "Ecommerce News EU",
+    "type": "rss",
+    "url": "https://ecommercenews.eu/feed/",
+    "topic": "policy",
+    "platforms": [
+      "Amazon",
+      "TikTok",
+      "Temu",
+      "独立站",
+      "SHEIN",
+      "AliExpress"
+    ],
+    "trust_tier": "industry",
+    "seller_signal_bias": "medium",
+    "freshness_days": 10,
+    "max_items": 5,
+    "include_keywords": [
+      "cross-border",
+      "marketplace",
+      "temu",
+      "tiktok",
+      "shein",
+      "amazon",
+      "tariff",
+      "customs",
+      "regulation",
+      "VAT",
+      "seller",
+      "fulfillment"
+    ],
+    "exclude_patterns": [
+      "podcast",
+      "webinar",
+      "job opening"
+    ]
+  },
+  {
+    "id": "practical-ecommerce",
+    "label": "Practical Ecommerce",
+    "type": "rss",
+    "url": "https://www.practicalecommerce.com/feed",
+    "topic": "news",
+    "platforms": [
+      "Amazon",
+      "TikTok",
+      "Temu",
+      "Walmart",
+      "独立站"
+    ],
+    "trust_tier": "seller-community",
+    "seller_signal_bias": "high",
+    "freshness_days": 14,
+    "max_items": 6,
+    "include_keywords": [
+      "tiktok shop",
+      "temu",
+      "amazon",
+      "seller",
+      "tariff",
+      "shipping",
+      "marketplace",
+      "cross-border",
+      "fulfillment",
+      "compliance",
+      "fees",
+      "policy"
+    ],
+    "exclude_patterns": [
+      "how to start",
+      "beginner",
+      "tutorial",
+      "SEO tips"
+    ]
+  }
+]

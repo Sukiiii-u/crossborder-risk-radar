@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>跨境风险雷达 | 行动面板</title>
+  <!-- 引入 Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- 引入 Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="./styles.css?v=8" />
+</head>
+
+<body>
+  <!-- 侧边导航/标识栏（极简） -->
+  <aside class="app-sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-logo" id="nav-brand-logo" style="cursor: pointer;" title="返回大盘">
+        <svg viewBox="0 0 24 24" fill="none" class="brand-icon" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2A10 10 0 1 0 22 12A10 10 0 0 0 12 2Z"></path>
+          <path d="M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+          <path d="M12 2v2"></path>
+          <path d="M12 20v2"></path>
+          <path d="M2 12h2"></path>
+          <path d="M20 12h2"></path>
+          <path d="M4.93 4.93l1.41 1.41"></path>
+          <path d="M17.66 17.66l1.41 1.41"></path>
+          <path d="M4.93 19.07l1.41-1.41"></path>
+          <path d="M17.66 6.34l1.41-1.41"></path>
+        </svg>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <!-- Tier 1: 资讯大盘 -->
+      <div class="nav-item active" data-view="view-global" title="宏观风险资讯大盘">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+      </div>
+
+      <!-- Tier 2: 专属视图区域 -->
+      <div class="nav-divider"></div>
+
+      <div class="nav-item nav-sub" data-view="view-platform" title="专属业务工作区">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 11 12 14 22 4"></polyline>
+          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+        </svg>
+      </div>
+
+      <div class="nav-divider"></div>
+
+      <!-- Tier 3: 自动化策略 -->
+      <div class="nav-item" data-view="view-settings" title="自动化监控策略中心">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path
+            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+          </path>
+        </svg>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="app-main">
+    <!-- 视图 1：全球宏观大盘 -->
+    <div id="view-global" class="page-view active-view">
+      <header class="page-header" style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div>
+          <h1 class="page-title" data-i18n="title">跨境风险雷达</h1>
+          <p class="page-subtitle" id="last-updated-text">最后抓取于：暂无数据</p>
+        </div>
+        <div class="header-metrics" id="kpi-metrics-row">
+          <!-- KPI 动态注入 -->
+        </div>
+      </header>
+
+      <div class="content-layout">
+        <!-- 左侧主工作区 -->
+        <div class="left-column">
+          <!-- 主工作区：纯净版每日资讯流 -->
+          <div class="task-inbox" style="border: none; box-shadow: none; background: transparent;">
+            <div class="inbox-header" style="background: transparent; border: none; padding: 0 0 16px 0;">
+              <h2 class="inbox-title" style="font-size: 1.125rem;">🌐 24小时前沿动态 <span class="badge status-badge"
+                  id="alert-count-badge">0</span></h2>
+            </div>
+
+            <div class="split-view-container"
+              style="display: flex; flex-direction: column; gap: 32px; margin-top: 24px;">
+              
+              <!-- 政策风险 -->
+              <section class="risk-tier-section" style="background: rgba(220, 38, 38, 0.03); border-left: 4px solid #DC2626; padding: 16px; border-radius: 8px;">
+                <h2 style="font-size: 1.125rem; font-weight: 600; color: #DC2626; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                  🔴 政策风险
+                </h2>
+                <div class="dashboard-grid" id="dim-policy-grid" style="display: flex; flex-direction: column; gap: 8px;"></div>
+              </section>
+
+              <!-- 物流异动 -->
+              <section class="risk-tier-section" style="background: rgba(234, 88, 12, 0.03); border-left: 4px solid #EA580C; padding: 16px; border-radius: 8px;">
+                <h2 style="font-size: 1.125rem; font-weight: 600; color: #EA580C; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                  🟠 物流异动
+                </h2>
+                <div class="dashboard-grid" id="dim-logistics-grid" style="display: flex; flex-direction: column; gap: 8px;"></div>
+              </section>
+
+              <!-- 合规准入 -->
+              <section class="risk-tier-section" style="background: rgba(139, 92, 246, 0.03); border-left: 4px solid #8B5CF6; padding: 16px; border-radius: 8px;">
+                <h2 style="font-size: 1.125rem; font-weight: 600; color: #8B5CF6; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                  🟣 合规准入
+                </h2>
+                <div class="dashboard-grid" id="dim-compliance-grid" style="display: flex; flex-direction: column; gap: 8px;"></div>
+              </section>
+
+              <!-- 税务关税 -->
+              <section class="risk-tier-section" style="background: rgba(202, 138, 4, 0.03); border-left: 4px solid #CA8A04; padding: 16px; border-radius: 8px;">
+                <h2 style="font-size: 1.125rem; font-weight: 600; color: #CA8A04; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                  🟡 税务关税
+                </h2>
+                <div class="dashboard-grid" id="dim-tariff-grid" style="display: flex; flex-direction: column; gap: 8px;"></div>
+              </section>
+
+              <!-- 平台动态 -->
+              <section class="risk-tier-section" style="background: rgba(37, 99, 235, 0.03); border-left: 4px solid #2563EB; padding: 16px; border-radius: 8px;">
+                <h2 style="font-size: 1.125rem; font-weight: 600; color: #2563EB; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                  🔵 平台动态
+                </h2>
+                <div class="dashboard-grid" id="dim-platform-grid" style="display: flex; flex-direction: column; gap: 8px;"></div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧边栏：静态分析与工具入口 -->
+        <div class="analytics-sidebar">
+          <!-- 风险特征卡 -->
+          <div class="panel">
+            <div class="panel-header">
+              <h3 class="panel-title">今日宏观雷达探测图</h3>
+              <!-- Pills 指标区 -->
+            </div>
+            <div class="panel-body">
+              <div class="chart-container" style="height: 250px;">
+                <canvas id="macroRiskChart"></canvas>
+              </div>
+              <div id="distribution-pills" class="distribution-legend mt-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end view-global -->
+
+    <!-- 视图 2：统一视图 (Platform Workspace) -->
+    <div id="view-platform" class="page-view" style="display: none;">
+      <header class="page-header">
+        <div>
+          <h1 class="page-title" data-i18n="platform_title">专属业务工作区</h1>
+          <p class="page-subtitle" data-i18n="platform_subtitle">多平台合规与履约防火墙</p>
+        </div>
+      </header>
+      <div class="content-layout">
+        <div class="main-column">
+          <!-- 宏观新闻监控（最顶部，独立于核心待办） -->
+          <section class="risk-tier-section" style="background: rgba(139, 92, 246, 0.03); border-left: 4px solid #8B5CF6; padding: 16px; border-radius: 8px; margin-bottom: 24px;">
+            <h2 style="font-size: 1.125rem; font-weight: 600; color: #8B5CF6; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+              <svg viewBox="0 0 24 24" fill="none" class="brand-icon" stroke="currentColor" stroke-width="2" width="20" height="20">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              宏观新闻监控
+            </h2>
+            <div class="dashboard-grid" id="workspace-macro-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;"></div>
+          </section>
+
+          <div class="task-inbox">
+            <div class="inbox-header">
+              <h2 class="inbox-title"><span data-i18n="core_todo">核心待办</span> <span class="badge status-badge"
+                  id="alert-count-platform">0</span></h2>
+              <div class="inbox-actions">
+                <button class="btn btn-ghost" data-i18n="mark_all_done">一键标为已处理</button>
+              </div>
+            </div>
+
+            <div class="split-view-container"
+              style="display: flex; flex-direction: column; gap: 32px; margin-top: 24px;">
+
+              <!-- Platform 选择器 -->
+              <div class="inbox-filters-bar" style="margin: 0;">
+                <div class="filter-group">
+                  <span class="filter-label" data-i18n="select_platform">选择跨境平台视角：</span>
+                  <select id="platform-switch" class="filter-select" style="min-width: 200px;">
+                    <option value="all">跨平台 (全选)</option>
+                    <option value="TikTok">TikTok</option>
+                    <option value="Amazon">Amazon</option>
+                    <option value="Temu">Temu</option>
+                    <option value="独立站">独立站</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- 平台专属事件 -->
+              <section class="risk-tier-section" style="padding: 16px; border-radius: 8px;">
+                <h2 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                  平台专属事件与深度分析
+                </h2>
+                <div class="dashboard-grid" id="platform-events-grid"
+                  style="display: flex; flex-direction: column; gap: 16px;"></div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="analytics-sidebar">
+        <div class="panel">
+          <div class="panel-header">
+            <h3 class="panel-title" data-i18n="sop_title">平台链路急救包 SOP</h3>
+          </div>
+          <div class="panel-body">
+            <div style="font-size:0.875rem;color:var(--text-muted);margin-bottom:12px;" data-i18n="sop_subtitle">
+              针对该生态的标准化排障策略</div>
+            <div class="accordion-group" id="tk-deep-grid-container">
+              <!-- 折叠菜单注入口 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div> <!-- end view-platform -->
+
+    <!-- 视图 3：策略配置占位 -->
+    <div id="view-settings" class="page-view" style="display: none;">
+      <header class="page-header">
+        <div>
+          <h1 class="page-title" data-i18n="monitor_title">自动化追踪与监控体系</h1>
+          <p class="page-subtitle" data-i18n="monitor_subtitle">让大模型 7x24 小时为您盯盘</p>
+        </div>
+      </header>
+      <div class="content-layout" style="display: block;">
+        <div class="task-inbox"
+          style="padding: 100px 20px; text-align: center; background: transparent; border: 1px dashed var(--border-light); box-shadow: none;">
+          <h3 style="font-size: 1.125rem; font-weight: 500; margin-bottom: 8px;">监控底座尚未接通</h3>
+          <p class="text-muted" style="max-width: 400px; margin: 0 auto; line-height: 1.6;">未来可以在此处订阅例如<strong
+              style="color:var(--text-main);">"带电产品查验"</strong>的黑天鹅事件，当匹配阈值 > 80% 时自动推送飞书警报。</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="./radar-data.js?v=20"></script>
+  <script src="./app.js?v=20"></script>
+</body>
+
+</html>
