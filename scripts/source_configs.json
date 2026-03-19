@@ -797,5 +797,61 @@
       "tutorial",
       "SEO tips"
     ]
+  },
+  {
+    "id": "shopee-seller-education",
+    "label": "Shopee Seller Education",
+    "type": "rss",
+    "url": "https://seller.shopee.com.my/edu/feed",
+    "topic": "platform",
+    "platforms": ["Shopee"],
+    "trust_tier": "official",
+    "seller_signal_bias": "high",
+    "freshness_days": 14,
+    "max_items": 5,
+    "include_keywords": ["seller", "policy", "update", "fee", "commission", "shipping", "logistics", "compliance"],
+    "exclude_patterns": ["tutorial", "beginner guide"]
+  },
+  {
+    "id": "ebay-seller-news",
+    "label": "eBay Seller Updates",
+    "type": "rss",
+    "url": "https://community.ebay.com/t5/Announcements/bg-p/Announcements/label-name/seller%20update",
+    "topic": "platform",
+    "platforms": ["eBay"],
+    "trust_tier": "official",
+    "seller_signal_bias": "high",
+    "freshness_days": 14,
+    "max_items": 5,
+    "include_keywords": ["seller", "policy", "fee", "update", "managed payments", "international shipping", "cross-border"],
+    "exclude_patterns": ["community event", "meetup"]
+  },
+  {
+    "id": "webretailer-news",
+    "label": "WebRetailer",
+    "type": "rss",
+    "url": "https://www.webretailer.com/feed/",
+    "topic": "news",
+    "platforms": ["Amazon", "eBay", "Shopee", "Lazada", "Walmart"],
+    "trust_tier": "industry",
+    "seller_signal_bias": "high",
+    "freshness_days": 10,
+    "max_items": 8,
+    "include_keywords": ["seller", "marketplace", "fee", "policy", "shipping", "cross-border", "Shopee", "eBay", "Lazada", "Walmart", "fulfillment"],
+    "exclude_patterns": ["review", "tutorial", "how to"]
+  },
+  {
+    "id": "channelx-news",
+    "label": "ChannelX (多平台)",
+    "type": "rss",
+    "url": "https://www.channelx.world/feed/",
+    "topic": "news",
+    "platforms": ["Amazon", "eBay", "Shopee", "Lazada", "Wish", "Walmart"],
+    "trust_tier": "industry",
+    "seller_signal_bias": "high",
+    "freshness_days": 10,
+    "max_items": 8,
+    "include_keywords": ["marketplace", "seller", "cross-border", "Shopee", "eBay", "Lazada", "Wish", "policy", "fee", "shipping", "tariff"],
+    "exclude_patterns": ["podcast", "webinar"]
   }
 ]

@@ -196,13 +196,29 @@ def build_fulfillment_actions(results: list[dict], profile: dict) -> list[dict]:
         "local-fulfillment-merchant-led": merchant_led_actions + temu_actions,
     }
 
+    # 按路径差异化注意事项，避免所有路径显示相同内容
+    path_watchouts = {
+        "crossborder-direct-mail": [
+            f"密切关注 {top_title} 的最终执行日期和适用品类；如尚未落地，保持周频追踪。",
+            "直邮链路的税费和时效最脆弱 — 一旦政策落地，立即重算到手价，避免广告投放打水漂。",
+        ],
+        "local-fulfillment-platform-led": [
+            f"留意平台是否因 {top_title} 调整仓配规则、提高绩效门槛或修改补货频率限制。",
+            "平台仓（FBA/全托管）的库容和合规文件是核心风险点 — 提前排查认证到期和库存健康度。",
+        ],
+        "local-fulfillment-merchant-led": [
+            f"自发货/海外仓路径优先关注 {top_title} 对清关和尾程时效的影响，准备备选物流方案。",
+            "3PL 旺季附加费和仓储费可能同步上涨 — 提前锁定费率或切换供应商。",
+        ],
+    }
+
     return [
         {
             "path_key": item["key"],
             "path_label": item["label"],
             "path_description": item["description"],
             "actions": path_actions[item["key"]],
-            "watchouts": shared_watch[:2],
+            "watchouts": path_watchouts.get(item["key"], shared_watch[:2]),
             "modifier": base_modifier,
         }
         for item in FULFILLMENT_PATHS
