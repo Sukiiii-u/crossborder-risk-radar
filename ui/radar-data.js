@@ -5,7 +5,7 @@ window.RADAR_UI_DATA = {
     "source_mode": "real",
     "snapshot_reason": "fresh",
     "snapshot_usable": true,
-    "event_count": 22,
+    "event_count": 21,
     "profile_label": "通用雷达首页（事件驱动 / 不绑定默认画像）",
     "brief_type": "morning_radar_general"
   },
@@ -886,37 +886,6 @@ window.RADAR_UI_DATA = {
       "timestamp": "Wed, 18 Mar 2026 03:15:26 +0000",
       "brief_rank": 12,
       "ranking_score": 104
-    },
-    {
-      "id": "物流科技公司广告合规纠纷",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 14,
-      "title": "物流科技公司广告合规纠纷",
-      "raw_title": "物流科技公司广告合规纠纷",
-      "summary": "Samsara胜诉获3000万美元赔偿，因Motive AI行车记录仪研究涉虚假广告；同时Motive在专利侵权案中被ITC判定不侵权，进口禁令威胁解除。中国跨境卖家需注意，涉及此类产品在美国市场的广告宣传和专利风险。",
-      "level": "medium",
-      "type": "platform",
-      "typeLabel": "平台动态",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "关注平台功能变更对流量和转化的影响",
-      "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/samsara-motive-lawsuit-arbitration-award-itc-ruling-2026"
-      },
-      "timestamp": "Mon, 16 Mar 2026 21:54:18 +0000",
-      "brief_rank": 14,
-      "ranking_score": 94
     }
   ],
   "macro_events": [
@@ -1596,37 +1565,6 @@ window.RADAR_UI_DATA = {
       "timestamp": "Wed, 18 Mar 2026 03:15:26 +0000",
       "brief_rank": 12,
       "ranking_score": 104
-    },
-    {
-      "id": "物流科技公司广告合规纠纷",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 14,
-      "title": "物流科技公司广告合规纠纷",
-      "raw_title": "物流科技公司广告合规纠纷",
-      "summary": "Samsara胜诉获3000万美元赔偿，因Motive AI行车记录仪研究涉虚假广告；同时Motive在专利侵权案中被ITC判定不侵权，进口禁令威胁解除。中国跨境卖家需注意，涉及此类产品在美国市场的广告宣传和专利风险。",
-      "level": "medium",
-      "type": "platform",
-      "typeLabel": "平台动态",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "关注平台功能变更对流量和转化的影响",
-      "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/samsara-motive-lawsuit-arbitration-award-itc-ruling-2026"
-      },
-      "timestamp": "Mon, 16 Mar 2026 21:54:18 +0000",
-      "brief_rank": 14,
-      "ranking_score": 94
     }
   ]
 };

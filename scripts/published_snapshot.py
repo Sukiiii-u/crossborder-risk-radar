@@ -478,7 +478,7 @@ def build_publish_payload(snapshot: dict[str, Any]) -> dict[str, Any]:
     normalized_events = unique_events
 
     # 过滤不相关事件：移除 is_relevant 明确为 False 或标题明显不相关的事件
-    _IRRELEVANT_KEYWORDS = ["行车记录仪", "车队管理", "DIY", "hardware", "meetup"]
+    _IRRELEVANT_KEYWORDS = ["行车记录仪", "车队管理", "DIY", "hardware", "meetup", "物流科技公司广告"]
     def _is_event_relevant(evt: dict) -> bool:
         if evt.get("is_relevant") is False:
             return False
