@@ -37,6 +37,9 @@ else
     log "⚠️ AI 分析出错（继续执行后续步骤）"
 fi
 
+# 步骤2.5：生成 published_run.json（radar_state 负责格式转换）
+$PYTHON "$SCRIPTS_DIR/radar_state.py" >> "$LOG_FILE" 2>&1 || true
+
 # 步骤3：同步到前端 radar-data.js
 log "步骤3/3：同步前端数据..."
 if $PYTHON "$UI_DIR/refresh_radar_data.py" >> "$LOG_FILE" 2>&1; then
