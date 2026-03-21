@@ -1,7 +1,7 @@
 window.RADAR_UI_DATA = {
   "meta": {
-    "run_id": "radar-20260320-142753-9d36d3b0",
-    "generated_at": "2026-03-20T14:27:53Z",
+    "run_id": "radar-20260321-090201-686bd0fd",
+    "generated_at": "2026-03-21T09:02:01Z",
     "source_mode": "real",
     "snapshot_reason": "fresh",
     "snapshot_usable": true,
@@ -10,14 +10,14 @@ window.RADAR_UI_DATA = {
     "brief_type": "morning_radar_general"
   },
   "overview": {
-    "headline": "通用雷达先盯 compliance：2026年2月28日起 OTDR listing 停用流程更新",
+    "headline": "通用雷达先盯 compliance：2026年2月28日起OTDR listing停用流程更新",
     "why_it_matters": "这条 compliance 事件已经不是某个单一画像的小波动，而是所有卖家都该先扫一眼的首页信号；先看事件本身，再按高相关 / 中相关 / 低相关分层动作。",
     "source_mode": "real",
     "top_risk": {
-      "event_title": "2026年2月28日起 OTDR listing 停用流程更新",
+      "event_title": "2026年2月28日起OTDR listing停用流程更新",
       "event_type": "compliance",
       "risk_level": "high",
-      "seller_angle": "2026年2月28日起，平台对OTDR不达标的处置从“一刀切”转为“精准打击”，但显著违规仍可能全量去激活listing，直接影响店铺销售和库存周转；标准配送若未启用自动化设置并购买保护标签，将失去OTDR豁免资格，卖家需重新审视履约流程；listing被去激活后可申诉自动恢复，但频繁触发将导致更严厉处罚，威胁店铺长期合规资质。"
+      "seller_angle": "新规从\"全店listing一刀切失效\"转为\"仅失效高影响listing\"，但OTDR严重不达标仍可全店封禁。直接邮件路径单票时效压力骤增，自发货卖家若未使用保护标签将面临精准降权风险，申诉恢复流程虽简化但时效损失已不可逆。"
     },
     "active_profile_modifier": {
       "platform": "全平台扫描",
@@ -27,7 +27,7 @@ window.RADAR_UI_DATA = {
   "dashboard": {
     "high_priority_count": 2,
     "top_story": {
-      "title": "2026年2月28日起 OTDR listing 停用流程更新",
+      "title": "2026年2月28日起OTDR listing停用流程更新",
       "risk_type": "compliance",
       "priority": "high"
     },
@@ -40,27 +40,27 @@ window.RADAR_UI_DATA = {
     "cards": [
       {
         "rank": 1,
-        "title": "2026年2月28日起 OTDR listing 停用流程更新",
+        "title": "2026年2月28日起OTDR listing停用流程更新",
         "risk_type": "compliance",
         "priority": "high",
         "who_to_watch": "本地履约-平台主导（平台修正：全平台扫描 / 市场修正：EU / 重点看定价、补货、平台仓规则）",
-        "action": "启用shipping settings automation并配置自动处理时间以获取OTDR保护资格"
+        "action": "立即核查所有自配送listing的OTDR值，确保整体高于90%红线"
       },
       {
         "rank": 2,
         "title": "Amazon 调整卖家自发货退款处理流程",
         "risk_type": "platform",
         "priority": "medium",
-        "who_to_watch": "退款处理窗口虽从2天延至4天，但逾期自动退款且无法申请SAFE-T赔偿，单次退货损失风险增加。卖家需建立更严格的退货签收监控机制，否则遭遇丢件或配送异常时将无法追偿，直接压缩净利润空间。",
-        "action": "启用引导式退款工作流(GRW)对退货分级，设置自动提醒防止超时"
+        "who_to_watch": "未在4个日历日内处理退款将触发自动退款，导致卖家直接损失退款金额且丧失SAFE-T追偿资格（除运输丢失等特定情况），直接压缩利润空间。退货处理时效要求提高，需配置更多人力或系统自动化来应对陡增的库存评估压力，否则将频繁触发自动退款并陷入无法索赔的被动局面。",
+        "action": "立即建立退货到达预警机制，在4天窗口内强制触发人工处理流程"
       },
       {
         "rank": 3,
         "title": "美国关税退款：卖家如何申请退还已缴关税",
         "risk_type": "tariff",
         "priority": "high",
-        "who_to_watch": "【雷达研判】该事件将从 硬性运营与履约成本攀升, 前端售价与利润空间压缩, 在库积压或库容流转断裂, 全链路清关与尾程交付受阻 维度冲击 general 业务。关键细节提示：已监测到 其他地区 关税 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
-        "action": "重新测算重点 SKU 毛利率"
+        "who_to_watch": "最高法院裁定部分关税非法，受影响进口商有望获得退款，卖家需立即核查历史关税缴纳记录；关税退还将直接增加利润空间，建议财务团队重新评估Q2-Q3成本结构；此次裁决可能引发更多合规审查，卖家应保留完整的进口文件和付款凭证以备审计。",
+        "action": "核查近3年进口记录，识别可申请退款的关税缴纳项"
       },
       {
         "rank": 4,
@@ -68,23 +68,23 @@ window.RADAR_UI_DATA = {
         "risk_type": "logistics",
         "priority": "medium",
         "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "建立高价值商品退货成本监控模型"
+        "action": "增加履约和补货缓冲时间"
       },
       {
         "rank": 5,
         "title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
         "risk_type": "platform",
         "priority": "medium",
-        "who_to_watch": "卖家可通过捐赠证书获取2025年捐赠库存的官方凭证，这是税务抵扣的重要文件，但同时也意味着捐赠行为将面临更严格的税务审查。捐赠库存的估值准确性和证书保存完整性将直接影响税务合规状态，未及时获取或保存证书可能导致抵扣损失或合规风险。",
-        "action": "登录卖家后台下载2025年FBA Donations捐赠证书"
+        "who_to_watch": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+        "action": "关注平台功能变更对流量和转化的影响"
       },
       {
         "rank": 6,
-        "title": "欧盟电商合规指南 + 链接",
+        "title": "欧盟电商合规指南+链接",
         "risk_type": "compliance",
         "priority": "medium",
         "who_to_watch": "本地履约-平台主导（平台修正：全平台扫描 / 市场修正：EU / 重点看定价、补货、平台仓规则）",
-        "action": "核查在售产品是否已获取欧盟要求的CE认证和原产地标识"
+        "action": "核查认证、标签与说明书要求"
       },
       {
         "rank": 7,
@@ -92,7 +92,7 @@ window.RADAR_UI_DATA = {
         "risk_type": "compliance",
         "priority": "medium",
         "who_to_watch": "本地履约-平台主导（平台修正：全平台扫描 / 市场修正：EU / 重点看定价、补货、平台仓规则）",
-        "action": "对接出海合作中心获取柬埔寨、越南最新准入法规与税务合规清单"
+        "action": "加入省国际商会获取驻柬联络处合规指导资源"
       },
       {
         "rank": 8,
@@ -100,11 +100,11 @@ window.RADAR_UI_DATA = {
         "risk_type": "logistics",
         "priority": "medium",
         "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "立即排查当前订单中涉及9个暂停国家的订单，冻结相关listing并通知客户"
+        "action": "增加履约和补货缓冲时间"
       },
       {
         "rank": 9,
-        "title": "Doba为dropshipping卖家新增Walmart Marketplace集成",
+        "title": "Doba新增沃尔玛Marketplace一件代发集成功能",
         "risk_type": "platform",
         "priority": "medium",
         "who_to_watch": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
@@ -115,32 +115,32 @@ window.RADAR_UI_DATA = {
         "title": "Amazon 春季促销活动更新",
         "risk_type": "platform",
         "priority": "medium",
-        "who_to_watch": "亚马逊7天促销将虹吸家居健康品类流量，非参与卖家曝光量预计下降30%-50%。相关品类价格战加剧，折扣压力可能使毛利率压缩5-10个百分点。卖家需在3月20日前完成备货和定价策略调整，否则将错失整个促销窗口期。",
-        "action": "检查FBA库存确保家居健康品类充足，低于安全库存立即补货"
+        "who_to_watch": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+        "action": "关注平台功能变更对流量和转化的影响"
       },
       {
         "rank": 11,
         "title": "美国海关收紧进口商资质规则",
         "risk_type": "platform",
         "priority": "medium",
-        "who_to_watch": "IOR责任主体审查趋严将直接导致部分货物因进口实体资质问题被扣留或退运，显著增加头程物流成本和时效不确定性。若卖家继续使用不合规的IOR主体，FBA及海外仓补货计划可能面临大规模中断风险。",
-        "action": "立即梳理所有进口通道的IOR责任主体资质证明"
+        "who_to_watch": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 美国 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+        "action": "关注平台功能变更对流量和转化的影响"
       },
       {
         "rank": 12,
-        "title": "从集装箱到“最后一公里”：马士基发力包裹物流",
+        "title": "From containers to doorsteps: Maersk’s push Into parcel logistics",
         "risk_type": "logistics",
         "priority": "medium",
         "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "对比马士基新服务与现有货代报价，重新评估物流成本结构与渠道选择"
+        "action": "增加履约和补货缓冲时间"
       },
       {
         "rank": 13,
-        "title": "亚马逊将在波兰投资超过50亿欧元",
+        "title": "亚马逊将向波兰投资超过50亿欧元",
         "risk_type": "platform",
         "priority": "medium",
-        "who_to_watch": "FBA波兰新配送中心将大幅提升平台仓储容量，预计2026-2028年间欧洲卖家FBA入库等待时间可缩短30%-40%，但更多卖家将涌入波兰市场导致竞争加剧；同时波兰作为欧洲物流枢纽的崛起将压缩第三方海外仓的价格优势。",
-        "action": "评估波兰新仓启用后的入仓优先级，优化库存分配策略"
+        "who_to_watch": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+        "action": "关注平台功能变更对流量和转化的影响"
       },
       {
         "rank": 14,
@@ -155,20 +155,20 @@ window.RADAR_UI_DATA = {
         "title": "从能力到商品：Skills市场正在重塑开发者的生产方式",
         "risk_type": "platform",
         "priority": "medium",
-        "who_to_watch": "Skills市场将专业能力封装为可调用模块，跨境卖家的法律合规、财税分析等高门槛服务有望实现自动化调用，降低人力成本；但同时，掌握AI工作流设计的运营人才将成为稀缺资源，团队能力升级成本上升；此外，平台若原生集成Skills生态，原有工具链服务商可能被快速替代，需警惕被动出局风险。",
-        "action": "调研主流平台Skills生态集成进度"
+        "who_to_watch": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+        "action": "关注平台功能变更对流量和转化的影响"
       }
     ]
   },
   "today_actions": [
-    "启用shipping settings automation并配置自动处理时间以获取OTDR保护资格",
-    "启用引导式退款工作流(GRW)对退货分级，设置自动提醒防止超时",
-    "重新测算重点 SKU 毛利率"
+    "立即核查所有自配送listing的OTDR值，确保整体高于90%红线",
+    "立即建立退货到达预警机制，在4天窗口内强制触发人工处理流程",
+    "核查近3年进口记录，识别可申请退款的关税缴纳项"
   ],
   "watch_items": [
-    "在Amazon Buy Shipping或Veeqo购买OTDR protected shipping labels建立履约凭证",
-    "与物流商确认退货签收节点，确保4天窗口内完成收货确认",
-    "评估是否需要提价或压缩广告投入"
+    "为所有自配送订单启用shipping settings automation并购买OTDR保护标签",
+    "强制迁移至GRW引导式退款工作流，保留物品状态证据以备SAFE-T申诉",
+    "联系清关代理或海关经纪人，确认退款申请流程和时效"
   ],
   "hold_line": "先别一上来就把首页绑定成某个默认画像；先看事件级别，再决定切去哪个画像深挖。",
   "fulfillment_actions": [
@@ -177,11 +177,11 @@ window.RADAR_UI_DATA = {
       "path_label": "跨境直发",
       "path_description": "包裹从境外直发到目标市场，先看税费、到手价、签收和退款链路。",
       "actions": [
-        "改用能接入Amazon Buy Shipping的物流渠道以获取OTDR保护标签",
-        "保留完整物流轨迹截图作为申诉证据链"
+        "启用自动化处理时间和购买OTDR保护标签，确保每票小包均纳入保护范围",
+        "建立发货时效台账，设定85%预警阈值提前干预"
       ],
       "watchouts": [
-        "直邮小包无法使用Amazon Buy Shipping标签，必须改换物流渠道或接受OTDR裸奔风险"
+        "单票直发无批量操作空间，任一包裹超时均可触发listing失效，需100%合规"
       ],
       "modifier": "平台修正：general / 市场修正：EU"
     },
@@ -190,11 +190,11 @@ window.RADAR_UI_DATA = {
       "path_label": "本地履约-平台主导",
       "path_description": "平台托管/半托管/FBA 一类，本地仓配能缓冲一部分冲击，但要盯价格带、补货和平台规则。",
       "actions": [
-        "确保FBA库存充足避免因缺货影响OTDR统计",
-        "隔离管理FBA与自发货listing防止OTDR交叉影响"
+        "此政策仅针对seller-fulfilled，FBA卖家可忽略但建议核查账户健康度",
+        "若同时运营FBA和自配送，隔离OTDR考核避免交叉影响"
       ],
       "watchouts": [
-        "FBA有独立配送绩效体系，但全托管模式下履约责任转移需确认权责划分"
+        "全托管/FBA虽不受直接影响，但账户整体OTDR不达标可能触发平台侧信用降级"
       ],
       "modifier": "平台修正：general / 市场修正：EU"
     },
@@ -203,11 +203,11 @@ window.RADAR_UI_DATA = {
       "path_label": "本地履约-3PL/商家主导",
       "path_description": "商家自控海外仓或 3PL，本地履约更稳，但仓储、清关和尾程协同压力更高。",
       "actions": [
-        "检查店铺是否启用shipping settings automation和自动处理时间",
-        "测试购买OTDR protected shipping label的操作流程确认可用性"
+        "海外仓路径需与3PL确认发货时效SLA，超时包裹必须使用Veeqo保护标签",
+        " Seller Fulfilled Prime订单虽豁免自动化处理时间，但仍须购买保护标签"
       ],
       "watchouts": [
-        "Seller Fulfilled Prime和premium shipping虽豁免自动处理时间要求，但仍需购买保护标签"
+        "海外仓备货周期长，若目的国物流延误积压，将直接拉低OTDR且保护标签无法覆盖"
       ],
       "modifier": "平台修正：general / 市场修正：EU"
     }
@@ -271,9 +271,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "【雷达研判】该事件将从 硬性运营与履约成本攀升, 前端售价与利润空间压缩, 在库积压或库容流转断裂, 全链路清关与尾程交付受阻 维度冲击 general 业务。关键细节提示：已监测到 其他地区 关税 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+      "impact": "最高法院裁定部分关税非法，受影响进口商有望获得退款，卖家需立即核查历史关税缴纳记录；关税退还将直接增加利润空间，建议财务团队重新评估Q2-Q3成本结构；此次裁决可能引发更多合规审查，卖家应保留完整的进口文件和付款凭证以备审计。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "重新测算重点 SKU 毛利率",
+      "action": "核查近3年进口记录，识别可申请退款的关税缴纳项",
       "source": {
         "name": "EcomCrew",
         "url": "https://www.ecomcrew.com/e636-tariff-refunds/"
@@ -283,12 +283,12 @@ window.RADAR_UI_DATA = {
       "ranking_score": 212
     },
     {
-      "id": "2026年2月28日起 OTDR listing 停用流程更新",
+      "id": "2026年2月28日起OTDR listing停用流程更新",
       "category": "urgent",
       "scope": "platform",
       "display_order": 1,
-      "title": "2026年2月28日起 OTDR listing 停用流程更新",
-      "raw_title": "2026年2月28日起 OTDR listing 停用流程更新",
+      "title": "2026年2月28日起OTDR listing停用流程更新",
+      "raw_title": "2026年2月28日起OTDR listing停用流程更新",
       "summary": "**摘要（112字）：** 亚马逊将于2026年2月28日起更新OTDR（准时交货率）要求执行方式。此前OTDR低于90%将导致全部卖家自发货listing被停用；更新后，仅停用对评分影响最大的特定listing，并提供恢复指引。",
       "level": "high",
       "type": "compliance",
@@ -302,9 +302,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "2026年2月28日起，平台对OTDR不达标的处置从“一刀切”转为“精准打击”，但显著违规仍可能全量去激活listing，直接影响店铺销售和库存周转；标准配送若未启用自动化设置并购买保护标签，将失去OTDR豁免资格，卖家需重新审视履约流程；listing被去激活后可申诉自动恢复，但频繁触发将导致更严厉处罚，威胁店铺长期合规资质。",
+      "impact": "新规从\"全店listing一刀切失效\"转为\"仅失效高影响listing\"，但OTDR严重不达标仍可全店封禁。直接邮件路径单票时效压力骤增，自发货卖家若未使用保护标签将面临精准降权风险，申诉恢复流程虽简化但时效损失已不可逆。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "启用shipping settings automation并配置自动处理时间以获取OTDR保护资格",
+      "action": "立即核查所有自配送listing的OTDR值，确保整体高于90%红线",
       "source": {
         "name": "Amazon Seller Forums - News and Announcements Content",
         "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/bb76566a-c8a4-468d-bb94-d49402c83023"
@@ -366,9 +366,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "退款处理窗口虽从2天延至4天，但逾期自动退款且无法申请SAFE-T赔偿，单次退货损失风险增加。卖家需建立更严格的退货签收监控机制，否则遭遇丢件或配送异常时将无法追偿，直接压缩净利润空间。",
+      "impact": "未在4个日历日内处理退款将触发自动退款，导致卖家直接损失退款金额且丧失SAFE-T追偿资格（除运输丢失等特定情况），直接压缩利润空间。退货处理时效要求提高，需配置更多人力或系统自动化来应对陡增的库存评估压力，否则将频繁触发自动退款并陷入无法索赔的被动局面。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "启用引导式退款工作流(GRW)对退货分级，设置自动提醒防止超时",
+      "action": "立即建立退货到达预警机制，在4天窗口内强制触发人工处理流程",
       "source": {
         "name": "Amazon Seller Forums - News and Announcements Content",
         "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/11268c92-5a5c-4125-9e59-49e433d0d151"
@@ -463,9 +463,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "高价值商品退货标签成本将由卖家全额承担，单件退货物流成本可能增加5-15美元，直接压缩品类利润空间10%-20%。退款周期从14天缩短至7天，加速资金回笼但也意味着退货处理窗口收窄，运营容错率降低。SAFE-T赔偿机制虽提供救济途径，但申请流程复杂且审批周期不确定，需提前建立完善的证据留存体系。",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 美国 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "建立高价值商品退货成本监控模型",
+      "action": "增加履约和补货缓冲时间",
       "source": {
         "name": "Amazon Seller Forums - News and Announcements Content",
         "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/c1eae42b-ead4-4c63-a007-aefbca44a867"
@@ -529,9 +529,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "卖家可通过捐赠证书获取2025年捐赠库存的官方凭证，这是税务抵扣的重要文件，但同时也意味着捐赠行为将面临更严格的税务审查。捐赠库存的估值准确性和证书保存完整性将直接影响税务合规状态，未及时获取或保存证书可能导致抵扣损失或合规风险。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "登录卖家后台下载2025年FBA Donations捐赠证书",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "Amazon Seller News / Announcements Content",
         "url": "https://sell.amazon.com/blog/announcements/fba-donation-certificate"
@@ -627,9 +627,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "carrier-official",
       "source_priority": "P1",
-      "impact": "美国邮政暂停百慕大等9国国际邮件收寄，直接影响小包直发和邮政渠道卖家的货物交付。依赖USPS国际小包或EMS的卖家面临无法发货风险，涉及这些目的国的在途货物可能被退回或滞留。对于半托管和海外仓卖家，以色列、伊拉克等国的配送网络可能出现中断，导致库存积压或客户投诉上升。",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 其他地区 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即排查当前订单中涉及9个暂停国家的订单，冻结相关listing并通知客户",
+      "action": "增加履约和补货缓冲时间",
       "source": {
         "name": "USPS International Service Alerts Content",
         "url": "https://about.usps.com/newsroom/service-alerts/international/"
@@ -658,9 +658,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "IOR责任主体审查趋严将直接导致部分货物因进口实体资质问题被扣留或退运，显著增加头程物流成本和时效不确定性。若卖家继续使用不合规的IOR主体，FBA及海外仓补货计划可能面临大规模中断风险。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 美国 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即梳理所有进口通道的IOR责任主体资质证明",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "EcomCrew",
         "url": "https://www.ecomcrew.com/u-s-customs-tightens-importer-of-record-rules/"
@@ -670,12 +670,12 @@ window.RADAR_UI_DATA = {
       "ranking_score": 102
     },
     {
-      "id": "欧盟电商合规指南 + 链接",
+      "id": "欧盟电商合规指南+链接",
       "category": "daily",
       "scope": "global",
       "display_order": 6,
-      "title": "欧盟电商合规指南 + 链接",
-      "raw_title": "欧盟电商合规指南 + 链接",
+      "title": "欧盟电商合规指南+链接",
+      "raw_title": "欧盟电商合规指南+链接",
       "summary": "欧盟电商合规指南：在欧盟销售不仅仅是开店、添加支付方式和发货。想在欧盟合法运营的品牌必须满足一系列合规要求，包括VAT税务、产品安全、消费者权益保护、数据隐私（GDPR）等。卖家需确保店铺和业务流程符合欧盟各成员国的法规标准。",
       "level": "medium",
       "type": "compliance",
@@ -689,9 +689,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "欧盟各成员国正加强对电商平台商品合规性审查，未通过CE认证或未完成VAT注册的产品面临强制下架和扣货风险，跨境卖家利润空间将被合规成本压缩。建议立即启动全链路合规诊断，避免因单点违规导致多市场连锁下架。",
+      "impact": "【雷达研判】该事件将从 强合规门槛导致商品无预警下架, 在库积压或库容流转断裂, 前端售价与利润空间压缩 维度冲击 general 业务。关键细节提示：已监测到 欧洲 合规 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "核查在售产品是否已获取欧盟要求的CE认证和原产地标识",
+      "action": "核查认证、标签与说明书要求",
       "source": {
         "name": "Cross-Border Magazine",
         "url": "https://cross-border-magazine.com/eu-e-commerce-compliance-guide/"
@@ -720,9 +720,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "该中心的启动意味着企业出海东盟（柬埔寨、越南等）将获得官方合规支持渠道，但免签政策落地前需提前完成企业资质备案与本土化合规布局。对于计划布局东南亚市场的卖家，当前是建立合规体系的关键窗口期，错过可能导致2026年市场准入被动。",
+      "impact": "新华出海合作中心聚焦合规管理，品牌建设门槛提高，未备案企业面临清退风险。柬埔寨免签政策与越南市场开放释放增量，但本土化运营成本上升15%-20%。海外中心资源向平台会员倾斜，中小卖家议价能力进一步削弱。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "对接出海合作中心获取柬埔寨、越南最新准入法规与税务合规清单",
+      "action": "加入省国际商会获取驻柬联络处合规指导资源",
       "source": {
         "name": "36氪科技",
         "url": "https://36kr.com/p/3729511818001799?f=rss"
@@ -732,12 +732,12 @@ window.RADAR_UI_DATA = {
       "ranking_score": 132
     },
     {
-      "id": "Doba为dropshipping卖家新增Walmart Marketplace集成",
+      "id": "Doba新增沃尔玛Marketplace一件代发集成功能",
       "category": "daily",
       "scope": "platform",
       "display_order": 9,
-      "title": "Doba为dropshipping卖家新增Walmart Marketplace集成",
-      "raw_title": "Doba为dropshipping卖家新增Walmart Marketplace集成",
+      "title": "Doba新增沃尔玛Marketplace一件代发集成功能",
+      "raw_title": "Doba新增沃尔玛Marketplace一件代发集成功能",
       "summary": "Doba平台于3月18日宣布与Walmart Marketplace完成技术对接，为dropshipping卖家提供自动化解决方案。集成后，卖家可同步产品listing、实时更新库存、自动处理订单，采用OAuth 2.0认证保障安全。",
       "level": "medium",
       "type": "platform",
@@ -782,9 +782,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "亚马逊7天促销将虹吸家居健康品类流量，非参与卖家曝光量预计下降30%-50%。相关品类价格战加剧，折扣压力可能使毛利率压缩5-10个百分点。卖家需在3月20日前完成备货和定价策略调整，否则将错失整个促销窗口期。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "检查FBA库存确保家居健康品类充足，低于安全库存立即补货",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "EcomCrew",
         "url": "https://www.ecomcrew.com/amazons-big-spring-sale-targets-home-and-wellness-shoppers-with-seven-days-of-deals/"
@@ -794,12 +794,12 @@ window.RADAR_UI_DATA = {
       "ranking_score": 102
     },
     {
-      "id": "从集装箱到“最后一公里”：马士基发力包裹物流",
+      "id": "From containers to doorsteps: Maersk’s push Into parcel logistics",
       "category": "daily",
       "scope": "global",
       "display_order": 12,
-      "title": "从集装箱到“最后一公里”：马士基发力包裹物流",
-      "raw_title": "从集装箱到“最后一公里”：马士基发力包裹物流",
+      "title": "**从集装箱到送货上门：马士基进军包裹物流领域**",
+      "raw_title": "From containers to doorsteps: Maersk’s push Into parcel logistics",
       "summary": "马士基从集装箱转向快递物流：海运巨头利用现有仓储网络和多承运商资源，实现“一票、一单、一号”全链路配送，覆盖美国全境门到门服务。",
       "level": "medium",
       "type": "logistics",
@@ -813,9 +813,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "马士基凭借海运+末端配送垂直整合，可能压缩传统货代中间环节利润空间，卖家物流成本结构面临重塑；其「一票到底」模式将提升跨境追踪透明度要求，倒逼卖家订单系统升级；多承运商网络统一管理标准若成行业标杆，中间服务商议价能力将被进一步削弱。",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 其他地区 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "对比马士基新服务与现有货代报价，重新评估物流成本结构与渠道选择",
+      "action": "增加履约和补货缓冲时间",
       "source": {
         "name": "FreightWaves",
         "url": "https://www.freightwaves.com/news/maersk-last-mile-delivery"
@@ -825,12 +825,12 @@ window.RADAR_UI_DATA = {
       "ranking_score": 97
     },
     {
-      "id": "亚马逊将在波兰投资超过50亿欧元",
+      "id": "亚马逊将向波兰投资超过50亿欧元",
       "category": "daily",
       "scope": "platform",
       "display_order": 13,
-      "title": "亚马逊将在波兰投资超过50亿欧元",
-      "raw_title": "亚马逊将在波兰投资超过50亿欧元",
+      "title": "亚马逊将向波兰投资超过50亿欧元",
+      "raw_title": "亚马逊将向波兰投资超过50亿欧元",
       "summary": "亚马逊将在2024至2028年间向波兰投资超50亿欧元，连同2012至2025年间已投入的100亿欧元，总投资额巨大。资金将部分用于新建Fulfillment Center。此举将进一步强化亚马逊在东欧的物流网络布局，对在该区域有业务布局或使用FBA服务的卖家可能带来配送效率提升",
       "level": "medium",
       "type": "platform",
@@ -844,9 +844,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "FBA波兰新配送中心将大幅提升平台仓储容量，预计2026-2028年间欧洲卖家FBA入库等待时间可缩短30%-40%，但更多卖家将涌入波兰市场导致竞争加剧；同时波兰作为欧洲物流枢纽的崛起将压缩第三方海外仓的价格优势。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "评估波兰新仓启用后的入仓优先级，优化库存分配策略",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "Ecommerce News EU",
         "url": "https://ecommercenews.eu/amazon-to-invest-over-5-billion-euros-in-poland/"
@@ -875,9 +875,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "Skills市场将专业能力封装为可调用模块，跨境卖家的法律合规、财税分析等高门槛服务有望实现自动化调用，降低人力成本；但同时，掌握AI工作流设计的运营人才将成为稀缺资源，团队能力升级成本上升；此外，平台若原生集成Skills生态，原有工具链服务商可能被快速替代，需警惕被动出局风险。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "调研主流平台Skills生态集成进度",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "36氪科技",
         "url": "https://36kr.com/p/3730644353286150?f=rss"
@@ -946,9 +946,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "【雷达研判】该事件将从 硬性运营与履约成本攀升, 前端售价与利润空间压缩, 在库积压或库容流转断裂, 全链路清关与尾程交付受阻 维度冲击 general 业务。关键细节提示：已监测到 其他地区 关税 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+      "impact": "最高法院裁定部分关税非法，受影响进口商有望获得退款，卖家需立即核查历史关税缴纳记录；关税退还将直接增加利润空间，建议财务团队重新评估Q2-Q3成本结构；此次裁决可能引发更多合规审查，卖家应保留完整的进口文件和付款凭证以备审计。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "重新测算重点 SKU 毛利率",
+      "action": "核查近3年进口记录，识别可申请退款的关税缴纳项",
       "source": {
         "name": "EcomCrew",
         "url": "https://www.ecomcrew.com/e636-tariff-refunds/"
@@ -960,12 +960,12 @@ window.RADAR_UI_DATA = {
   ],
   "urgent_events": [
     {
-      "id": "2026年2月28日起 OTDR listing 停用流程更新",
+      "id": "2026年2月28日起OTDR listing停用流程更新",
       "category": "urgent",
       "scope": "platform",
       "display_order": 1,
-      "title": "2026年2月28日起 OTDR listing 停用流程更新",
-      "raw_title": "2026年2月28日起 OTDR listing 停用流程更新",
+      "title": "2026年2月28日起OTDR listing停用流程更新",
+      "raw_title": "2026年2月28日起OTDR listing停用流程更新",
       "summary": "**摘要（112字）：** 亚马逊将于2026年2月28日起更新OTDR（准时交货率）要求执行方式。此前OTDR低于90%将导致全部卖家自发货listing被停用；更新后，仅停用对评分影响最大的特定listing，并提供恢复指引。",
       "level": "high",
       "type": "compliance",
@@ -979,9 +979,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "2026年2月28日起，平台对OTDR不达标的处置从“一刀切”转为“精准打击”，但显著违规仍可能全量去激活listing，直接影响店铺销售和库存周转；标准配送若未启用自动化设置并购买保护标签，将失去OTDR豁免资格，卖家需重新审视履约流程；listing被去激活后可申诉自动恢复，但频繁触发将导致更严厉处罚，威胁店铺长期合规资质。",
+      "impact": "新规从\"全店listing一刀切失效\"转为\"仅失效高影响listing\"，但OTDR严重不达标仍可全店封禁。直接邮件路径单票时效压力骤增，自发货卖家若未使用保护标签将面临精准降权风险，申诉恢复流程虽简化但时效损失已不可逆。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "启用shipping settings automation并配置自动处理时间以获取OTDR保护资格",
+      "action": "立即核查所有自配送listing的OTDR值，确保整体高于90%红线",
       "source": {
         "name": "Amazon Seller Forums - News and Announcements Content",
         "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/bb76566a-c8a4-468d-bb94-d49402c83023"
@@ -1043,9 +1043,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "退款处理窗口虽从2天延至4天，但逾期自动退款且无法申请SAFE-T赔偿，单次退货损失风险增加。卖家需建立更严格的退货签收监控机制，否则遭遇丢件或配送异常时将无法追偿，直接压缩净利润空间。",
+      "impact": "未在4个日历日内处理退款将触发自动退款，导致卖家直接损失退款金额且丧失SAFE-T追偿资格（除运输丢失等特定情况），直接压缩利润空间。退货处理时效要求提高，需配置更多人力或系统自动化来应对陡增的库存评估压力，否则将频繁触发自动退款并陷入无法索赔的被动局面。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "启用引导式退款工作流(GRW)对退货分级，设置自动提醒防止超时",
+      "action": "立即建立退货到达预警机制，在4天窗口内强制触发人工处理流程",
       "source": {
         "name": "Amazon Seller Forums - News and Announcements Content",
         "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/11268c92-5a5c-4125-9e59-49e433d0d151"
@@ -1140,9 +1140,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "高价值商品退货标签成本将由卖家全额承担，单件退货物流成本可能增加5-15美元，直接压缩品类利润空间10%-20%。退款周期从14天缩短至7天，加速资金回笼但也意味着退货处理窗口收窄，运营容错率降低。SAFE-T赔偿机制虽提供救济途径，但申请流程复杂且审批周期不确定，需提前建立完善的证据留存体系。",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 美国 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "建立高价值商品退货成本监控模型",
+      "action": "增加履约和补货缓冲时间",
       "source": {
         "name": "Amazon Seller Forums - News and Announcements Content",
         "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/c1eae42b-ead4-4c63-a007-aefbca44a867"
@@ -1206,9 +1206,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "platform-official",
       "source_priority": "P0",
-      "impact": "卖家可通过捐赠证书获取2025年捐赠库存的官方凭证，这是税务抵扣的重要文件，但同时也意味着捐赠行为将面临更严格的税务审查。捐赠库存的估值准确性和证书保存完整性将直接影响税务合规状态，未及时获取或保存证书可能导致抵扣损失或合规风险。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "登录卖家后台下载2025年FBA Donations捐赠证书",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "Amazon Seller News / Announcements Content",
         "url": "https://sell.amazon.com/blog/announcements/fba-donation-certificate"
@@ -1304,9 +1304,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "official-content",
       "source_type": "carrier-official",
       "source_priority": "P1",
-      "impact": "美国邮政暂停百慕大等9国国际邮件收寄，直接影响小包直发和邮政渠道卖家的货物交付。依赖USPS国际小包或EMS的卖家面临无法发货风险，涉及这些目的国的在途货物可能被退回或滞留。对于半托管和海外仓卖家，以色列、伊拉克等国的配送网络可能出现中断，导致库存积压或客户投诉上升。",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 其他地区 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即排查当前订单中涉及9个暂停国家的订单，冻结相关listing并通知客户",
+      "action": "增加履约和补货缓冲时间",
       "source": {
         "name": "USPS International Service Alerts Content",
         "url": "https://about.usps.com/newsroom/service-alerts/international/"
@@ -1335,9 +1335,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "IOR责任主体审查趋严将直接导致部分货物因进口实体资质问题被扣留或退运，显著增加头程物流成本和时效不确定性。若卖家继续使用不合规的IOR主体，FBA及海外仓补货计划可能面临大规模中断风险。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 美国 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即梳理所有进口通道的IOR责任主体资质证明",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "EcomCrew",
         "url": "https://www.ecomcrew.com/u-s-customs-tightens-importer-of-record-rules/"
@@ -1349,12 +1349,12 @@ window.RADAR_UI_DATA = {
   ],
   "daily_events": [
     {
-      "id": "欧盟电商合规指南 + 链接",
+      "id": "欧盟电商合规指南+链接",
       "category": "daily",
       "scope": "global",
       "display_order": 6,
-      "title": "欧盟电商合规指南 + 链接",
-      "raw_title": "欧盟电商合规指南 + 链接",
+      "title": "欧盟电商合规指南+链接",
+      "raw_title": "欧盟电商合规指南+链接",
       "summary": "欧盟电商合规指南：在欧盟销售不仅仅是开店、添加支付方式和发货。想在欧盟合法运营的品牌必须满足一系列合规要求，包括VAT税务、产品安全、消费者权益保护、数据隐私（GDPR）等。卖家需确保店铺和业务流程符合欧盟各成员国的法规标准。",
       "level": "medium",
       "type": "compliance",
@@ -1368,9 +1368,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "欧盟各成员国正加强对电商平台商品合规性审查，未通过CE认证或未完成VAT注册的产品面临强制下架和扣货风险，跨境卖家利润空间将被合规成本压缩。建议立即启动全链路合规诊断，避免因单点违规导致多市场连锁下架。",
+      "impact": "【雷达研判】该事件将从 强合规门槛导致商品无预警下架, 在库积压或库容流转断裂, 前端售价与利润空间压缩 维度冲击 general 业务。关键细节提示：已监测到 欧洲 合规 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "核查在售产品是否已获取欧盟要求的CE认证和原产地标识",
+      "action": "核查认证、标签与说明书要求",
       "source": {
         "name": "Cross-Border Magazine",
         "url": "https://cross-border-magazine.com/eu-e-commerce-compliance-guide/"
@@ -1399,9 +1399,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "该中心的启动意味着企业出海东盟（柬埔寨、越南等）将获得官方合规支持渠道，但免签政策落地前需提前完成企业资质备案与本土化合规布局。对于计划布局东南亚市场的卖家，当前是建立合规体系的关键窗口期，错过可能导致2026年市场准入被动。",
+      "impact": "新华出海合作中心聚焦合规管理，品牌建设门槛提高，未备案企业面临清退风险。柬埔寨免签政策与越南市场开放释放增量，但本土化运营成本上升15%-20%。海外中心资源向平台会员倾斜，中小卖家议价能力进一步削弱。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "对接出海合作中心获取柬埔寨、越南最新准入法规与税务合规清单",
+      "action": "加入省国际商会获取驻柬联络处合规指导资源",
       "source": {
         "name": "36氪科技",
         "url": "https://36kr.com/p/3729511818001799?f=rss"
@@ -1411,12 +1411,12 @@ window.RADAR_UI_DATA = {
       "ranking_score": 132
     },
     {
-      "id": "Doba为dropshipping卖家新增Walmart Marketplace集成",
+      "id": "Doba新增沃尔玛Marketplace一件代发集成功能",
       "category": "daily",
       "scope": "platform",
       "display_order": 9,
-      "title": "Doba为dropshipping卖家新增Walmart Marketplace集成",
-      "raw_title": "Doba为dropshipping卖家新增Walmart Marketplace集成",
+      "title": "Doba新增沃尔玛Marketplace一件代发集成功能",
+      "raw_title": "Doba新增沃尔玛Marketplace一件代发集成功能",
       "summary": "Doba平台于3月18日宣布与Walmart Marketplace完成技术对接，为dropshipping卖家提供自动化解决方案。集成后，卖家可同步产品listing、实时更新库存、自动处理订单，采用OAuth 2.0认证保障安全。",
       "level": "medium",
       "type": "platform",
@@ -1461,9 +1461,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "亚马逊7天促销将虹吸家居健康品类流量，非参与卖家曝光量预计下降30%-50%。相关品类价格战加剧，折扣压力可能使毛利率压缩5-10个百分点。卖家需在3月20日前完成备货和定价策略调整，否则将错失整个促销窗口期。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "检查FBA库存确保家居健康品类充足，低于安全库存立即补货",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "EcomCrew",
         "url": "https://www.ecomcrew.com/amazons-big-spring-sale-targets-home-and-wellness-shoppers-with-seven-days-of-deals/"
@@ -1473,12 +1473,12 @@ window.RADAR_UI_DATA = {
       "ranking_score": 102
     },
     {
-      "id": "从集装箱到“最后一公里”：马士基发力包裹物流",
+      "id": "From containers to doorsteps: Maersk’s push Into parcel logistics",
       "category": "daily",
       "scope": "global",
       "display_order": 12,
-      "title": "从集装箱到“最后一公里”：马士基发力包裹物流",
-      "raw_title": "从集装箱到“最后一公里”：马士基发力包裹物流",
+      "title": "**从集装箱到送货上门：马士基进军包裹物流领域**",
+      "raw_title": "From containers to doorsteps: Maersk’s push Into parcel logistics",
       "summary": "马士基从集装箱转向快递物流：海运巨头利用现有仓储网络和多承运商资源，实现“一票、一单、一号”全链路配送，覆盖美国全境门到门服务。",
       "level": "medium",
       "type": "logistics",
@@ -1492,9 +1492,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "马士基凭借海运+末端配送垂直整合，可能压缩传统货代中间环节利润空间，卖家物流成本结构面临重塑；其「一票到底」模式将提升跨境追踪透明度要求，倒逼卖家订单系统升级；多承运商网络统一管理标准若成行业标杆，中间服务商议价能力将被进一步削弱。",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 其他地区 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "对比马士基新服务与现有货代报价，重新评估物流成本结构与渠道选择",
+      "action": "增加履约和补货缓冲时间",
       "source": {
         "name": "FreightWaves",
         "url": "https://www.freightwaves.com/news/maersk-last-mile-delivery"
@@ -1504,12 +1504,12 @@ window.RADAR_UI_DATA = {
       "ranking_score": 97
     },
     {
-      "id": "亚马逊将在波兰投资超过50亿欧元",
+      "id": "亚马逊将向波兰投资超过50亿欧元",
       "category": "daily",
       "scope": "platform",
       "display_order": 13,
-      "title": "亚马逊将在波兰投资超过50亿欧元",
-      "raw_title": "亚马逊将在波兰投资超过50亿欧元",
+      "title": "亚马逊将向波兰投资超过50亿欧元",
+      "raw_title": "亚马逊将向波兰投资超过50亿欧元",
       "summary": "亚马逊将在2024至2028年间向波兰投资超50亿欧元，连同2012至2025年间已投入的100亿欧元，总投资额巨大。资金将部分用于新建Fulfillment Center。此举将进一步强化亚马逊在东欧的物流网络布局，对在该区域有业务布局或使用FBA服务的卖家可能带来配送效率提升",
       "level": "medium",
       "type": "platform",
@@ -1523,9 +1523,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "FBA波兰新配送中心将大幅提升平台仓储容量，预计2026-2028年间欧洲卖家FBA入库等待时间可缩短30%-40%，但更多卖家将涌入波兰市场导致竞争加剧；同时波兰作为欧洲物流枢纽的崛起将压缩第三方海外仓的价格优势。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "评估波兰新仓启用后的入仓优先级，优化库存分配策略",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "Ecommerce News EU",
         "url": "https://ecommercenews.eu/amazon-to-invest-over-5-billion-euros-in-poland/"
@@ -1554,9 +1554,9 @@ window.RADAR_UI_DATA = {
       "source_layer": "base-feed",
       "source_type": "",
       "source_priority": "",
-      "impact": "Skills市场将专业能力封装为可调用模块，跨境卖家的法律合规、财税分析等高门槛服务有望实现自动化调用，降低人力成本；但同时，掌握AI工作流设计的运营人才将成为稀缺资源，团队能力升级成本上升；此外，平台若原生集成Skills生态，原有工具链服务商可能被快速替代，需警惕被动出局风险。",
+      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "调研主流平台Skills生态集成进度",
+      "action": "关注平台功能变更对流量和转化的影响",
       "source": {
         "name": "36氪科技",
         "url": "https://36kr.com/p/3730644353286150?f=rss"
