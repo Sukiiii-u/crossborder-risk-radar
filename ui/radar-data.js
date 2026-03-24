@@ -709,8 +709,8 @@ window.RADAR_UI_DATA = {
       "raw_title": "Parcelhero推出行业领先实时追踪及简化下单功能",
       "summary": "英国快递比价平台Parcelhero推出平台重大升级第一阶段，上线AI智能追踪功能、行业最快预订界面及多项智能发货功能，助力跨境卖家实时掌控物流动态、简化发货流程。",
       "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
+      "type": "platform",
+      "typeLabel": "平台动态",
       "platforms": [
         "跨境通用"
       ],
@@ -767,7 +767,7 @@ window.RADAR_UI_DATA = {
       "category": "daily",
       "scope": "global",
       "display_order": 11,
-      "title": "该政策变动可能加剧美国国内港口间运输的竞争",
+      "title": "特朗普暂停航运法可能损害美国旗承运人",
       "raw_title": "How Trump’s pause of shipping law could hurt U.S.-flag carrier...",
       "summary": "特朗普暂停琼斯法案，禁止外籍船只从事美国国内港口间运输，致美国船旗承运人担忧市场份额流失及国家安全风险，跨境卖家需关注美国物流成本变化。",
       "level": "medium",
@@ -1419,8 +1419,8 @@ window.RADAR_UI_DATA = {
       "raw_title": "Parcelhero推出行业领先实时追踪及简化下单功能",
       "summary": "英国快递比价平台Parcelhero推出平台重大升级第一阶段，上线AI智能追踪功能、行业最快预订界面及多项智能发货功能，助力跨境卖家实时掌控物流动态、简化发货流程。",
       "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
+      "type": "platform",
+      "typeLabel": "平台动态",
       "platforms": [
         "跨境通用"
       ],
@@ -1477,7 +1477,7 @@ window.RADAR_UI_DATA = {
       "category": "daily",
       "scope": "global",
       "display_order": 11,
-      "title": "该政策变动可能加剧美国国内港口间运输的竞争",
+      "title": "特朗普暂停航运法可能损害美国旗承运人",
       "raw_title": "How Trump’s pause of shipping law could hurt U.S.-flag carrier...",
       "summary": "特朗普暂停琼斯法案，禁止外籍船只从事美国国内港口间运输，致美国船旗承运人担忧市场份额流失及国家安全风险，跨境卖家需关注美国物流成本变化。",
       "level": "medium",
