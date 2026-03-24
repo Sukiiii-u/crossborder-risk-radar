@@ -37,6 +37,21 @@ def localize_title(raw_title: str, source_label: str = "") -> str:
             return zh
 
     if looks_chinese(title) and "公告更新" not in title and "规则更新" not in title:
+        # 中文标题质量后处理
+        # 1. 去掉编辑标注（如 '+ 链接'、'+ 原文'）
+        title = re.sub(r'\s*[+＋]\s*(链接|原文|来源|详情|link).*$', '', title, flags=re.IGNORECASE)
+        # 2. 去掉冗余后缀（如 '通知公告'、'变更通知'—保留括号内的日期信息）
+        title = re.sub(r'通知公告$', '', title)
+        # 3. 截断超长标题（保持语义完整）
+        if len(title) > 40:
+            for sep in ["，", "；", "—", "：", " - "]:
+                pos = title.rfind(sep, 0, 40)
+                if pos > 15:
+                    title = title[:pos]
+                    break
+            else:
+                if len(title) > 45:
+                    title = title[:42] + "…"
         return title
 
     patterns: list[tuple[str, str]] = [
