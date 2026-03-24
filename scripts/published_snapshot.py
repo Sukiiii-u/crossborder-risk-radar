@@ -9,8 +9,7 @@ from typing import Any
 
 from runtime_paths import POLICY_WATCH_FILE
 from zh_localization import localize_summary, localize_title, looks_chinese
-from analyze_event import detect_event_type
-
+from analyze_event import detect_event_type, detect_event_type_with_scores  # noqa: E402
 TYPE_LABELS = {
     "customs": "海关查验",
     "tariff": "关税与税务",
@@ -27,27 +26,19 @@ TYPE_LABELS = {
 def _normalize_event(item: dict[str, Any], fallback_index: int) -> dict[str, Any]:
     raw_type = str(item.get("event_type") or item.get("primary_topic") or "policy")
 
-    # 二次校验：用关键词检测纠正 LLM 可能给出的错误分类（双向校验）
+    # 二次校验：关键词置信度 vs LLM 分类（通用机制，覆盖所有方向）
+    # 原理：当关键词检测对某类型高度确信（命中 ≥ 2）且 LLM 分类在该类型上命中极低时，
+    #        信任关键词检测结果。这从根源上避免了逐个方向加规则的"打地鼠"问题。
     title_text = str(item.get("raw_event_title") or item.get("event_title") or "")
     summary_text = str(item.get("event_summary") or item.get("summary") or "")
-    combined_text = f"{title_text} {summary_text}".lower()
-    keyword_type = detect_event_type(f"{title_text} {summary_text}")
+    keyword_type, keyword_scores = detect_event_type_with_scores(f"{title_text} {summary_text}")
 
-    # 方向1：物流/关税/合规文章被 LLM 误标为 platform
-    if raw_type == "platform" and keyword_type in {"logistics", "tariff", "compliance"}:
-        raw_type = keyword_type
-
-    # 方向2：平台促销/运营活动被 LLM 误标为 logistics
-    _platform_signals = ["deals", "sale", "促销", "清货", "outlet", "佣金", "commission",
-                         "流量", "曝光", "listing", "评论", "review", "广告", "竞价",
-                         "捐赠", "donation", "prime day", "spring sale", "black friday"]
-    _logistics_signals = ["freight", "shipping", "port", "航运", "港口", "海运", "空运",
-                          "运价", "舱位", "承运", "container", "carrier", "vessel"]
-    if raw_type == "logistics":
-        platform_hits = sum(1 for kw in _platform_signals if kw in combined_text)
-        logistics_hits = sum(1 for kw in _logistics_signals if kw in combined_text)
-        if platform_hits >= 2 and logistics_hits == 0:
-            raw_type = "platform"
+    if keyword_type != raw_type:
+        kw_best_score = keyword_scores.get(keyword_type, 0)
+        kw_llm_score = keyword_scores.get(raw_type, 0)
+        # 关键词对最佳类型命中 ≥ 2，且领先 LLM 类型 ≥ 2 个命中 → 覆盖 LLM
+        if kw_best_score >= 2 and (kw_best_score - kw_llm_score) >= 2:
+            raw_type = keyword_type
     level = str(item.get("risk_level") or "medium")
     source_entries = item.get("sources") or []
     first_source = source_entries[0] if source_entries and isinstance(source_entries[0], dict) else {}

@@ -153,13 +153,18 @@ def clean_content(content: str) -> str:
 
 
 def detect_event_type(text: str) -> str:
+    best, _ = detect_event_type_with_scores(text)
+    return best
+
+
+def detect_event_type_with_scores(text: str) -> tuple[str, dict[str, int]]:
+    """返回 (最佳分类, {各类型: 命中关键词数})，供二次校验使用。"""
     lower = text.lower()
     scores: dict[str, int] = {}
     for event_type, words in EVENT_TYPE_KEYWORDS.items():
         scores[event_type] = sum(1 for word in words if signal_in_text(word, lower))
     best = max(scores, key=lambda k: scores[k])
-    # 无关键词命中时兜底为 policy（通用经营信号），而非 platform
-    return best if scores[best] > 0 else "policy"
+    return (best if scores[best] > 0 else "policy", scores)
 
 
 def detect_region(text: str, region_hint: str | None = None) -> str:
