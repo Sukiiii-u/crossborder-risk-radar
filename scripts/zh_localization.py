@@ -62,7 +62,6 @@ def localize_title(raw_title: str, source_label: str = "") -> str:
         (r"clear excess inventory.*big spring sale", "Amazon Big Spring Sale 清库存窗口期即将开启"),
         (r"spring sale", "Amazon 春季促销活动更新"),
         (r"supplyhouse.*fulfillment|supplyhouse.*distribution|supplyhouse.*expand", "SupplyHouse 扩建仓储中心，物流版图扩张"),
-        (r"distribution center|distribution operations|fulfillment center", "跨境仓储与分销网络动态"),
         (r"samsara.*motive|motive.*samsara|marketing claims.*arbitration", "物流科技公司广告合规纠纷"),
         (r"international service alert", "USPS 国际线路服务告警"),
         (r"international return.*surge|return.*e-?commerce.*merchant", "国际退货潮涌动，电商卖家面临成本攀升"),

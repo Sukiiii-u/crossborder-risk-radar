@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """统一的 LLM 调用封装层。
 
-默认使用 MiniMax-M2.5 模型，支持 OpenAI 兼容协议。
+默认模型和 API 地址通过配置文件指定，支持 Anthropic Messages 协议。
 配置读取优先级：环境变量 > configs/llm_config.json > 默认值。
 内置重试（3 次指数退避）和超时（30s）。
 LLM 不可用时自动回退到 fallback 结果。
@@ -139,7 +139,7 @@ def chat_completion(
             req = urllib.request.Request(url, data=payload, headers=headers, method="POST")
             with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
                 body = json.loads(resp.read().decode("utf-8"))
-            # MiniMax Anthropic 响应：content 数组可能含 thinking + text 块
+            # Anthropic 格式响应：content 数组可能含 thinking + text 块
             content_blocks = body.get("content", [])
             for block in content_blocks:
                 if isinstance(block, dict) and block.get("type") == "text":

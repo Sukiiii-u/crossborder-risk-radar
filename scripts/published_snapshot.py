@@ -17,6 +17,7 @@ TYPE_LABELS = {
     "logistics": "物流运输",
     "compliance": "合规标准",
     "environment": "合规标准",
+    "holiday": "旺季与促销",
 }
 
 

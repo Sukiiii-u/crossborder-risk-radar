@@ -15,13 +15,40 @@ logger = logging.getLogger("analyze_event")
 SCRIPT_DIR = _SCRIPT_DIR
 
 EVENT_TYPE_KEYWORDS = {
-    "tariff": ["tariff", "关税", "进口税", "trade policy", "加税", "额外费用", "征收费用", "小包税", "免税", "低价值包裹", "税费", "cbam", "carbon border"],
+    "tariff": [
+        "tariff", "tariffs", "关税", "进口税", "trade policy", "trade war", "加税", "额外费用",
+        "征收费用", "小包税", "免税", "低价值包裹", "税费", "cbam", "carbon border",
+        "duties", "duty", "nearshoring", "reshoring", "近岸", "回流", "贸易战",
+        "supply chain cost", "供应链成本", "anti-dumping", "反倾销",
+    ],
     "environment": ["环保", "packaging", "包装", "plastic", "sustainability", "可回收"],
-    "compliance": ["compliance", "合规", "regulation", "认证", "监管", "标签要求", "counterfeit", "假冒", "fake", "伪冒", "知识产权", "trademark", "品牌侵权", "seized", "扣押", "走私", "违禁品"],
-    "logistics": ["logistics", "shipping", "port", "物流", "航运", "延误", "港口", "罢工", "locomotive", "列车", "铁路"],
+    "compliance": [
+        "compliance", "合规", "regulation", "认证", "监管", "标签要求",
+        "counterfeit", "假冒", "fake", "伪冒", "知识产权", "trademark", "品牌侵权",
+        "seized", "扣押", "走私", "违禁品", "recall", "召回", "禁售",
+    ],
+    "logistics": [
+        "logistics", "shipping", "port", "物流", "航运", "延误", "港口", "罢工",
+        "locomotive", "列车", "铁路",
+        # 补充缺失的高频物流词
+        "freight", "cargo", "container", "warehouse", "warehousing", "trucking",
+        "trailer", "supply chain", "carrier", "ocean", "vessel", "transit",
+        "delivery", "fulfillment", "surcharge", "rate",
+        "货运", "仓储", "运输", "集装箱", "承运", "舱位", "运价", "附加费", "清关",
+        "头程", "尾程", "时效", "航线", "海运", "空运", "陆运",
+    ],
     "holiday": ["holiday", "节假日", "旺季", "peak season", "促销季"],
-    "policy": ["立法", "法案", "法规", "禁令", "ban", "制裁", "sanction", "行政令", "executive order", "carnet", "manifest"],
-    "platform": ["launch", "推出", "上线", "新功能", "feature", "update", "升级", "alexa", "algorithm", "算法", "佣金", "commission", "fee change", "marketplace", "seller central", "卖家中心", "政策", "公告", "规则", "措施"],
+    "policy": [
+        "立法", "法案", "法规", "禁令", "ban", "制裁", "sanction",
+        "行政令", "executive order", "carnet", "manifest",
+        "legislation", "act", "directive",
+    ],
+    "platform": [
+        "launch", "推出", "上线", "新功能", "feature", "update", "升级",
+        "alexa", "algorithm", "算法", "佣金", "commission", "fee change",
+        "marketplace", "seller central", "卖家中心", "公告", "规则", "措施",
+        "限流", "降权", "流量",
+    ],
 }
 
 IMPACT_MAP = {
@@ -131,7 +158,8 @@ def detect_event_type(text: str) -> str:
     for event_type, words in EVENT_TYPE_KEYWORDS.items():
         scores[event_type] = sum(1 for word in words if signal_in_text(word, lower))
     best = max(scores, key=lambda k: scores[k])
-    return best if scores[best] > 0 else "platform"
+    # 无关键词命中时兜底为 policy（通用经营信号），而非 platform
+    return best if scores[best] > 0 else "policy"
 
 
 def detect_region(text: str, region_hint: str | None = None) -> str:
@@ -564,6 +592,7 @@ def build_output(input_data: dict[str, Any]) -> dict[str, Any]:
         platform_hint = seller_profile.get("platform", "全平台")
         model_hint = seller_profile.get("fulfillment_model", "跨境")
         impact_reasoning = ""  # 先初始化，LLM 成功后覆盖，否则走 fallback
+        _llm_sop_data: dict[str, Any] = {}  # 提前初始化，避免 dir() hack
         # 尝试 LLM 深度分析
         llm_analysis = llm_client.generate_risk_analysis(
             event_content=content,
@@ -585,13 +614,15 @@ def build_output(input_data: dict[str, Any]) -> dict[str, Any]:
             llm_sop = llm_analysis.get("sop")
             if isinstance(llm_sop, dict):
                 _llm_sop_data = llm_sop
+            else:
+                logger.warning("LLM 返回的 sop 字段不是 dict，类型：%s", type(llm_sop).__name__)
             logger.debug("LLM 深度分析成功")
         if not impact_reasoning or "暂未解析" in impact_reasoning:
             # Fallback：模板拼接
             summary_hint = summary[:120].strip("。").strip() + "..." if len(summary) > 120 else summary.strip("。")
             impact_reasoning = f"【雷达研判】该事件将从 {', '.join(impact_zh_list)} 维度冲击 {platform_hint} 业务。关键细节提示：{summary_hint}。这将直接导致 {model_hint} 链路的稳定性受挫，建议立即启动 SOP 响应。"
-    # 收集 LLM SOP（如无则为空 dict）
-    _llm_sop_result = _llm_sop_data if '_llm_sop_data' in dir() else {}
+    # 收集 LLM SOP
+    _llm_sop_result = _llm_sop_data
     return {
         "event_title": title,
         "event_summary": summary,

@@ -249,8 +249,11 @@ def rank_and_select_events(results: list[dict], profile: dict) -> list[dict]:
     
     def get_plat(r):
         p = str((r.get("platforms") or ["Other"])[0]).lower()
-        for k in ["amazon", "tiktok", "shopee", "walmart", "temu"]:
+        for k in ["amazon", "tiktok", "shopee", "walmart", "temu",
+                   "aliexpress", "ebay", "lazada", "mercado", "shein", "shopify"]:
             if k in p: return k
+        if "跨境通用" in p or "多平台" in p:
+            return "general"
         return p
 
     # 第一阶段：选取官方核心池与 P0 快照（权重最高，且符合平台偏好）

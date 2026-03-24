@@ -1,5 +1,397 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0"><channel><title>changedetection.io</title><link>https://changedetection.io</link><description>Feed description</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><lastBuildDate>Thu, 19 Mar 2026 06:29:05 +0000</lastBuildDate><item><title>https://sell.amazon.com/blog/announcements</title><link>http://127.0.0.1:5002/diff/8d889775-f383-46f5-aafe-63cecb9e56ee</link><description>&lt;pre&gt;https://sell.amazon.com/blog/announcements had a change.
+<rss version="2.0"><channel><title>changedetection.io</title><link>https://changedetection.io</link><description>Feed description</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><lastBuildDate>Fri, 20 Mar 2026 03:24:18 +0000</lastBuildDate><item><title>https://sellercentral.amazon.com/seller-forums/discussions?categories%5B0%5D=amzn1.spce.category.8b1ad9d2</title><link>http://127.0.0.1:5002/diff/60221fa4-13b3-4718-a9cd-112afb5b2a50</link><description>&lt;pre&gt;https://sellercentral.amazon.com/seller-forums/discussions?categories%5B0%5D=amzn1.spce.category.8b1ad9d2 had a change.
+
+(added)                               ∙3 days ago
+(added)                                 Clear excess inventory with Big Spring Sale 2026
+(added) 
+(added)                                       Big Spring Sale is back March 25-31, with seven days of deals across more than 35 categories. As our largest overstock deal event, you can use this opportunity to improve your inventory health by submitting Outlet deals.
+(added) 
+(added)                                       Creating Outlet deals for your products can increase sell-through, improve cash flow, optimize capacity levels, and reduce total storage fees. Plus, Outlet deals will have additional promotional visibility during this sales event.
+(added) 
+(added)                                       To create an Outlet deal, follow these steps:
+(added) 
+(added)                                        1. From the Seller Central main menu, hover over Inventory , and click FBA Inventory .
+(added)                                        2. To filter for eligible inventory, click Create Outlet deal in the Recommendation filter.
+(added)                                        3. From the drop-down menu in the Action column to the right of the eligible item, select Create Outlet deal .
+(added)                                        4. In the pop-up window, enter your price in the Outlet deal price box . Your price must be less than or equal to the maximum price.
+(added)                                        5. Review the start and end dates for your Outlet deal, then click Submit .
+(added) 
+(added)                                       You can submit your Outlet deals until March 20 to run your deal during Big Spring Sale. To learn more about Outlet deal eligibility, visit Amazon Outlet.
+(added) 
+(added)                                       For more details on this event, go to Everything you need to know about Amazon’s Big Spring Sale 2026.
+(added) 
+(added)                                 Latest activity7 hours ago
+(added)                                 0
+(added)                                 1
+(added)                                 138
+(added)                                 7
+(added)                                 News_Amazon
+(changed)                                 3489
+(into)                                 3493
+(changed)                               ∙3 days ago
+(changed)                                 Clear excess inventory with Big Spring Sale 2026
+(changed) 
+(changed)                                       Big Spring Sale is back March 25-31, with seven days of deals across more than 35 categories. As our largest overstock deal event, you can use this opportunity to improve your inventory health by submitting Outlet deals.
+(changed) 
+(changed)                                       Creating Outlet deals for your products can increase sell-through, improve cash flow, optimize capacity levels, and reduce total storage fees. Plus, Outlet deals will have additional promotional visibility during this sales event.
+(changed) 
+(changed)                                       To create an Outlet deal, follow these steps:
+(changed) 
+(changed)                                        1. From the Seller Central main menu, hover over Inventory , and click FBA Inventory .
+(changed)                                        2. To filter for eligible inventory, click Create Outlet deal in the Recommendation filter.
+(changed)                                        3. From the drop-down menu in the Action column to the right of the eligible item, select Create Outlet deal .
+(changed)                                        4. In the pop-up window, enter your price in the Outlet deal price box . Your price must be less than or equal to the maximum price.
+(changed)                                        5. Review the start and end dates for your Outlet deal, then click Submit .
+(changed) 
+(changed)                                       You can submit your Outlet deals until March 20 to run your deal during Big Spring Sale. To learn more about Outlet deal eligibility, visit Amazon Outlet.
+(changed) 
+(changed)                                       For more details on this event, go to Everything you need to know about Amazon’s Big Spring Sale 2026.
+(changed) 
+(changed)                                 Latest activity4 hours ago
+(changed)                                 0
+(changed)                                 1
+(changed)                                 135
+(changed)                                 7
+(into)                               ∙a day ago
+(into)                                 Updated payment reports simplify accrual reporting for delivery date-based reserves
+(into) 
+(into)                                       We've heard your feedback about how reports based only on payout timing made accrual reconciliation more difficult, especially when some transactions are deferred.
+(into) 
+(into)                                       By April 30, 2026, we'll update the Date Range Transaction and Summary reports for our US, Canada, Mexico, and Brazil stores.
+(into) 
+(into)                                       This change applies to the following users:
+(into) 
+(into)                                         * Sellers who are subject to delivery-date based reserve policies and can view deferred transactions on the Payments dashboard
+(into)                                         * Developers who access transaction reports through the reports API
+(into) 
+(into)                                       The updated reports will provide a clearer view of accrued earnings for month-end reconciliation and financial reporting.
+(into) 
+(into)                                       By April 30, when you request a Transaction or Summary report for a period beginning January 1, 2025, you’ll notice three key improvements:
+(into) 
+(into)                                         * All posted transactions are in one place . Your reports will include both transactions that have already been released to your balance, as well as transactions that are deferred under delivery-date based policies. You no longer must download separate deferred transaction reports to view deferred activity.
+(into)                                         * Activity is indexed by posted date . The Date/Time column in Transaction reports will reflect the transaction posted date, rather than the release date, or payout eligibility date. This posted date provides a more consistent view of activity during the period that you select.
+(into)                                         * You have clear visibility into deferred versus released statuses in same report . There will be a new column in Transaction reports that shows whether a transaction is deferred or released. An additional column, Transaction Release Date, will indicate when the transaction was released. If a transaction remains deferred, the release date field will be blank.
+(into) 
+(into)                                       If you have existing integrations with third-party financial systems, we recommend that you update your mappings or scripts. Note that reports for periods before January 1, 2025, will continue to follow the prior format. We plan to roll out similar reporting updates for additional stores by June 30, 2026.
+(into) 
+(into)                                       To view your reports, follow these steps:
+(into) 
+(into)                                        1. Go to Payments , and select Reports Repository .
+(into)                                        2. Under Account type , select All (Unified Reports) .
+(into)                                        3. Under Report type , select Summary or Transaction .
+(into)                                        4. Set the start date in the Reporting date range as January 1, 2025 or later.
+(into)                                        5. Click Request report .
+(into) 
+(into)                                       For more information, go to Payment Date Range Transaction and Summary reports.
+(into) 
+(into)                                       To provide feedback on these updates, contact us at vosfx-spff@amazon.com.
+(into) 
+(into)                                 Latest activityan hour ago
+(into)                                 0
+(into)                                 3
+(into)                                 60
+(into)                                 4
+(removed)                               ∙a day ago
+(removed)                                 Updated payment reports simplify accrual reporting for delivery date-based reserves
+(removed) 
+(removed)                                       We've heard your feedback about how reports based only on payout timing made accrual reconciliation more difficult, especially when some transactions are deferred.
+(removed) 
+(removed)                                       By April 30, 2026, we'll update the Date Range Transaction and Summary reports for our US, Canada, Mexico, and Brazil stores.
+(removed) 
+(removed)                                       This change applies to the following users:
+(removed) 
+(removed)                                         * Sellers who are subject to delivery-date based reserve policies and can view deferred transactions on the Payments dashboard
+(removed)                                         * Developers who access transaction reports through the reports API
+(removed) 
+(removed)                                       The updated reports will provide a clearer view of accrued earnings for month-end reconciliation and financial reporting.
+(removed) 
+(removed)                                       By April 30, when you request a Transaction or Summary report for a period beginning January 1, 2025, you’ll notice three key improvements:
+(removed) 
+(removed)                                         * All posted transactions are in one place . Your reports will include both transactions that have already been released to your balance, as well as transactions that are deferred under delivery-date based policies. You no longer must download separate deferred transaction reports to view deferred activity.
+(removed)                                         * Activity is indexed by posted date . The Date/Time column in Transaction reports will reflect the transaction posted date, rather than the release date, or payout eligibility date. This posted date provides a more consistent view of activity during the period that you select.
+(removed)                                         * You have clear visibility into deferred versus released statuses in same report . There will be a new column in Transaction reports that shows whether a transaction is deferred or released. An additional column, Transaction Release Date, will indicate when the transaction was released. If a transaction remains deferred, the release date field will be blank.
+(removed) 
+(removed)                                       If you have existing integrations with third-party financial systems, we recommend that you update your mappings or scripts. Note that reports for periods before January 1, 2025, will continue to follow the prior format. We plan to roll out similar reporting updates for additional stores by June 30, 2026.
+(removed) 
+(removed)                                       To view your reports, follow these steps:
+(removed) 
+(removed)                                        1. Go to Payments , and select Reports Repository .
+(removed)                                        2. Under Account type , select All (Unified Reports) .
+(removed)                                        3. Under Report type , select Summary or Transaction .
+(removed)                                        4. Set the start date in the Reporting date range as January 1, 2025 or later.
+(removed)                                        5. Click Request report .
+(removed) 
+(removed)                                       For more information, go to Payment Date Range Transaction and Summary reports.
+(removed) 
+(removed)                                       To provide feedback on these updates, contact us at vosfx-spff@amazon.com.
+(removed) 
+(removed)                                 Latest activity10 hours ago
+(removed)                                 0
+(removed)                                 3
+(removed)                                 58
+(removed)                                 3
+(removed)                                 News_Amazon
+(added)                               ∙3 days ago
+(added)                                 Clear excess inventory with Big Spring Sale 2026
+(added) 
+(added)                                       Big Spring Sale is back March 25-31, with seven days of deals across more than 35 categories. As our largest overstock deal event, you can use this opportunity to improve your inventory health by submitting Outlet deals.
+(added) 
+(added)                                       Creating Outlet deals for your products can increase sell-through, improve cash flow, optimize capacity levels, and reduce total storage fees. Plus, Outlet deals will have additional promotional visibility during this sales event.
+(added) 
+(added)                                       To create an Outlet deal, follow these steps:
+(added) 
+(added)                                        1. From the Seller Central main menu, hover over Inventory , and click FBA Inventory .
+(added)                                        2. To filter for eligible inventory, click Create Outlet deal in the Recommendation filter.
+(added)                                        3. From the drop-down menu in the Action column to the right of the eligible item, select Create Outlet deal .
+(added)                                        4. In the pop-up window, enter your price in the Outlet deal price box . Your price must be less than or equal to the maximum price.
+(added)                                        5. Review the start and end dates for your Outlet deal, then click Submit .
+(added) 
+(added)                                       You can submit your Outlet deals until March 20 to run your deal during Big Spring Sale. To learn more about Outlet deal eligibility, visit Amazon Outlet.
+(added) 
+(added)                                       For more details on this event, go to Everything you need to know about Amazon’s Big Spring Sale 2026.
+(added) 
+(added)                                 Latest activity7 hours ago
+(added)                                 0
+(added)                                 1
+(added)                                 138
+(added)                                 7
+(added) 
+(added)                                 Clear excess inventory with Big Spring Sale 2026
+(added) 
+(added)                                     by News_Amazon
+(added)                                     3 days ago
+(added) 
+(added)                                       Big Spring Sale is back March 25-31, with seven days of deals across more than 35 categories. As our largest overstock deal event, you can use this opportunity to improve your inventory health by submitting Outlet deals.
+(added) 
+(added)                                       Creating Outlet deals for your products can increase sell-through, improve cash flow, optimize capacity levels, and reduce total storage fees. Plus, Outlet deals will have additional promotional visibility during this sales event.
+(added) 
+(added)                                       To create an Outlet deal, follow these steps:
+(added) 
+(added)                                        1. From the Seller Central main menu, hover over Inventory , and click FBA Inventory .
+(added)                                        2. To filter for eligible inventory, click Create Outlet deal in the Recommendation filter.
+(added)                                        3. From the drop-down menu in the Action column to the right of the eligible item, select Create Outlet deal .
+(added)                                        4. In the pop-up window, enter your price in the Outlet deal price box . Your price must be less than or equal to the maximum price.
+(added)                                        5. Review the start and end dates for your Outlet deal, then click Submit .
+(added) 
+(added)                                       You can submit your Outlet deals until March 20 to run your deal during Big Spring Sale. To learn more about Outlet deal eligibility, visit Amazon Outlet.
+(added) 
+(added)                                       For more details on this event, go to Everything you need to know about Amazon’s Big Spring Sale 2026.
+(added) 
+(added)                                   0 votes
+(added)                                   1 vote
+(added)                                   138 views
+(added)                                   7 replies
+(added)                                   Latest activity7 hours ago
+(added)                                 News_Amazon
+(changed)                                 3489
+(into)                                 3493
+(changed)                               ∙3 days ago
+(changed)                                 Clear excess inventory with Big Spring Sale 2026
+(changed) 
+(changed)                                       Big Spring Sale is back March 25-31, with seven days of deals across more than 35 categories. As our largest overstock deal event, you can use this opportunity to improve your inventory health by submitting Outlet deals.
+(changed) 
+(changed)                                       Creating Outlet deals for your products can increase sell-through, improve cash flow, optimize capacity levels, and reduce total storage fees. Plus, Outlet deals will have additional promotional visibility during this sales event.
+(changed) 
+(changed)                                       To create an Outlet deal, follow these steps:
+(changed) 
+(changed)                                        1. From the Seller Central main menu, hover over Inventory , and click FBA Inventory .
+(changed)                                        2. To filter for eligible inventory, click Create Outlet deal in the Recommendation filter.
+(changed)                                        3. From the drop-down menu in the Action column to the right of the eligible item, select Create Outlet deal .
+(changed)                                        4. In the pop-up window, enter your price in the Outlet deal price box . Your price must be less than or equal to the maximum price.
+(changed)                                        5. Review the start and end dates for your Outlet deal, then click Submit .
+(changed) 
+(changed)                                       You can submit your Outlet deals until March 20 to run your deal during Big Spring Sale. To learn more about Outlet deal eligibility, visit Amazon Outlet.
+(changed) 
+(changed)                                       For more details on this event, go to Everything you need to know about Amazon’s Big Spring Sale 2026.
+(changed) 
+(changed)                                 Latest activity4 hours ago
+(changed)                                 0
+(changed)                                 1
+(changed)                                 135
+(changed)                                 7
+(changed) 
+(changed)                                 Clear excess inventory with Big Spring Sale 2026
+(into)                               ∙a day ago
+(into)                                 Updated payment reports simplify accrual reporting for delivery date-based reserves
+(into) 
+(into)                                       We've heard your feedback about how reports based only on payout timing made accrual reconciliation more difficult, especially when some transactions are deferred.
+(into) 
+(into)                                       By April 30, 2026, we'll update the Date Range Transaction and Summary reports for our US, Canada, Mexico, and Brazil stores.
+(into) 
+(into)                                       This change applies to the following users:
+(into) 
+(into)                                         * Sellers who are subject to delivery-date based reserve policies and can view deferred transactions on the Payments dashboard
+(into)                                         * Developers who access transaction reports through the reports API
+(into) 
+(into)                                       The updated reports will provide a clearer view of accrued earnings for month-end reconciliation and financial reporting.
+(into) 
+(into)                                       By April 30, when you request a Transaction or Summary report for a period beginning January 1, 2025, you’ll notice three key improvements:
+(into) 
+(into)                                         * All posted transactions are in one place . Your reports will include both transactions that have already been released to your balance, as well as transactions that are deferred under delivery-date based policies. You no longer must download separate deferred transaction reports to view deferred activity.
+(into)                                         * Activity is indexed by posted date . The Date/Time column in Transaction reports will reflect the transaction posted date, rather than the release date, or payout eligibility date. This posted date provides a more consistent view of activity during the period that you select.
+(into)                                         * You have clear visibility into deferred versus released statuses in same report . There will be a new column in Transaction reports that shows whether a transaction is deferred or released. An additional column, Transaction Release Date, will indicate when the transaction was released. If a transaction remains deferred, the release date field will be blank.
+(into) 
+(into)                                       If you have existing integrations with third-party financial systems, we recommend that you update your mappings or scripts. Note that reports for periods before January 1, 2025, will continue to follow the prior format. We plan to roll out similar reporting updates for additional stores by June 30, 2026.
+(into) 
+(into)                                       To view your reports, follow these steps:
+(into) 
+(into)                                        1. Go to Payments , and select Reports Repository .
+(into)                                        2. Under Account type , select All (Unified Reports) .
+(into)                                        3. Under Report type , select Summary or Transaction .
+(into)                                        4. Set the start date in the Reporting date range as January 1, 2025 or later.
+(into)                                        5. Click Request report .
+(into) 
+(into)                                       For more information, go to Payment Date Range Transaction and Summary reports.
+(into) 
+(into)                                       To provide feedback on these updates, contact us at vosfx-spff@amazon.com.
+(into) 
+(into)                                 Latest activityan hour ago
+(into)                                 0
+(into)                                 3
+(into)                                 60
+(into)                                 4
+(into) 
+(into)                                 Updated payment reports simplify accrual reporting for delivery date-based reserves
+(changed)                                     3 days ago
+(changed) 
+(changed)                                       Big Spring Sale is back March 25-31, with seven days of deals across more than 35 categories. As our largest overstock deal event, you can use this opportunity to improve your inventory health by submitting Outlet deals.
+(changed) 
+(changed)                                       Creating Outlet deals for your products can increase sell-through, improve cash flow, optimize capacity levels, and reduce total storage fees. Plus, Outlet deals will have additional promotional visibility during this sales event.
+(changed) 
+(changed)                                       To create an Outlet deal, follow these steps:
+(changed) 
+(changed)                                        1. From the Seller Central main menu, hover over Inventory , and click FBA Inventory .
+(changed)                                        2. To filter for eligible inventory, click Create Outlet deal in the Recommendation filter.
+(changed)                                        3. From the drop-down menu in the Action column to the right of the eligible item, select Create Outlet deal .
+(changed)                                        4. In the pop-up window, enter your price in the Outlet deal price box . Your price must be less than or equal to the maximum price.
+(changed)                                        5. Review the start and end dates for your Outlet deal, then click Submit .
+(changed) 
+(changed)                                       You can submit your Outlet deals until March 20 to run your deal during Big Spring Sale. To learn more about Outlet deal eligibility, visit Amazon Outlet.
+(changed) 
+(changed)                                       For more details on this event, go to Everything you need to know about Amazon’s Big Spring Sale 2026.
+(into)                                     a day ago
+(into) 
+(into)                                       We've heard your feedback about how reports based only on payout timing made accrual reconciliation more difficult, especially when some transactions are deferred.
+(into) 
+(into)                                       By April 30, 2026, we'll update the Date Range Transaction and Summary reports for our US, Canada, Mexico, and Brazil stores.
+(into) 
+(into)                                       This change applies to the following users:
+(into) 
+(into)                                         * Sellers who are subject to delivery-date based reserve policies and can view deferred transactions on the Payments dashboard
+(into)                                         * Developers who access transaction reports through the reports API
+(into) 
+(into)                                       The updated reports will provide a clearer view of accrued earnings for month-end reconciliation and financial reporting.
+(into) 
+(into)                                       By April 30, when you request a Transaction or Summary report for a period beginning January 1, 2025, you’ll notice three key improvements:
+(into) 
+(into)                                         * All posted transactions are in one place . Your reports will include both transactions that have already been released to your balance, as well as transactions that are deferred under delivery-date based policies. You no longer must download separate deferred transaction reports to view deferred activity.
+(into)                                         * Activity is indexed by posted date . The Date/Time column in Transaction reports will reflect the transaction posted date, rather than the release date, or payout eligibility date. This posted date provides a more consistent view of activity during the period that you select.
+(into)                                         * You have clear visibility into deferred versus released statuses in same report . There will be a new column in Transaction reports that shows whether a transaction is deferred or released. An additional column, Transaction Release Date, will indicate when the transaction was released. If a transaction remains deferred, the release date field will be blank.
+(into) 
+(into)                                       If you have existing integrations with third-party financial systems, we recommend that you update your mappings or scripts. Note that reports for periods before January 1, 2025, will continue to follow the prior format. We plan to roll out similar reporting updates for additional stores by June 30, 2026.
+(into) 
+(into)                                       To view your reports, follow these steps:
+(into) 
+(into)                                        1. Go to Payments , and select Reports Repository .
+(into)                                        2. Under Account type , select All (Unified Reports) .
+(into)                                        3. Under Report type , select Summary or Transaction .
+(into)                                        4. Set the start date in the Reporting date range as January 1, 2025 or later.
+(into)                                        5. Click Request report .
+(into) 
+(into)                                       For more information, go to Payment Date Range Transaction and Summary reports.
+(into) 
+(into)                                       To provide feedback on these updates, contact us at vosfx-spff@amazon.com.
+(changed)                                   1 vote
+(changed)                                   135 views
+(changed)                                   7 replies
+(changed)                                   Latest activity4 hours ago
+(into)                                   3 votes
+(into)                                   60 views
+(into)                                   4 replies
+(into)                                   Latest activityan hour ago
+(removed)                               ∙a day ago
+(removed)                                 Updated payment reports simplify accrual reporting for delivery date-based reserves
+(removed) 
+(removed)                                       We've heard your feedback about how reports based only on payout timing made accrual reconciliation more difficult, especially when some transactions are deferred.
+(removed) 
+(removed)                                       By April 30, 2026, we'll update the Date Range Transaction and Summary reports for our US, Canada, Mexico, and Brazil stores.
+(removed) 
+(removed)                                       This change applies to the following users:
+(removed) 
+(removed)                                         * Sellers who are subject to delivery-date based reserve policies and can view deferred transactions on the Payments dashboard
+(removed)                                         * Developers who access transaction reports through the reports API
+(removed) 
+(removed)                                       The updated reports will provide a clearer view of accrued earnings for month-end reconciliation and financial reporting.
+(removed) 
+(removed)                                       By April 30, when you request a Transaction or Summary report for a period beginning January 1, 2025, you’ll notice three key improvements:
+(removed) 
+(removed)                                         * All posted transactions are in one place . Your reports will include both transactions that have already been released to your balance, as well as transactions that are deferred under delivery-date based policies. You no longer must download separate deferred transaction reports to view deferred activity.
+(removed)                                         * Activity is indexed by posted date . The Date/Time column in Transaction reports will reflect the transaction posted date, rather than the release date, or payout eligibility date. This posted date provides a more consistent view of activity during the period that you select.
+(removed)                                         * You have clear visibility into deferred versus released statuses in same report . There will be a new column in Transaction reports that shows whether a transaction is deferred or released. An additional column, Transaction Release Date, will indicate when the transaction was released. If a transaction remains deferred, the release date field will be blank.
+(removed) 
+(removed)                                       If you have existing integrations with third-party financial systems, we recommend that you update your mappings or scripts. Note that reports for periods before January 1, 2025, will continue to follow the prior format. We plan to roll out similar reporting updates for additional stores by June 30, 2026.
+(removed) 
+(removed)                                       To view your reports, follow these steps:
+(removed) 
+(removed)                                        1. Go to Payments , and select Reports Repository .
+(removed)                                        2. Under Account type , select All (Unified Reports) .
+(removed)                                        3. Under Report type , select Summary or Transaction .
+(removed)                                        4. Set the start date in the Reporting date range as January 1, 2025 or later.
+(removed)                                        5. Click Request report .
+(removed) 
+(removed)                                       For more information, go to Payment Date Range Transaction and Summary reports.
+(removed) 
+(removed)                                       To provide feedback on these updates, contact us at vosfx-spff@amazon.com.
+(removed) 
+(removed)                                 Latest activity10 hours ago
+(removed)                                 0
+(removed)                                 3
+(removed)                                 58
+(removed)                                 3
+(removed) 
+(removed)                                 Updated payment reports simplify accrual reporting for delivery date-based reserves
+(removed) 
+(removed)                                     by News_Amazon
+(removed)                                     a day ago
+(removed) 
+(removed)                                       We've heard your feedback about how reports based only on payout timing made accrual reconciliation more difficult, especially when some transactions are deferred.
+(removed) 
+(removed)                                       By April 30, 2026, we'll update the Date Range Transaction and Summary reports for our US, Canada, Mexico, and Brazil stores.
+(removed) 
+(removed)                                       This change applies to the following users:
+(removed) 
+(removed)                                         * Sellers who are subject to delivery-date based reserve policies and can view deferred transactions on the Payments dashboard
+(removed)                                         * Developers who access transaction reports through the reports API
+(removed) 
+(removed)                                       The updated reports will provide a clearer view of accrued earnings for month-end reconciliation and financial reporting.
+(removed) 
+(removed)                                       By April 30, when you request a Transaction or Summary report for a period beginning January 1, 2025, you’ll notice three key improvements:
+(removed) 
+(removed)                                         * All posted transactions are in one place . Your reports will include both transactions that have already been released to your balance, as well as transactions that are deferred under delivery-date based policies. You no longer must download separate deferred transaction reports to view deferred activity.
+(removed)                                         * Activity is indexed by posted date . The Date/Time column in Transaction reports will reflect the transaction posted date, rather than the release date, or payout eligibility date. This posted date provides a more consistent view of activity during the period that you select.
+(removed)                                         * You have clear visibility into deferred versus released statuses in same report . There will be a new column in Transaction reports that shows whether a transaction is deferred or released. An additional column, Transaction Release Date, will indicate when the transaction was released. If a transaction remains deferred, the release date field will be blank.
+(removed) 
+(removed)                                       If you have existing integrations with third-party financial systems, we recommend that you update your mappings or scripts. Note that reports for periods before January 1, 2025, will continue to follow the prior format. We plan to roll out similar reporting updates for additional stores by June 30, 2026.
+(removed) 
+(removed)                                       To view your reports, follow these steps:
+(removed) 
+(removed)                                        1. Go to Payments , and select Reports Repository .
+(removed)                                        2. Under Account type , select All (Unified Reports) .
+(removed)                                        3. Under Report type , select Summary or Transaction .
+(removed)                                        4. Set the start date in the Reporting date range as January 1, 2025 or later.
+(removed)                                        5. Click Request report .
+(removed) 
+(removed)                                       For more information, go to Payment Date Range Transaction and Summary reports.
+(removed) 
+(removed)                                       To provide feedback on these updates, contact us at vosfx-spff@amazon.com.
+(removed) 
+(removed)                                   0 votes
+(removed)                                   3 votes
+(removed)                                   58 views
+(removed)                                   3 replies
+(removed)                                   Latest activity10 hours ago
+(removed)                                 News_Amazon
+&lt;/pre&gt;</description><guid isPermaLink="false">60221fa4-13b3-4718-a9cd-112afb5b2a50/1773970930</guid><category>p0</category><category>platform</category><category>Amazon Seller Forums</category><pubDate>Fri, 20 Mar 2026 09:42:10 +0000</pubDate></item><item><title>https://sell.amazon.com/blog/announcements</title><link>http://127.0.0.1:5002/diff/8d889775-f383-46f5-aafe-63cecb9e56ee</link><description>&lt;pre&gt;https://sell.amazon.com/blog/announcements had a change.
 
 (changed)                     Get over $50K in potential incentives when you start selling with Amazon. Learn how
 (into)                     Unlock $50K in new seller credits, bonuses, and exclusive benefits. Learn how
@@ -11,98 +403,4 @@
 (into)                           + Start selling
 (changed)                   * Sign up
 (into)                   * Start selling
-&lt;/pre&gt;</description><guid isPermaLink="false">8d889775-f383-46f5-aafe-63cecb9e56ee/1773900077</guid><category>platform</category><category>p0</category><category>amazon</category><pubDate>Thu, 19 Mar 2026 14:01:17 +0000</pubDate></item><item><title>https://sellercentral.amazon.com/seller-forums/discussions?categories%5B0%5D=amzn1.spce.category.8b1ad9d2</title><link>http://127.0.0.1:5002/diff/60221fa4-13b3-4718-a9cd-112afb5b2a50</link><description>&lt;pre&gt;https://sellercentral.amazon.com/seller-forums/discussions?categories%5B0%5D=amzn1.spce.category.8b1ad9d2 had a change.
-
-(changed)                                 1620
-(into)                                 1621
-(changed)                                 2620
-(into)                                 2622
-(changed)                               ∙2 days ago
-(into)                               ∙3 days ago
-(changed)                                 Latest activity22 hours ago
-(into)                                 Latest activitya day ago
-(changed)                                 97
-(into)                                 100
-(changed)                                 Latest activitya day ago
-(into)                                 Latest activity2 days ago
-(changed)                                 3480
-(into)                                 3482
-(changed)                               ∙18 hours ago
-(into)                               ∙21 hours ago
-(changed)                                 Latest activity5 hours ago
-(changed)                                 0
-(changed)                                 0
-(changed)                                 26
-(into)                                 Latest activity8 hours ago
-(into)                                 0
-(into)                                 0
-(into)                                 27
-(changed)                               ∙10 hours ago
-(into)                               ∙13 hours ago
-(changed)                                 Latest activity9 hours ago
-(changed)                                 0
-(changed)                                 2
-(changed)                                 31
-(into)                                 Latest activity12 hours ago
-(into)                                 0
-(into)                                 3
-(into)                                 34
-(changed)                                 1620
-(into)                                 1621
-(changed)                                 2620
-(into)                                 2622
-(changed)                               ∙2 days ago
-(into)                               ∙3 days ago
-(changed)                                 Latest activity22 hours ago
-(into)                                 Latest activitya day ago
-(changed)                                 97
-(into)                                 100
-(changed)                                     2 days ago
-(into)                                     3 days ago
-(changed)                                   97 views
-(into)                                   100 views
-(changed)                                   Latest activity22 hours ago
-(into)                                   Latest activitya day ago
-(changed)                                 Latest activitya day ago
-(into)                                 Latest activity2 days ago
-(changed)                                 3480
-(into)                                 3482
-(changed)                                   Latest activitya day ago
-(changed)                                 News_Amazon
-(changed)                               ∙18 hours ago
-(into)                                   Latest activity2 days ago
-(into)                                 News_Amazon
-(into)                               ∙21 hours ago
-(changed)                                 Latest activity5 hours ago
-(changed)                                 0
-(changed)                                 0
-(changed)                                 26
-(into)                                 Latest activity8 hours ago
-(into)                                 0
-(into)                                 0
-(into)                                 27
-(changed)                                     18 hours ago
-(into)                                     21 hours ago
-(changed)                                   26 views
-(into)                                   27 views
-(changed)                                   Latest activity5 hours ago
-(into)                                   Latest activity8 hours ago
-(changed)                               ∙10 hours ago
-(into)                               ∙13 hours ago
-(changed)                                 Latest activity9 hours ago
-(changed)                                 0
-(changed)                                 2
-(changed)                                 31
-(into)                                 Latest activity12 hours ago
-(into)                                 0
-(into)                                 3
-(into)                                 34
-(changed)                                     10 hours ago
-(into)                                     13 hours ago
-(changed)                                   2 votes
-(changed)                                   31 views
-(into)                                   3 votes
-(into)                                   34 views
-(changed)                                   Latest activity9 hours ago
-(into)                                   Latest activity12 hours ago
-&lt;/pre&gt;</description><guid isPermaLink="false">60221fa4-13b3-4718-a9cd-112afb5b2a50/1773894592</guid><category>p0</category><category>platform</category><category>Amazon Seller Forums</category><pubDate>Thu, 19 Mar 2026 12:29:52 +0000</pubDate></item></channel></rss>
+&lt;/pre&gt;</description><guid isPermaLink="false">8d889775-f383-46f5-aafe-63cecb9e56ee/1773964883</guid><category>platform</category><category>p0</category><category>amazon</category><pubDate>Fri, 20 Mar 2026 08:01:23 +0000</pubDate></item></channel></rss>

@@ -169,14 +169,15 @@ HARD_NOISE_PATTERNS = (
     r"\bbuy for me\b", r"\brecognition cycle\b", r"\bapplicants can expect next\b",
 )
 HALF_LIFE_HOURS_BY_TOPIC = {
-    "tariff": 168,
-    "compliance": 168,
-    "policy": 168,
-    "customs": 168,
-    "environment": 168,
-    "logistics": 72,
-    "holiday": 72,
-    "news": 48,
+    "tariff": 168,      # 关税政策影响持久
+    "compliance": 168,   # 合规要求长期有效
+    "policy": 120,       # 政策类中等时效
+    "customs": 168,      # 海关规则长期有效
+    "environment": 168,  # 环保法规长期有效
+    "logistics": 72,     # 物流异动较短时效
+    "platform": 48,      # 平台功能更新衰减最快
+    "holiday": 72,       # 旺季时效适中
+    "news": 48,          # 一般新闻衰减快
 }
 TOP_EVENT_LIMIT = 15
 FULFILLMENT_PATHS = [
