@@ -17,7 +17,7 @@ let currentPlatform = 'all';
 const i18nMap = {
   zh: {
     levelText: { high: '严重风险', medium: '警告', low: '提示' },
-    riskTypeText: { policy: '政策风险', logistics: '物流异动', tariff: '税务关税', environment: '合规准入', compliance: '合规准入', platform_rule: '平台动态', platform: '平台动态', customs: '税务关税' },
+    riskTypeText: { policy: '政策风险', logistics: '物流异动', tariff: '税务关税', environment: '合规准入', compliance: '合规准入', platform_rule: '平台动态', platform: '平台动态', platform_policy: '平台政策', customs: '税务关税' },
     empty_global: '大盘平安，暂无宏观风险！',
     empty_platform: '该专属视角暂未命中相关风险，恭喜平安！',
     last_fetched: '最后抓取于：',
@@ -30,7 +30,7 @@ const i18nMap = {
   },
   en: {
     levelText: { high: 'Critical', medium: 'Warning', low: 'Notice' },
-    riskTypeText: { policy: 'Platform Policy', logistics: 'Logistics', tariff: 'Tariff & Tax', environment: 'Compliance', compliance: 'Compliance', platform_rule: 'Platform Policy', platform: 'Platform Policy' },
+    riskTypeText: { policy: 'Policy Risk', logistics: 'Logistics', tariff: 'Tariff & Tax', environment: 'Compliance', compliance: 'Compliance', platform_rule: 'Platform Policy', platform: 'Platform News', platform_policy: 'Platform Policy' },
     empty_global: 'Dashboard clear. No macro risks detected!',
     empty_platform: 'No specific risks found in this lens. You are safe!',
     last_fetched: 'Last Fetched: ',
@@ -81,13 +81,12 @@ function toDisplayItem(item) {
 
 function summarizeRiskTypes() {
   const categories = [
-    { key: 'policy', label: '政策风险' },
     { key: 'logistics', label: '物流异动' },
     { key: 'compliance', label: '合规准入' },
     { key: 'tariff', label: '税务关税' },
     { key: 'platform', label: '平台动态' }
   ];
-  const aggregatedMap = { policy: 0, logistics: 0, compliance: 0, tariff: 0, platform: 0 };
+  const aggregatedMap = { logistics: 0, compliance: 0, tariff: 0, platform: 0 };
   
   if (!normalizedEvents || normalizedEvents.length === 0) {
     return categories.map(c => ({ ...c, count: 0 }));
@@ -105,7 +104,7 @@ function summarizeRiskTypes() {
 }
 
 // 公共维度路由：将事件映射到5个雷达维度之一
-// 特定平台（非"跨境通用"）的 policy 事件 → 归为 platform（平台动态）
+// policy 类型包含：政府政策（归政策风险）和平台专属政策（归平台动态）
 const PLATFORM_KEYWORDS = ['amazon', 'tiktok', 'temu', 'shopee', 'ebay', 'walmart', 'shein', 'lazada'];
 function mapToDimension(item) {
   const type = item.type_raw || 'policy';
@@ -114,12 +113,13 @@ function mapToDimension(item) {
   if (['compliance', 'environment'].includes(type)) return 'compliance';
   if (['tariff', 'customs'].includes(type)) return 'tariff';
   if (type === 'platform') return 'platform';
-  // policy 类型：如果是特定平台专属事件，归为平台动态
+  // policy 类型：如果是特定平台专属事件，归为平台动态；否则归为政策风险
   if (type === 'policy') {
     const plat = (item.platform || '').toLowerCase();
     if (plat && plat !== '跨境通用' && PLATFORM_KEYWORDS.some(kw => plat.includes(kw))) {
       return 'platform';
     }
+    return 'policy';
   }
   return 'policy';
 }
@@ -421,11 +421,11 @@ function renderGlobalDashboard() {
     });
   }
 
-  // 按公共维度路由分拣到5个维度
-  const buckets = { policy: [], logistics: [], compliance: [], tariff: [], platform: [] };
+  // 按公共维度路由分拣到4个维度
+  const buckets = { logistics: [], compliance: [], tariff: [], platform: [] };
   filtered.forEach(e => {
     const key = mapToDimension(e);
-    buckets[key].push(e);
+    if (buckets[key]) buckets[key].push(e);
   });
 
   // 每个维度内按风险级别排序
@@ -433,7 +433,6 @@ function renderGlobalDashboard() {
   Object.values(buckets).forEach(arr => arr.sort((a, b) => (levelOrder[a.level] || 3) - (levelOrder[b.level] || 3)));
 
   const emptyMsg = '<div style="padding:24px; text-align:center; color:var(--text-light); font-size:0.875rem;">该维度暂无事件</div>';
-  document.getElementById('dim-policy-grid').innerHTML = buckets.policy.map(e => renderCompactCard(e)).join('') || emptyMsg;
   document.getElementById('dim-logistics-grid').innerHTML = buckets.logistics.map(e => renderCompactCard(e)).join('') || emptyMsg;
   document.getElementById('dim-compliance-grid').innerHTML = buckets.compliance.map(e => renderCompactCard(e)).join('') || emptyMsg;
   document.getElementById('dim-tariff-grid').innerHTML = buckets.tariff.map(e => renderCompactCard(e)).join('') || emptyMsg;
