@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+from datetime import datetime, timezone
 from copy import deepcopy
 from typing import Any
 
@@ -89,7 +90,7 @@ def _normalize_event(item: dict[str, Any], fallback_index: int) -> dict[str, Any
     else:
         # 没有检测到任何具体平台：标记为 "跨境通用"，不再保留源配置的宽泛多平台列表
         # 这样在"专属业务区"选择特定平台时，这些通用事件就不会混入
-        if len(platforms) >= 3:
+        if len(platforms) >= 2:
             platforms = ["跨境通用"]
 
     source_layer = str(item.get("source_layer") or "")
@@ -242,6 +243,7 @@ def load_policy_watch_events() -> list[dict[str, Any]]:
                 "② 入仓周期（7–10天）加长备货提前量；③ 退货处理改由平台托管，售后流程需适配。"
             ),
             "action": "立即盘点全部美国站 SKU，按 FBT 费率表重新测算单件利润，优先迁移高频出单品",
+            "expires_at": "2026-04-30T00:00:00+00:00",
         },
         {
             "id": "tiktok-europe-expansion-seed",
@@ -268,6 +270,7 @@ def load_policy_watch_events() -> list[dict[str, Any]]:
                 "14天退货权意味着退货率可能高于北美站。建议先用海外仓 + 轻小件测试。"
             ),
             "action": "评估目标市场 VAT 注册成本（每国约€200–500/年），筛选无需CE认证的试销品类",
+            "expires_at": "2026-06-30T00:00:00+00:00",
         },
         {
             "id": "tiktok-creator-commission-seed",
@@ -293,6 +296,7 @@ def load_policy_watch_events() -> list[dict[str, Any]]:
                 "Open Plan 流量扶持被削弱，需转向自播或 Targeted Plan。"
             ),
             "action": "评估当前达人带货 ROI，制定自播扩能计划，优化佣金结构",
+            "expires_at": "2026-06-30T00:00:00+00:00",
         },
         {
             "id": "temu-turkey-restructure-seed",
@@ -319,6 +323,7 @@ def load_policy_watch_events() -> list[dict[str, Any]]:
                 "但高客单商品的竞争环境改善——低价铺货型卖家受冲击更大。"
             ),
             "action": "重新测算土耳其站 top100 SKU 的含税到手价，淘汰利润不足5%的品",
+            "expires_at": "2026-06-30T00:00:00+00:00",
         },
         {
             "id": "temu-semi-managed-expansion-seed",
@@ -345,6 +350,7 @@ def load_policy_watch_events() -> list[dict[str, Any]]:
                 "适合已有美国/欧洲仓储的多渠道卖家，新卖家建议先用第三方海外仓试水。"
             ),
             "action": "评估现有海外仓产能是否可分配给 Temu 半托管，测算半托管 vs 全托管的 SKU 级利润差异",
+            "expires_at": "2026-06-30T00:00:00+00:00",
         },
     ]
 
@@ -356,11 +362,16 @@ def load_policy_watch_events() -> list[dict[str, Any]]:
         except (OSError, json.JSONDecodeError):
             items = []
 
-    # 补充种子事件：只要 ID 不重复就注入，确保各平台有多条专属内容
+    # 补充种子事件：只要 ID 不重复且未过期就注入
     existing_ids = {str(item.get("id", "")) for item in items if isinstance(item, dict)}
+    now_iso = datetime.now(timezone.utc).isoformat()
     for seed in _SEED_EVENTS:
-        if seed["id"] not in existing_ids:
-            items.append(seed)
+        if seed["id"] in existing_ids:
+            continue
+        expires = seed.get("expires_at", "")
+        if expires and expires < now_iso:
+            continue  # 种子事件已过期，不再注入
+        items.append(seed)
 
     normalized: list[dict[str, Any]] = []
     for index, item in enumerate(items, start=1):

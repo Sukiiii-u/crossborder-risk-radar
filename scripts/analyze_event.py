@@ -213,7 +213,12 @@ def classify_relevance(text: str) -> tuple[bool, str, str]:
         "退款", "refund", "refunds", "退货", "return", "returns", "退件", "索赔", "claim", "claims",
         "赔付", "reimbursement", "safe-t", "seller assurance", "return label", "prepaid return",
         "seller-fulfilled", "fbm", "buy shipping", "restocking fee",
-        "封号", "deactivate", "关店", "冻结", "资金冻结", "frozen", "下架", "remove", "take down", "诉讼", "lawsuit", "被起诉", "罚款", "penalty", "fined"
+        "封号", "deactivate", "关店", "冻结", "资金冻结", "frozen", "下架", "remove", "take down", "诉讼", "lawsuit", "被起诉", "罚款", "penalty", "fined",
+        # 补充中文运营信号
+        "限流", "降权", "流量下降", "转化率", "退货率", "逎向物流",
+        "运价上涨", "附加费上涨", "舱位紧张", "运力不足",
+        "货运", "freight", "仓储", "warehouse", "承运", "carrier",
+        "头程", "尾程", "时效", "运输",
     ])
     environmental_signals = _get_signals("environmental_signals", [
         "包装", "packaging", "可回收", "plastic", "sustainability", "环保",
