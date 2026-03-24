@@ -27,13 +27,27 @@ TYPE_LABELS = {
 def _normalize_event(item: dict[str, Any], fallback_index: int) -> dict[str, Any]:
     raw_type = str(item.get("event_type") or item.get("primary_topic") or "policy")
 
-    # 二次校验：用关键词检测纠正 LLM 可能给出的错误分类
-    # 典型场景：FreightWaves 物流/供应链文章被 LLM 误标为 platform
+    # 二次校验：用关键词检测纠正 LLM 可能给出的错误分类（双向校验）
     title_text = str(item.get("raw_event_title") or item.get("event_title") or "")
     summary_text = str(item.get("event_summary") or item.get("summary") or "")
+    combined_text = f"{title_text} {summary_text}".lower()
     keyword_type = detect_event_type(f"{title_text} {summary_text}")
+
+    # 方向1：物流/关税/合规文章被 LLM 误标为 platform
     if raw_type == "platform" and keyword_type in {"logistics", "tariff", "compliance"}:
-        raw_type = keyword_type  # 关键词检测到实质性分类时，覆盖 LLM 的 platform 判断
+        raw_type = keyword_type
+
+    # 方向2：平台促销/运营活动被 LLM 误标为 logistics
+    _platform_signals = ["deals", "sale", "促销", "清货", "outlet", "佣金", "commission",
+                         "流量", "曝光", "listing", "评论", "review", "广告", "竞价",
+                         "捐赠", "donation", "prime day", "spring sale", "black friday"]
+    _logistics_signals = ["freight", "shipping", "port", "航运", "港口", "海运", "空运",
+                          "运价", "舱位", "承运", "container", "carrier", "vessel"]
+    if raw_type == "logistics":
+        platform_hits = sum(1 for kw in _platform_signals if kw in combined_text)
+        logistics_hits = sum(1 for kw in _logistics_signals if kw in combined_text)
+        if platform_hits >= 2 and logistics_hits == 0:
+            raw_type = "platform"
     level = str(item.get("risk_level") or "medium")
     source_entries = item.get("sources") or []
     first_source = source_entries[0] if source_entries and isinstance(source_entries[0], dict) else {}
