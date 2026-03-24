@@ -591,13 +591,13 @@ def build_output(input_data: dict[str, Any]) -> dict[str, Any]:
     impact_zh_list = [IMPACT_TEXT_ZH.get(d, "业务链路") for d in impact_dimensions]
     
     # 商业化深度解析：优先使用 LLM，失败回退到模板拼接
+    _llm_sop_data: dict[str, Any] = {}  # 在分支前初始化，避免 is_relevant=False 时未定义
     if not is_relevant:
         impact_reasoning = "该动态暂未解析出足以阻断跨境核心链路的实质性风险，建议作为常态背景信息保持关注。"
     else:
         platform_hint = seller_profile.get("platform", "全平台")
         model_hint = seller_profile.get("fulfillment_model", "跨境")
         impact_reasoning = ""  # 先初始化，LLM 成功后覆盖，否则走 fallback
-        _llm_sop_data: dict[str, Any] = {}  # 提前初始化，避免 dir() hack
         # 尝试 LLM 深度分析
         llm_analysis = llm_client.generate_risk_analysis(
             event_content=content,
