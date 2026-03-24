@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from copy import deepcopy
 from typing import Any
 
@@ -395,21 +395,30 @@ def load_policy_watch_events() -> list[dict[str, Any]]:
     ]
 
     items: list[dict[str, Any]] = []
+    now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     if POLICY_WATCH_FILE.exists():
         try:
             payload = json.loads(POLICY_WATCH_FILE.read_text(encoding="utf-8"))
-            items = payload.get("items") or []
+            raw_items = payload.get("items") or []
+            # 过滤掉 monitor_until 已过期的事件
+            for it in raw_items:
+                if not isinstance(it, dict):
+                    continue
+                mu = it.get("monitor_until", "")
+                if mu and mu < now_iso:
+                    continue  # 已过生效日期，不再展示
+                items.append(it)
         except (OSError, json.JSONDecodeError):
             items = []
 
     # 补充种子事件：只要 ID 不重复且未过期就注入
     existing_ids = {str(item.get("id", "")) for item in items if isinstance(item, dict)}
-    now_iso = datetime.now(timezone.utc).isoformat()
+    now_full_iso = datetime.now(timezone.utc).isoformat()
     for seed in _SEED_EVENTS:
         if seed["id"] in existing_ids:
             continue
         expires = seed.get("expires_at", "")
-        if expires and expires < now_iso:
+        if expires and expires < now_full_iso:
             continue  # 种子事件已过期，不再注入
         items.append(seed)
 
@@ -502,6 +511,91 @@ def classify_publish_bucket(event: dict[str, Any]) -> str:
     return "urgent" if (level == "high" or is_official_p0 or is_platform_official or is_high_seller_impact or is_carrier_official or is_global_high_impact) else "daily"
 
 
+def _extract_future_date(text: str) -> str | None:
+    """从文本中提取未来日期（如'2026年7月1日'、'July 2026'），返回 ISO 格式日期字符串。"""
+    now = datetime.now(timezone.utc)
+    # 中文格式：2026年7月1日 / 2026年7月
+    for m in re.finditer(r"(20\d{2})年(\d{1,2})月(?:(\d{1,2})日?)?", text):
+        y, mo = int(m.group(1)), int(m.group(2))
+        d = int(m.group(3)) if m.group(3) else 1
+        try:
+            dt = datetime(y, mo, d, tzinfo=timezone.utc)
+            if dt > now:
+                return dt.strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+    # 英文格式：July 1, 2026 / July 2026 / 2026-07-01
+    months = {"january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6,
+              "july": 7, "august": 8, "september": 9, "october": 10, "november": 11, "december": 12}
+    for m in re.finditer(r"(" + "|".join(months) + r")\s+(?:(\d{1,2}),?\s+)?(20\d{2})", text.lower()):
+        mo = months[m.group(1)]
+        d = int(m.group(2)) if m.group(2) else 1
+        y = int(m.group(3))
+        try:
+            dt = datetime(y, mo, d, tzinfo=timezone.utc)
+            if dt > now:
+                return dt.strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+    # ISO 格式：2026-07-01
+    for m in re.finditer(r"(20\d{2})-(\d{2})-(\d{2})", text):
+        try:
+            dt = datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), tzinfo=timezone.utc)
+            if dt > now:
+                return dt.strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+    return None
+
+
+def _persist_macro_event(evt: dict[str, Any]) -> None:
+    """将 macro 事件自动持久化到 policy_watch.json，确保在 monitor_until 前持续展示。"""
+    try:
+        if POLICY_WATCH_FILE.exists():
+            data = json.loads(POLICY_WATCH_FILE.read_text(encoding="utf-8"))
+        else:
+            data = {"generated_at": datetime.now(timezone.utc).isoformat(), "item_count": 0, "items": []}
+
+        items = data.get("items", [])
+        existing_ids = {str(item.get("id", "")) for item in items if isinstance(item, dict)}
+        evt_id = str(evt.get("id", ""))
+        if evt_id in existing_ids:
+            return  # 已存在，跳过
+
+        # 从事件文本中提取未来生效日期
+        full_text = f"{evt.get('title', '')} {evt.get('summary', '')} {evt.get('impact', '')}"
+        future_date = _extract_future_date(full_text)
+        if not future_date:
+            return  # 没有未来日期，不需要持久化
+
+        # 构建持久化条目
+        persist_item = {
+            "id": evt_id,
+            "title": evt.get("title"),
+            "source_title": evt.get("raw_title"),
+            "summary": evt.get("summary"),
+            "event_type": evt.get("type"),
+            "risk_level": evt.get("level"),
+            "platforms": evt.get("platforms"),
+            "regions": evt.get("regions"),
+            "source_type": evt.get("source_type"),
+            "source_layer": evt.get("source_layer"),
+            "source": evt.get("source"),
+            "impact": evt.get("impact"),
+            "action": evt.get("action"),
+            "timestamp": evt.get("timestamp"),
+            "effective_date": future_date,
+            "monitor_until": future_date,  # 至少展示到生效日期
+        }
+        items.append(persist_item)
+        data["items"] = items
+        data["item_count"] = len(items)
+        data["generated_at"] = datetime.now(timezone.utc).isoformat()
+        POLICY_WATCH_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception:
+        pass  # 持久化失败不影响主流程
+
+
 def build_publish_payload(snapshot: dict[str, Any]) -> dict[str, Any]:
     brief = snapshot.get("brief", {})
     run = snapshot.get("run", {})
@@ -516,7 +610,11 @@ def build_publish_payload(snapshot: dict[str, Any]) -> dict[str, Any]:
                 continue
             current = deepcopy(item)
             current["publish_bucket"] = classify_publish_bucket(current)
-            normalized_events.append(_normalize_event(current, index))
+            norm = _normalize_event(current, index)
+            normalized_events.append(norm)
+            # 自动持久化 macro 事件：含未来生效日期时写入 policy_watch.json
+            if norm.get("category") == "macro":
+                _persist_macro_event(norm)
 
     # 去重：相同标题 + 相同影响描述的条目只保留排序靠前的
     seen_dedup: set[tuple[str, str]] = set()
