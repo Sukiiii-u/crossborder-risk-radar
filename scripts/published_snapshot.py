@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime, timezone
 from copy import deepcopy
 from typing import Any
@@ -180,6 +181,28 @@ def _normalize_event(item: dict[str, Any], fallback_index: int) -> dict[str, Any
     )
     if not looks_chinese(display_summary):
         display_summary = "建议结合原文链接核对执行范围、时间和受影响卖家类型，注意识别全链路成本波动风险。"
+
+    # 标题-内容一致性校验：防止信源帖子混合多条政策导致标题与 impact 不匹配
+    # 典型场景：Amazon 公告帖标题是"评论共享变体规则"，但影响描述在讲 APRL 退货标签
+    if looks_chinese(display_title) and impact and len(impact) > 20:
+        # 提取标题核心词（去掉标点和常见虚词）
+        _title_chars = re.sub(r'[^\u4e00-\u9fff a-zA-Z]', '', display_title)
+        _title_keywords = [w for w in _title_chars.split() if len(w) >= 2] if ' ' in _title_chars else [_title_chars[i:i+2] for i in range(0, max(0, len(_title_chars)-1), 2)]
+        # 检查标题核心词是否出现在 impact 中
+        _impact_lower = impact.lower()
+        _title_match_count = sum(1 for kw in _title_keywords[:5] if kw.lower() in _impact_lower)
+        if _title_keywords and _title_match_count == 0:
+            # 标题和影响描述完全不匹配 → 从 impact 提取新标题
+            _impact_clean = re.sub(r'[*#\n]', '', impact)
+            # 按语义边界截取 impact 前半段作为标题
+            for _sep in ["，", "；", "。", "，"]:
+                _pos = _impact_clean.find(_sep)
+                if 8 < _pos < 35:
+                    display_title = _impact_clean[:_pos]
+                    break
+            else:
+                display_title = _impact_clean[:30] + "…" if len(_impact_clean) > 30 else _impact_clean
+
 
     category = str(item.get("publish_bucket") or "").strip()
     if category not in {"macro", "urgent", "daily"}:
