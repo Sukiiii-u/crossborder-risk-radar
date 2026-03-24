@@ -19,8 +19,8 @@ from typing import Any
 
 logger = logging.getLogger("llm_client")
 
-DEFAULT_MODEL = "MiniMax-M2.5"
-DEFAULT_API_BASE = "https://api.minimaxi.com/anthropic"
+DEFAULT_MODEL = "your-model-name"
+DEFAULT_API_BASE = "https://your-api-endpoint.com"
 DEFAULT_TIMEOUT = 60
 MAX_RETRIES = 3
 RETRY_BASE_DELAY = 1.0  # 秒，指数退避基数

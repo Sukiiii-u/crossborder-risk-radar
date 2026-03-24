@@ -7,6 +7,7 @@ __pycache__/
 runtime/runs/
 runtime/latest_run.json
 runtime/latest_rendered.txt
+runtime/published_run.json
 runtime/data/
 # ui/radar-data.js  # 不再忽略，需要推送到 GitHub Pages
 
