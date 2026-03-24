@@ -30,10 +30,9 @@ EVENT_TYPE_KEYWORDS = {
     "logistics": [
         "logistics", "shipping", "port", "物流", "航运", "延误", "港口", "罢工",
         "locomotive", "列车", "铁路",
-        # 补充缺失的高频物流词
         "freight", "cargo", "container", "warehouse", "warehousing", "trucking",
         "trailer", "supply chain", "carrier", "ocean", "vessel", "transit",
-        "delivery", "fulfillment", "surcharge", "rate",
+        "delivery", "fulfillment", "surcharge",
         "货运", "仓储", "运输", "集装箱", "承运", "舱位", "运价", "附加费", "清关",
         "头程", "尾程", "时效", "航线", "海运", "空运", "陆运",
     ],
@@ -48,6 +47,12 @@ EVENT_TYPE_KEYWORDS = {
         "alexa", "algorithm", "算法", "佣金", "commission", "fee change",
         "marketplace", "seller central", "卖家中心", "公告", "规则", "措施",
         "限流", "降权", "流量",
+        # 促销/营销/运营活动
+        "deals", "deal", "sale", "outlet", "promotion", "促销", "清货",
+        "折扣", "discount", "coupon", "优惠", "大促", "秒杀", "闪购",
+        "prime day", "spring sale", "black friday", "cyber monday",
+        "lightning deal", "best deal", "捐赠", "donation",
+        "评论", "review", "listing", "广告", "竞价", "曝光",
     ],
 }
 
