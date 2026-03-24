@@ -404,9 +404,9 @@ function applyMacroFilter(label) {
   }
 }
 
-// 渲染全局大盘视图 — 按雷达图5维度分拣（政策风险/物流异动/合规准入/税务关税/平台动态）
+// 渲染全局大盘视图 — 按雷达图4维度分拣（物流异动/合规准入/税务关税/平台动态）
 function renderGlobalDashboard() {
-  const dimGrid = document.getElementById('dim-policy-grid');
+  const dimGrid = document.getElementById('dim-logistics-grid');
   if (!dimGrid) return;
 
   // 排除宏观事件（宏观政策只在工作区展示）
