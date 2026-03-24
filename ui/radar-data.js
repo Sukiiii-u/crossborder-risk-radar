@@ -5,7 +5,7 @@ window.RADAR_UI_DATA = {
     "source_mode": "real",
     "snapshot_reason": "fresh",
     "snapshot_usable": true,
-    "event_count": 20,
+    "event_count": 22,
     "profile_label": "通用雷达首页（事件驱动 / 不绑定默认画像）",
     "brief_type": "morning_radar_general"
   },
@@ -256,7 +256,7 @@ window.RADAR_UI_DATA = {
       "category": "urgent",
       "scope": "platform",
       "display_order": 1,
-      "title": "【雷达研判】该事件将从 硬性运营与履约成本攀升, 强合规门槛…",
+      "title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
       "raw_title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
       "summary": "**中文摘要：**\n\n使用FBA Donations的卖家现在可获取捐赠证书。通过该计划在2025年捐赠的产品，其库存信息将由非营利组织合作伙伴出具捐赠证明，便于卖家申报相关抵扣。建议有捐赠需求的卖家登录后台查看或下载证书。",
       "level": "medium",
@@ -320,7 +320,7 @@ window.RADAR_UI_DATA = {
       "category": "urgent",
       "scope": "platform",
       "display_order": 2,
-      "title": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压…",
+      "title": "2026年2月28日起，OTDR listing停用流程更新",
       "raw_title": "2026年2月28日起，OTDR listing停用流程更新",
       "summary": "2026年2月28日起，FBA延迟发货率（OTDR）低于90%时，将只对影响评分最严重的特定listing执行停售，而非全店下架。卖家可按指引恢复受影响的listing。",
       "level": "high",
@@ -541,6 +541,37 @@ window.RADAR_UI_DATA = {
       "monitor_until": null,
       "brief_rank": 6,
       "ranking_score": null
+    },
+    {
+      "id": "USPS 国际线路服务告警",
+      "category": "urgent",
+      "scope": "global",
+      "display_order": 6,
+      "title": "USPS 国际线路服务告警",
+      "raw_title": "USPS 国际线路服务告警",
+      "summary": "美国邮政（USPS）因运输不足及目的国服务中断，暂停接收发往以下国家/地区的国际邮件：百慕大、阿富汗、伊拉克、塞舌尔、巴林、以色列、南苏丹、白俄罗斯、科威特、苏丹。请卖家暂停向以上目的地发货，直至另行通知。",
+      "level": "medium",
+      "type": "logistics",
+      "typeLabel": "物流运输",
+      "platforms": [
+        "跨境通用"
+      ],
+      "regions": [
+        "Other"
+      ],
+      "source_layer": "official-content",
+      "source_type": "carrier-official",
+      "source_priority": "P1",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 其他地区 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+      "subject": "布局 EU 市场的 general mixed 卖家",
+      "action": "增加履约和补货缓冲时间",
+      "source": {
+        "name": "USPS International Service Alerts Content",
+        "url": "https://about.usps.com/newsroom/service-alerts/international/"
+      },
+      "timestamp": "2026-03-20T00:00:00Z",
+      "brief_rank": 6,
+      "ranking_score": 134
     },
     {
       "id": "temu-semi-managed-expansion-seed",
@@ -736,7 +767,7 @@ window.RADAR_UI_DATA = {
       "category": "daily",
       "scope": "global",
       "display_order": 11,
-      "title": "美国国旗船运营商可能因竞争加剧减少长期运力承诺",
+      "title": "特朗普暂停航运法可能损害美国旗船公司",
       "raw_title": "How Trump’s pause of shipping law could hurt U.S.-flag carrier...",
       "summary": "特朗普暂停琼斯法案（Jones Act），该法案原本禁止外国船只在美港口间运输货物。美旗船运公司警告，此举将削弱其长期稳定业务承诺，或损害美国航运安全。对中国跨境卖家而言，若美国本土船运受冲击，相关航线运力与运费可能波动。",
       "level": "medium",
@@ -854,6 +885,37 @@ window.RADAR_UI_DATA = {
       "timestamp": "Sun, 22 Mar 2026 13:06:05 +0000",
       "brief_rank": 14,
       "ranking_score": 75
+    },
+    {
+      "id": "亚马逊将向波兰投资逾50亿欧元",
+      "category": "daily",
+      "scope": "platform",
+      "display_order": 15,
+      "title": "亚马逊将向波兰投资逾50亿欧元",
+      "raw_title": "亚马逊将向波兰投资逾50亿欧元",
+      "summary": "亚马逊将在2024至2028年间向波兰投资超50亿欧元，连同2012至2025年已投入的100亿欧元，持续加码该市场。部分资金将用于新建FBA物流配送中心，进一步强化欧洲本土仓储配送能力。",
+      "level": "medium",
+      "type": "logistics",
+      "typeLabel": "物流运输",
+      "platforms": [
+        "Amazon"
+      ],
+      "regions": [
+        "Other"
+      ],
+      "source_layer": "base-feed",
+      "source_type": "",
+      "source_priority": "",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 其他地区 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+      "subject": "布局 EU 市场的 general mixed 卖家",
+      "action": "增加履约和补货缓冲时间",
+      "source": {
+        "name": "Ecommerce News EU",
+        "url": "https://ecommercenews.eu/amazon-to-invest-over-5-billion-euros-in-poland/"
+      },
+      "timestamp": "Thu, 19 Mar 2026 15:31:45 +0000",
+      "brief_rank": 15,
+      "ranking_score": 70
     }
   ],
   "macro_events": [
@@ -902,7 +964,7 @@ window.RADAR_UI_DATA = {
       "category": "urgent",
       "scope": "platform",
       "display_order": 1,
-      "title": "【雷达研判】该事件将从 硬性运营与履约成本攀升, 强合规门槛…",
+      "title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
       "raw_title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
       "summary": "**中文摘要：**\n\n使用FBA Donations的卖家现在可获取捐赠证书。通过该计划在2025年捐赠的产品，其库存信息将由非营利组织合作伙伴出具捐赠证明，便于卖家申报相关抵扣。建议有捐赠需求的卖家登录后台查看或下载证书。",
       "level": "medium",
@@ -966,7 +1028,7 @@ window.RADAR_UI_DATA = {
       "category": "urgent",
       "scope": "platform",
       "display_order": 2,
-      "title": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压…",
+      "title": "2026年2月28日起，OTDR listing停用流程更新",
       "raw_title": "2026年2月28日起，OTDR listing停用流程更新",
       "summary": "2026年2月28日起，FBA延迟发货率（OTDR）低于90%时，将只对影响评分最严重的特定listing执行停售，而非全店下架。卖家可按指引恢复受影响的listing。",
       "level": "high",
@@ -1187,6 +1249,37 @@ window.RADAR_UI_DATA = {
       "monitor_until": null,
       "brief_rank": 6,
       "ranking_score": null
+    },
+    {
+      "id": "USPS 国际线路服务告警",
+      "category": "urgent",
+      "scope": "global",
+      "display_order": 6,
+      "title": "USPS 国际线路服务告警",
+      "raw_title": "USPS 国际线路服务告警",
+      "summary": "美国邮政（USPS）因运输不足及目的国服务中断，暂停接收发往以下国家/地区的国际邮件：百慕大、阿富汗、伊拉克、塞舌尔、巴林、以色列、南苏丹、白俄罗斯、科威特、苏丹。请卖家暂停向以上目的地发货，直至另行通知。",
+      "level": "medium",
+      "type": "logistics",
+      "typeLabel": "物流运输",
+      "platforms": [
+        "跨境通用"
+      ],
+      "regions": [
+        "Other"
+      ],
+      "source_layer": "official-content",
+      "source_type": "carrier-official",
+      "source_priority": "P1",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 其他地区 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+      "subject": "布局 EU 市场的 general mixed 卖家",
+      "action": "增加履约和补货缓冲时间",
+      "source": {
+        "name": "USPS International Service Alerts Content",
+        "url": "https://about.usps.com/newsroom/service-alerts/international/"
+      },
+      "timestamp": "2026-03-20T00:00:00Z",
+      "brief_rank": 6,
+      "ranking_score": 134
     },
     {
       "id": "temu-semi-managed-expansion-seed",
@@ -1384,7 +1477,7 @@ window.RADAR_UI_DATA = {
       "category": "daily",
       "scope": "global",
       "display_order": 11,
-      "title": "美国国旗船运营商可能因竞争加剧减少长期运力承诺",
+      "title": "特朗普暂停航运法可能损害美国旗船公司",
       "raw_title": "How Trump’s pause of shipping law could hurt U.S.-flag carrier...",
       "summary": "特朗普暂停琼斯法案（Jones Act），该法案原本禁止外国船只在美港口间运输货物。美旗船运公司警告，此举将削弱其长期稳定业务承诺，或损害美国航运安全。对中国跨境卖家而言，若美国本土船运受冲击，相关航线运力与运费可能波动。",
       "level": "medium",
@@ -1502,6 +1595,37 @@ window.RADAR_UI_DATA = {
       "timestamp": "Sun, 22 Mar 2026 13:06:05 +0000",
       "brief_rank": 14,
       "ranking_score": 75
+    },
+    {
+      "id": "亚马逊将向波兰投资逾50亿欧元",
+      "category": "daily",
+      "scope": "platform",
+      "display_order": 15,
+      "title": "亚马逊将向波兰投资逾50亿欧元",
+      "raw_title": "亚马逊将向波兰投资逾50亿欧元",
+      "summary": "亚马逊将在2024至2028年间向波兰投资超50亿欧元，连同2012至2025年已投入的100亿欧元，持续加码该市场。部分资金将用于新建FBA物流配送中心，进一步强化欧洲本土仓储配送能力。",
+      "level": "medium",
+      "type": "logistics",
+      "typeLabel": "物流运输",
+      "platforms": [
+        "Amazon"
+      ],
+      "regions": [
+        "Other"
+      ],
+      "source_layer": "base-feed",
+      "source_type": "",
+      "source_priority": "",
+      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 其他地区 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
+      "subject": "布局 EU 市场的 general mixed 卖家",
+      "action": "增加履约和补货缓冲时间",
+      "source": {
+        "name": "Ecommerce News EU",
+        "url": "https://ecommercenews.eu/amazon-to-invest-over-5-billion-euros-in-poland/"
+      },
+      "timestamp": "Thu, 19 Mar 2026 15:31:45 +0000",
+      "brief_rank": 15,
+      "ranking_score": 70
     }
   ]
 };
