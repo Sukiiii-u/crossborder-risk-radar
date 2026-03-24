@@ -8,6 +8,7 @@ from typing import Any
 
 from runtime_paths import POLICY_WATCH_FILE
 from zh_localization import localize_summary, localize_title, looks_chinese
+from analyze_event import detect_event_type
 
 TYPE_LABELS = {
     "customs": "海关查验",
@@ -24,6 +25,14 @@ TYPE_LABELS = {
 
 def _normalize_event(item: dict[str, Any], fallback_index: int) -> dict[str, Any]:
     raw_type = str(item.get("event_type") or item.get("primary_topic") or "policy")
+
+    # 二次校验：用关键词检测纠正 LLM 可能给出的错误分类
+    # 典型场景：FreightWaves 物流/供应链文章被 LLM 误标为 platform
+    title_text = str(item.get("raw_event_title") or item.get("event_title") or "")
+    summary_text = str(item.get("event_summary") or item.get("summary") or "")
+    keyword_type = detect_event_type(f"{title_text} {summary_text}")
+    if raw_type == "platform" and keyword_type in {"logistics", "tariff", "compliance"}:
+        raw_type = keyword_type  # 关键词检测到实质性分类时，覆盖 LLM 的 platform 判断
     level = str(item.get("risk_level") or "medium")
     source_entries = item.get("sources") or []
     first_source = source_entries[0] if source_entries and isinstance(source_entries[0], dict) else {}

@@ -88,7 +88,7 @@ window.RADAR_UI_DATA = {
       {
         "rank": 7,
         "title": "关税与近岸外包重塑供应链，拖车仓储需求上升",
-        "risk_type": "platform",
+        "risk_type": "logistics",
         "priority": "medium",
         "who_to_watch": "拖车存储需求激增表明传统仓储空间紧张，跨境卖家面临仓储成本显著上涨压力，库存持有成本预计上升15%-30%。关税政策和近岸外包趋势导致货运流量波动加大，库存预测准确性下降，增加滞销和断货双重风险。",
         "action": "紧急评估各履约路径的仓储成本占比，重新计算利润空间阈值"
@@ -96,7 +96,7 @@ window.RADAR_UI_DATA = {
       {
         "rank": 8,
         "title": "State of Freight 五要点：已强劲的市场再获战争式冲击",
-        "risk_type": "platform",
+        "risk_type": "logistics",
         "priority": "medium",
         "who_to_watch": "伊朗地缘冲突导致红海航运受阻、苏伊士运河通行风险上升，推高跨境物流成本15%-30%，直接压缩卖家利润空间3-8个百分点。燃油附加费和战争险费用上涨将使中小卖家月均物流支出增加数千美元，同时清关时效延长风险上升。",
         "action": "立即与货代签订3-6个月运价锁定协议，规避后续涨价风险"
@@ -646,8 +646,8 @@ window.RADAR_UI_DATA = {
       "raw_title": "关税与近岸外包重塑供应链，拖车仓储需求上升",
       "summary": "**摘要：** 受关税政策和近岸外包趋势影响，跨境供应链持续重构，仓储成本不断攀升。越来越多制造商和零售商转向租用拖车存储以应对库存激增和跨境货运波动，此举正成为优化供应链弹性的重要策略。",
       "level": "medium",
-      "type": "platform",
-      "typeLabel": "平台动态",
+      "type": "logistics",
+      "typeLabel": "物流运输",
       "platforms": [
         "跨境通用"
       ],
@@ -677,8 +677,8 @@ window.RADAR_UI_DATA = {
       "raw_title": "State of Freight 五要点：已强劲的市场再获战争式冲击",
       "summary": "**跨境物流简报：**\n\n3月State of Freight网络研讨会聚焦“伊朗战争”议题。当前货运市场本就强劲，受战争冲击后运费成本尤其卡车运输成本急剧上升。建议跨境卖家密切关注运价波动，提前规划物流方案以应对成本变化。",
       "level": "medium",
-      "type": "platform",
-      "typeLabel": "平台动态",
+      "type": "logistics",
+      "typeLabel": "物流运输",
       "platforms": [
         "跨境通用"
       ],
@@ -1356,8 +1356,8 @@ window.RADAR_UI_DATA = {
       "raw_title": "关税与近岸外包重塑供应链，拖车仓储需求上升",
       "summary": "**摘要：** 受关税政策和近岸外包趋势影响，跨境供应链持续重构，仓储成本不断攀升。越来越多制造商和零售商转向租用拖车存储以应对库存激增和跨境货运波动，此举正成为优化供应链弹性的重要策略。",
       "level": "medium",
-      "type": "platform",
-      "typeLabel": "平台动态",
+      "type": "logistics",
+      "typeLabel": "物流运输",
       "platforms": [
         "跨境通用"
       ],
@@ -1387,8 +1387,8 @@ window.RADAR_UI_DATA = {
       "raw_title": "State of Freight 五要点：已强劲的市场再获战争式冲击",
       "summary": "**跨境物流简报：**\n\n3月State of Freight网络研讨会聚焦“伊朗战争”议题。当前货运市场本就强劲，受战争冲击后运费成本尤其卡车运输成本急剧上升。建议跨境卖家密切关注运价波动，提前规划物流方案以应对成本变化。",
       "level": "medium",
-      "type": "platform",
-      "typeLabel": "平台动态",
+      "type": "logistics",
+      "typeLabel": "物流运输",
       "platforms": [
         "跨境通用"
       ],
