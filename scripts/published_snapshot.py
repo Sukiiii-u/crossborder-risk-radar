@@ -184,7 +184,10 @@ def _normalize_event(item: dict[str, Any], fallback_index: int) -> dict[str, Any
 
     # 标题-内容一致性校验：防止信源帖子混合多条政策导致标题与 impact 不匹配
     # 典型场景：Amazon 公告帖标题是"评论共享变体规则"，但影响描述在讲 APRL 退货标签
-    if looks_chinese(display_title) and impact and len(impact) > 20:
+    # 注意：跳过 fallback 模板生成的 impact（以"【雷达研判】"开头），因为模板内容固定、
+    #       不含事件关键词，会导致原本正确的标题被误替换
+    _is_template_impact = impact.startswith("【雷达研判】") or impact.startswith("该动态暂未")
+    if looks_chinese(display_title) and impact and len(impact) > 20 and not _is_template_impact:
         # 提取标题核心词（去掉标点和常见虚词）
         _title_chars = re.sub(r'[^\u4e00-\u9fff a-zA-Z]', '', display_title)
         _title_keywords = [w for w in _title_chars.split() if len(w) >= 2] if ' ' in _title_chars else [_title_chars[i:i+2] for i in range(0, max(0, len(_title_chars)-1), 2)]
