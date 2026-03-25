@@ -1,23 +1,23 @@
 window.RADAR_UI_DATA = {
   "meta": {
-    "run_id": "radar-20260324-233142-805988c4",
-    "generated_at": "2026-03-24T23:31:42Z",
-    "source_mode": "real",
-    "snapshot_reason": "fresh",
-    "snapshot_usable": true,
-    "event_count": 22,
+    "run_id": "radar-20260325-094525-d62e65b6",
+    "generated_at": "2026-03-25T09:45:25Z",
+    "source_mode": "seed",
+    "snapshot_reason": "stale",
+    "snapshot_usable": false,
+    "event_count": 10,
     "profile_label": "通用雷达首页（事件驱动 / 不绑定默认画像）",
     "brief_type": "morning_radar_general"
   },
   "overview": {
-    "headline": "通用雷达先盯 platform：2026年2月28日起OTDR列表停用流程更新",
-    "why_it_matters": "这条 platform 事件已经不是某个单一画像的小波动，而是所有卖家都该先扫一眼的首页信号；先看事件本身，再按高相关 / 中相关 / 低相关分层动作。",
-    "source_mode": "real",
+    "headline": "通用雷达先盯 environment：欧盟包装可回收强制新规：涉欧卖家面临材料换代与成本飙升",
+    "why_it_matters": "这条 environment 事件已经不是某个单一画像的小波动，而是所有卖家都该先扫一眼的首页信号；先看事件本身，再按高相关 / 中相关 / 低相关分层动作。",
+    "source_mode": "seed",
     "top_risk": {
-      "event_title": "2026年2月28日起OTDR列表停用流程更新",
-      "event_type": "platform",
-      "risk_level": "high",
-      "seller_angle": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。"
+      "event_title": "欧盟包装可回收强制新规：涉欧卖家面临材料换代与成本飙升",
+      "event_type": "environment",
+      "risk_level": "medium",
+      "seller_angle": "不符合新规的包装材料将被限制进入欧盟市场，已有库存面临强制报废或退运风险。使用可回收/可降解材料将推高单件包装成本15%-30%，利润空间进一步承压。"
     },
     "active_profile_modifier": {
       "platform": "全平台扫描",
@@ -25,149 +25,53 @@ window.RADAR_UI_DATA = {
     }
   },
   "dashboard": {
-    "high_priority_count": 1,
+    "high_priority_count": 0,
     "top_story": {
-      "title": "2026年2月28日起OTDR列表停用流程更新",
-      "risk_type": "platform",
-      "priority": "high"
+      "title": "欧盟包装可回收强制新规：涉欧卖家面临材料换代与成本飙升",
+      "risk_type": "environment",
+      "priority": "medium"
     },
     "risk_type_distribution": [
-      "logistics×11",
-      "platform×3",
-      "compliance×1"
+      "environment×1",
+      "logistics×1",
+      "tariff×1"
     ],
     "cards": [
       {
         "rank": 1,
-        "title": "2026年2月28日起OTDR列表停用流程更新",
-        "risk_type": "platform",
-        "priority": "high",
-        "who_to_watch": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
-        "action": "关注平台功能变更对流量和转化的影响"
+        "title": "欧盟包装可回收强制新规：涉欧卖家面临材料换代与成本飙升",
+        "risk_type": "environment",
+        "priority": "medium",
+        "who_to_watch": "本地履约-平台主导（平台修正：全平台扫描 / 市场修正：EU / 重点看定价、补货、平台仓规则）",
+        "action": "立即审计在欧库存产品的包装材料类型与合规状态"
       },
       {
         "rank": 2,
-        "title": "Amazon Big Spring Sale 清库存窗口期即将开启",
-        "risk_type": "platform",
-        "priority": "medium",
-        "who_to_watch": "亚马逊将在3月25-31日推出大型清仓促销活动，为冗余FBA库存提供额外曝光机会。若错过3月20日提交截止日期，将无法享受活动期间的促销流量，导致仓储费持续累积。Outlet Deal价格要求不高于最高限价，可能压缩利润空间，但对于长期滞销库存，清仓收益仍优于长期仓储成本。",
-        "action": "立即登录FBA Inventory后台，筛选Create Outlet deal推荐商品"
+        "title": "欧盟取消低价值包裹免税政策，低客单价直邮卖家成本承压",
+        "risk_type": "tariff",
+        "priority": "low",
+        "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 税后到手价与毛利最敏感）",
+        "action": "核算取消免税后的商品毛利，筛选利润可覆盖新增税费的SKU"
       },
       {
         "rank": 3,
-        "title": "Amazon 要求高货值商品使用预付退货标签",
+        "title": "欧洲港口罢工预警：物流时效或将延误，卖家需提前备货应对",
         "risk_type": "logistics",
         "priority": "medium",
         "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "核查店铺中高价值商品（>$100）占比与月均退货量，测算新增退货标签成本对利润率的影响"
-      },
-      {
-        "rank": 4,
-        "title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
-        "risk_type": "platform",
-        "priority": "medium",
-        "who_to_watch": "捐赠证书涉及税务申报抵扣，错误信息可能导致合规处罚或收益少报。库存捐赠记录需与财务报表精确匹配，否则可能引发审计风险。跨境卖家需确认各销售区域对捐赠抵扣的法规差异，避免申报不当。",
-        "action": "核对2025年捐赠记录与FBA库存报告的一致性"
-      },
-      {
-        "rank": 5,
-        "title": "EU电商合规指南+链接",
-        "risk_type": "compliance",
-        "priority": "medium",
-        "who_to_watch": "本地履约-平台主导（平台修正：全平台扫描 / 市场修正：EU / 重点看定价、补货、平台仓规则）",
-        "action": "立即启动欧盟合规自查，优先核查VAT、产品安全、隐私政策三项核心要求"
-      },
-      {
-        "rank": 6,
-        "title": "USPS 国际线路服务告警",
-        "risk_type": "logistics",
-        "priority": "medium",
-        "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "立即排查受影响10国订单并通知买家"
-      },
-      {
-        "rank": 7,
-        "title": "关税与近岸外包重塑供应链，拖车存储需求上升",
-        "risk_type": "logistics",
-        "priority": "medium",
-        "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "重新测算含拖车租金的履约成本，动态调整定价策略"
-      },
-      {
-        "rank": 8,
-        "title": "FMC主席DiBella：港口是美国经济安全与稳定的关键",
-        "risk_type": "logistics",
-        "priority": "medium",
-        "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "建立FMC政策追踪机制，关注新规发布动态"
-      },
-      {
-        "rank": 9,
-        "title": "Parcelhero 推出业界领先实时追踪及简化预订功能",
-        "risk_type": "logistics",
-        "priority": "medium",
-        "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "对比Parcelhero新功能与现有物流方案的成本时效差异"
-      },
-      {
-        "rank": 10,
-        "title": "变革浪潮冲击海运行业",
-        "risk_type": "logistics",
-        "priority": "medium",
-        "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "监测主要航线运价走势，与货代建立动态报价沟通机制"
-      },
-      {
-        "rank": 11,
-        "title": "特朗普暂停航运法可能损害美国船旗承运人与安全",
-        "risk_type": "logistics",
-        "priority": "medium",
-        "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "梳理现有物流合同中的运力保障条款，评估船东资质变化风险"
-      },
-      {
-        "rank": 12,
-        "title": "Five takeaways from State of Freight: Already strong market ge...",
-        "risk_type": "logistics",
-        "priority": "medium",
-        "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "启动运费成本重核算，同步调整 SKU 定价策略"
-      },
-      {
-        "rank": 13,
-        "title": "全球最大集装箱航运公司进军油轮市场",
-        "risk_type": "logistics",
-        "priority": "medium",
-        "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "核查与MSC签约的2025年年度合同是否有服务等级保障条款"
-      },
-      {
-        "rank": 14,
-        "title": "USPS亏损威胁电商物流配送",
-        "risk_type": "logistics",
-        "priority": "medium",
-        "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "清点近30天USPS承运包裹占比，超40%需立即启动渠道迁移"
-      },
-      {
-        "rank": 15,
-        "title": "亚马逊将向波兰投资超过50亿欧元",
-        "risk_type": "logistics",
-        "priority": "medium",
-        "who_to_watch": "跨境直发（平台修正：全平台扫描 / 市场修正：EU / 时效、签收、退款链路最敏感）",
-        "action": "增加履约和补货缓冲时间"
+        "action": "紧急排查近30天入欧货物，预留2-3周安全库存缓冲"
       }
     ]
   },
   "today_actions": [
-    "关注平台功能变更对流量和转化的影响",
-    "立即登录FBA Inventory后台，筛选Create Outlet deal推荐商品",
-    "核查店铺中高价值商品（>$100）占比与月均退货量，测算新增退货标签成本对利润率的影响"
+    "立即审计在欧库存产品的包装材料类型与合规状态",
+    "核算取消免税后的商品毛利，筛选利润可覆盖新增税费的SKU",
+    "紧急排查近30天入欧货物，预留2-3周安全库存缓冲"
   ],
   "watch_items": [
-    "评估是否需要适配新功能或调整运营策略",
-    "逐 SKU 测算 Outlet 价格与仓储费节省的净收益",
-    "登录卖家后台启用APRL程序并配置Buy Shipping Services，确保2月8日前完成系统对接"
+    "联系包材供应商获取可回收认证材料及报价",
+    "评估欧盟本地化仓储可行性，测算海外仓vs直邮的盈亏平衡点",
+    "联系货代锁定铁路或卡班替代路线，确认备用舱位"
   ],
   "hold_line": "先别一上来就把首页绑定成某个默认画像；先看事件级别，再决定切去哪个画像深挖。",
   "fulfillment_actions": [
@@ -176,11 +80,11 @@ window.RADAR_UI_DATA = {
       "path_label": "跨境直发",
       "path_description": "包裹从境外直发到目标市场，先看税费、到手价、签收和退款链路。",
       "actions": [
-        "先重算税后到手价、毛利率和退款缓冲，别让低客单 SKU 悄悄转负。",
-        "紧盯 2026年2月28日起OTDR列表停用流程更新 的正式细则和执行时间，避免广告继续把亏损放大。"
+        "排查小包直发订单中使用的塑料袋、缓冲填充物是否合规",
+        "预留3个月库存缓冲期，同步测试新包装稳定性"
       ],
       "watchouts": [
-        "密切关注 2026年2月28日起OTDR列表停用流程更新 的最终执行日期和适用品类。"
+        "直邮小包面单与包装合为一体，须确保新材料在欧盟各国海关不触发环保查验"
       ],
       "modifier": "平台修正：general / 市场修正：EU"
     },
@@ -189,11 +93,11 @@ window.RADAR_UI_DATA = {
       "path_label": "本地履约-平台主导",
       "path_description": "平台托管/半托管/FBA 一类，本地仓配能缓冲一部分冲击，但要盯价格带、补货和平台规则。",
       "actions": [
-        "先复核平台仓配链路的价格带、补货节奏和承诺时效，确认安全垫还在不在。",
-        "把 platform 风险翻译成平台内动作：提价、控量、调补货，不要只看新闻标题。"
+        "联系亚马逊/速卖通等平台，确认FBA仓库存的包装豁免政策",
+        "对在仓不合规库存申请退运或本地销毁，避免产生长期仓储费"
       ],
       "watchouts": [
-        "留意平台是否因 2026年2月28日起OTDR列表停用流程更新 调整仓配规则或绩效门槛。"
+        "FBA库存下架后二次入仓需重新符合新规，勿仓促返库造成双重损失"
       ],
       "modifier": "平台修正：general / 市场修正：EU"
     },
@@ -202,11 +106,11 @@ window.RADAR_UI_DATA = {
       "path_label": "本地履约-3PL/商家主导",
       "path_description": "商家自控海外仓或 3PL，本地履约更稳，但仓储、清关和尾程协同压力更高。",
       "actions": [
-        "立即盘点站点在途库存与库容利用率，防范政策突变引发的仓储费异动。",
-        "针对 2026年2月28日起OTDR列表停用流程更新 预留备用清关行联系方式，评估核心 SKU 是否需前置拨备。"
+        "通知海外仓服务商提供合规包材，并更新入库标准",
+        "协调第三方物流商调整打包流程，更新操作SOP"
       ],
       "watchouts": [
-        "自发货路径优先关注 2026年2月28日起OTDR列表停用流程更新 对清关和尾程时效的影响。"
+        "海外仓多SKU混放，需逐品核查避免个别不合规SKU拖累整仓"
       ],
       "modifier": "平台修正：general / 市场修正：EU"
     }
@@ -251,37 +155,6 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
-      "id": "2026年2月28日起OTDR列表停用流程更新",
-      "category": "urgent",
-      "scope": "platform",
-      "display_order": 1,
-      "title": "2026年2月28日起OTDR列表停用流程更新",
-      "raw_title": "2026年2月28日起OTDR列表停用流程更新",
-      "summary": "亚马逊更新OTDR listing停用规则，2026年2月28日起，准时交货率低于90%时，将仅停用对评分影响最大的特定listing，而非全部seller-fulfilled listing，并提供恢复指导。",
-      "level": "high",
-      "type": "platform",
-      "typeLabel": "平台动态",
-      "platforms": [
-        "Amazon"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "official-content",
-      "source_type": "platform-official",
-      "source_priority": "P0",
-      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "关注平台功能变更对流量和转化的影响",
-      "source": {
-        "name": "Amazon Seller Forums - News and Announcements Content",
-        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/bb76566a-c8a4-468d-bb94-d49402c83023"
-      },
-      "timestamp": "2026-03-22T19:48:02.780Z",
-      "brief_rank": 1,
-      "ranking_score": 205
-    },
-    {
       "id": "temu-us-deminimis-impact",
       "category": "urgent",
       "scope": "platform",
@@ -313,37 +186,6 @@ window.RADAR_UI_DATA = {
       "monitor_until": null,
       "brief_rank": 2,
       "ranking_score": null
-    },
-    {
-      "id": "Amazon Big Spring Sale 清库存窗口期即将开启",
-      "category": "urgent",
-      "scope": "platform",
-      "display_order": 2,
-      "title": "亚马逊将在3月25-31日推出大型清仓促销活动",
-      "raw_title": "Amazon Big Spring Sale 清库存窗口期即将开启",
-      "summary": "2026年Big Spring Sale将于3月25-31日举行，7天内覆盖35+类目。作为亚马逊最大清仓活动，卖家可通过提交Outlet deals清理FBA过剩库存，提升库存周转率、改善现金流、优化库容并降低仓储费，活动期间还可获得额外推广曝光。",
-      "level": "medium",
-      "type": "platform",
-      "typeLabel": "平台动态",
-      "platforms": [
-        "Amazon"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "official-content",
-      "source_type": "platform-official",
-      "source_priority": "P0",
-      "impact": "亚马逊将在3月25-31日推出大型清仓促销活动，为冗余FBA库存提供额外曝光机会。若错过3月20日提交截止日期，将无法享受活动期间的促销流量，导致仓储费持续累积。Outlet Deal价格要求不高于最高限价，可能压缩利润空间，但对于长期滞销库存，清仓收益仍优于长期仓储成本。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即登录FBA Inventory后台，筛选Create Outlet deal推荐商品",
-      "source": {
-        "name": "Amazon Seller Forums - News and Announcements Content",
-        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/912589ea-a61d-41e9-ab87-fea55be45804"
-      },
-      "timestamp": "2026-03-23T19:45:09.868Z",
-      "brief_rank": 2,
-      "ranking_score": 183
     },
     {
       "id": "tiktok-fbt-mandate-us-seed",
@@ -379,37 +221,6 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
-      "id": "Amazon 要求高货值商品使用预付退货标签",
-      "category": "urgent",
-      "scope": "platform",
-      "display_order": 3,
-      "title": "高价值商品退货成本将大幅增加",
-      "raw_title": "Amazon 要求高货值商品使用预付退货标签",
-      "summary": "2026年2月8日起，所有美国卖家须使用亚马逊预付费退货标签（APRL）处理客户退货，不再区分商品价值。APRL通过Buy Shipping Services自动提供预付费退货标签，将退款周期从14天缩短至7天，无需买卖双方消息往来。Handmade手工艺品、认证二手商品等品类的",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "Amazon"
-      ],
-      "regions": [
-        "US"
-      ],
-      "source_layer": "official-content",
-      "source_type": "platform-official",
-      "source_priority": "P0",
-      "impact": "高价值商品退货成本将大幅增加，此前豁免标签费现在需由卖家承担，直接压缩高客单价商品利润空间。退款周期从14天缩短至7天，加速资金回笼但也要求更快完成库存核销与再上架决策。平台强制接入APRL程序，未合规卖家将面临退货流程中断风险。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "核查店铺中高价值商品（>$100）占比与月均退货量，测算新增退货标签成本对利润率的影响",
-      "source": {
-        "name": "Amazon Seller Forums - News and Announcements Content",
-        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/c1eae42b-ead4-4c63-a007-aefbca44a867"
-      },
-      "timestamp": "2026-03-20T20:34:04.294Z",
-      "brief_rank": 3,
-      "ranking_score": 180
-    },
-    {
       "id": "tiktok-europe-expansion-seed",
       "category": "urgent",
       "scope": "platform",
@@ -441,37 +252,6 @@ window.RADAR_UI_DATA = {
       "monitor_until": null,
       "brief_rank": 4,
       "ranking_score": null
-    },
-    {
-      "id": "Amazon FBA 捐赠计划开放捐赠凭证下载",
-      "category": "urgent",
-      "scope": "platform",
-      "display_order": 4,
-      "title": "捐赠证书涉及税务申报抵扣",
-      "raw_title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
-      "summary": "使用FBA Donations的卖家现在可以获取捐赠证书。2025年通过FBA Donations计划捐赠过产品的卖家，现可从非营利组织合作伙伴处获取捐赠证书，查看上一年度的捐赠库存记录。",
-      "level": "medium",
-      "type": "platform",
-      "typeLabel": "平台动态",
-      "platforms": [
-        "Amazon"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "official-content",
-      "source_type": "platform-official",
-      "source_priority": "P0",
-      "impact": "捐赠证书涉及税务申报抵扣，错误信息可能导致合规处罚或收益少报。库存捐赠记录需与财务报表精确匹配，否则可能引发审计风险。跨境卖家需确认各销售区域对捐赠抵扣的法规差异，避免申报不当。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "核对2025年捐赠记录与FBA库存报告的一致性",
-      "source": {
-        "name": "Amazon Seller News / Announcements Content",
-        "url": "https://sell.amazon.com/blog/announcements/fba-donation-certificate"
-      },
-      "timestamp": "2026-03-09T17:36:00",
-      "brief_rank": 4,
-      "ranking_score": 169
     },
     {
       "id": "tiktok-creator-commission-seed",
@@ -542,37 +322,6 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
-      "id": "USPS 国际线路服务告警",
-      "category": "urgent",
-      "scope": "global",
-      "display_order": 6,
-      "title": "USPS 国际线路服务告警",
-      "raw_title": "USPS 国际线路服务告警",
-      "summary": "**USPS国际邮件暂停预警（2026年3月20日）**：美国邮政因运输条件不足或目的国服务中断，暂停接收发往以下目的地的国际邮件：百慕大（邮政服务暂停）、阿富汗、伊拉克、塞舌尔、巴林、以色列、南苏丹、白俄罗斯、科威特、苏丹。请跨境卖家暂停向上述地区发货，直至通知。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "official-content",
-      "source_type": "carrier-official",
-      "source_priority": "P1",
-      "impact": "USPS暂停接受发往百慕大、阿富汗、伊拉克、塞舌尔、巴林、以色列、南苏丹、白俄罗斯、科威特、苏丹共10国的国际邮件，跨境直邮链路直接中断。依赖USPS小包的卖家将面临订单积压、库存周转停滞，替代物流成本将侵蚀轻小件商品利润空间，部分卖家可能因无法履约触发平台处罚。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即排查受影响10国订单并通知买家",
-      "source": {
-        "name": "USPS International Service Alerts Content",
-        "url": "https://about.usps.com/newsroom/service-alerts/international/"
-      },
-      "timestamp": "2026-03-20T00:00:00Z",
-      "brief_rank": 6,
-      "ranking_score": 134
-    },
-    {
       "id": "temu-semi-managed-expansion-seed",
       "category": "urgent",
       "scope": "platform",
@@ -607,314 +356,97 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
-      "id": "EU电商合规指南+链接",
+      "id": "欧盟包装可回收强制新规：涉欧卖家面临材料换代与成本飙升",
       "category": "daily",
-      "scope": "global",
-      "display_order": 5,
-      "title": "EU电商合规指南",
-      "raw_title": "EU电商合规指南+链接",
-      "summary": "欧盟电商合规指南+链接。在欧盟内部开展在线销售不仅仅是开店、添加支付方式和发货那么简单。想在欧盟合法运营的品牌必须满足一系列法规要求，包括VAT合规、产品安全标准、消费者权益保护、隐私政策（GDPR）等。建议跨境卖家提前了解各成员国的具体要求，建立合规体系以避免法律风险。",
+      "scope": "platform",
+      "display_order": 1,
+      "title": "欧盟包装可回收强制新规：涉欧卖家面临材料换代与成本飙升",
+      "raw_title": "欧盟包装可回收强制新规：涉欧卖家面临材料换代与成本飙升",
+      "summary": "潜在 欧洲 环保 事件，可能会影响当前的跨境履约、利润或合规操作。",
       "level": "medium",
-      "type": "compliance",
+      "type": "environment",
       "typeLabel": "合规标准",
       "platforms": [
-        "跨境通用"
+        "多平台波及"
       ],
       "regions": [
         "EU"
       ],
-      "source_layer": "base-feed",
+      "source_layer": "",
       "source_type": "",
       "source_priority": "",
-      "impact": "欧盟新合规要求将增加卖家在VAT注册、产品认证、数据保护等方面的合规成本，预计整体运营成本上涨5-15%。未完成合规整改的卖家可能面临listing下架或账户暂停风险，尤其影响轻小件直发商品的价格竞争力。",
+      "impact": "不符合新规的包装材料将被限制进入欧盟市场，已有库存面临强制报废或退运风险。使用可回收/可降解材料将推高单件包装成本15%-30%，利润空间进一步承压。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即启动欧盟合规自查，优先核查VAT、产品安全、隐私政策三项核心要求",
+      "action": "立即审计在欧库存产品的包装材料类型与合规状态",
       "source": {
-        "name": "Cross-Border Magazine",
-        "url": "https://cross-border-magazine.com/eu-e-commerce-compliance-guide/"
+        "name": "user-provided",
+        "url": "https://example.com/eu-packaging-rule"
       },
-      "timestamp": "Thu, 12 Mar 2026 08:59:10 +0000",
-      "brief_rank": 5,
-      "ranking_score": 140
+      "timestamp": null,
+      "brief_rank": 1,
+      "ranking_score": 114
     },
     {
-      "id": "关税与近岸外包重塑供应链，拖车存储需求上升",
+      "id": "欧盟取消低价值包裹免税政策，低客单价直邮卖家成本承压",
       "category": "daily",
-      "scope": "global",
-      "display_order": 7,
-      "title": "关税与近岸外包重塑供应链，拖车存储需求上升",
-      "raw_title": "关税与近岸外包重塑供应链，拖车存储需求上升",
-      "summary": "受关税政策和近岸外包趋势影响，制造商和零售商正越来越多地租用存储拖车，以应对库存激增、跨境货运流量增加和仓储成本上升的问题。这一趋势正在重塑全球供应链格局。",
+      "scope": "platform",
+      "display_order": 2,
+      "title": "欧盟取消低价值包裹免税政策，低客单价直邮卖家成本承压",
+      "raw_title": "欧盟取消低价值包裹免税政策，低客单价直邮卖家成本承压",
+      "summary": "潜在 欧洲 关税 事件，可能会影响当前的跨境履约、利润或合规操作。",
+      "level": "low",
+      "type": "tariff",
+      "typeLabel": "关税与税务",
+      "platforms": [
+        "多平台波及"
+      ],
+      "regions": [
+        "EU"
+      ],
+      "source_layer": "",
+      "source_type": "",
+      "source_priority": "",
+      "impact": "取消€150以下免税后，直邮小包成本将增加15-25%，低客单价商品利润空间被侵蚀甚至亏损。同时清关流程复杂化，通关时效延长，税务合规风险上升。已使用海外仓或平台仓的卖家可维持竞争力，但需应对随之而来的价格内卷压力。",
+      "subject": "布局 EU 市场的 general mixed 卖家",
+      "action": "核算取消免税后的商品毛利，筛选利润可覆盖新增税费的SKU",
+      "source": {
+        "name": "user-provided",
+        "url": "https://example.com/eu-small-parcel-tax"
+      },
+      "timestamp": null,
+      "brief_rank": 2,
+      "ranking_score": 94
+    },
+    {
+      "id": "欧洲港口罢工预警：物流时效或将延误，卖家需提前备货应对",
+      "category": "daily",
+      "scope": "platform",
+      "display_order": 3,
+      "title": "欧洲港口罢工预警：物流时效或将延误，卖家需提前备货应对",
+      "raw_title": "欧洲港口罢工预警：物流时效或将延误，卖家需提前备货应对",
+      "summary": "潜在 欧洲 物流 事件，可能会影响当前的跨境履约、利润或合规操作。",
       "level": "medium",
       "type": "logistics",
       "typeLabel": "物流运输",
       "platforms": [
-        "跨境通用"
+        "多平台波及"
       ],
       "regions": [
-        "Other"
+        "EU"
       ],
-      "source_layer": "base-feed",
+      "source_layer": "",
       "source_type": "",
       "source_priority": "",
-      "impact": "关税政策和近岸外包趋势推动跨境货运量激增，拖车仓储租金持续上涨，直接压缩跨境卖家利润空间。库存波动性增大导致预测难度上升，错配风险向履约全链路传导。",
+      "impact": "港口罢工将导致集装箱滞港、清关延迟，跨境直邮小包平均时效可能延长5-10个工作日；FBA补货周期拉长将增加长期仓储费风险，断货Listing权重下滑不可逆；自发货卖家可能面临高额滞留费及买家差评压力。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "重新测算含拖车租金的履约成本，动态调整定价策略",
+      "action": "紧急排查近30天入欧货物，预留2-3周安全库存缓冲",
       "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/trailer-storage-demand-rises-as-tariffs-nearshoring-reshape-supply-chains"
+        "name": "user-provided",
+        "url": "https://example.com/port-union-vote"
       },
-      "timestamp": "Mon, 23 Mar 2026 11:30:00 +0000",
-      "brief_rank": 7,
-      "ranking_score": 95
-    },
-    {
-      "id": "FMC主席DiBella：港口是美国经济安全与稳定的关键",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 8,
-      "title": "特朗普政府强化国内航运业支持",
-      "raw_title": "FMC主席DiBella：港口是美国经济安全与稳定的关键",
-      "summary": "**摘要：**\n\nFMC新任主席Laura DiBella表示，港口对美国经济安全和稳定至关重要，特朗普政府正推动数十年来对本土航运业最强力的支持政策。此举预计将影响中美航线及跨境物流格局，卖家需关注政策变化对运输成本和时效的影响。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "US"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "特朗普政府强化国内航运业支持，可能推动港口费用上调和监管收紧，增加跨境卖家的物流合规成本；航运公司议价能力提升，运价波动风险加大；清关时效和港口拥堵问题可能反复出现，影响库存周转计划。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "建立FMC政策追踪机制，关注新规发布动态",
-      "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/fmcs-dibella-ports-are-key-to-u-s-economic-security-and-stability"
-      },
-      "timestamp": "Tue, 24 Mar 2026 11:00:00 +0000",
-      "brief_rank": 8,
-      "ranking_score": 86
-    },
-    {
-      "id": "Parcelhero 推出业界领先实时追踪及简化预订功能",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 9,
-      "title": "AI追踪功能可降低客户物流咨询量20%-30%",
-      "raw_title": "Parcelhero 推出业界领先实时追踪及简化预订功能",
-      "summary": "英国领先快递比价及物流平台Parcelhero推出重大平台升级第一阶段功能，包括AI驱动追踪、最快预订界面及多项智能功能，旨在提升用户掌控体验。这是系列技术升级的首发。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "UK"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "AI追踪功能可降低客户物流咨询量20%-30%，减少售后人力成本；快速预订界面缩短发货准备时间，提升订单处理效率；英国物流市场数字化加速，竞争门槛提高，卖家需及时适配新技术保持竞争力。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "对比Parcelhero新功能与现有物流方案的成本时效差异",
-      "source": {
-        "name": "Tamebay",
-        "url": "https://channelx.world/2026/03/parcelhero-launches-market-leading-live-tracking-and-streamlined-booking-features/"
-      },
-      "timestamp": "Mon, 23 Mar 2026 14:50:48 +0000",
-      "brief_rank": 9,
-      "ranking_score": 84
-    },
-    {
-      "id": "变革浪潮冲击海运行业",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 10,
-      "title": "变革浪潮冲击海运行业",
-      "raw_title": "变革浪潮冲击海运行业",
-      "summary": "海运变革浪潮涌动。在物流供应商寻求春季业务复苏迹象之际，海洋航运正经历一系列影响海运供应链前景的变化。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "海运市场正经历多重变化，跨境卖家的物流成本将面临显著波动压力。海洋供应链的不确定性可能导致交付时效延长，库存管理难度加大。低价舱位可能快速售罄，建议提前锁定运力和合理备货。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "监测主要航线运价走势，与货代建立动态报价沟通机制",
-      "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/rip-tide-of-change-roils-ocean-shipping"
-      },
-      "timestamp": "Mon, 23 Mar 2026 13:04:44 +0000",
-      "brief_rank": 10,
-      "ranking_score": 83
-    },
-    {
-      "id": "特朗普暂停航运法可能损害美国船旗承运人与安全",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 11,
-      "title": "特朗普暂停航运法可能损害美国船旗承运人与安全",
-      "raw_title": "特朗普暂停航运法可能损害美国船旗承运人与安全",
-      "summary": "特朗普暂停琼斯法案，允许外国船舶运输美国港口间货物。美线航运商称此举将损害美国籍船舶运营商利益及其长期承诺，同时引发国家安全担忧。此政策变化可能影响中美航线货运格局，跨境卖家需关注后续政策走向。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "US"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "美国国旗船舶运营商将直面外国竞争者的价格战冲击，长期稳定的货运承诺体系面临瓦解风险。对于依赖本国船舶运力的跨境卖家，美国国内段物流成本可能出现异常波动，供应链稳定性存疑。同时，战时或紧急状态下可调用的美国船舶运力可能萎缩，国防和安全供应链韧性面临考验。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "梳理现有物流合同中的运力保障条款，评估船东资质变化风险",
-      "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/how-trumps-pause-of-shipping-law-could-hurt-u-s-flag-carriers"
-      },
-      "timestamp": "Fri, 20 Mar 2026 15:00:00 +0000",
-      "brief_rank": 11,
-      "ranking_score": 76
-    },
-    {
-      "id": "Five takeaways from State of Freight: Already strong market ge...",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 12,
-      "title": "伊朗战争风险溢价已传导至主干航线",
-      "raw_title": "Five takeaways from State of Freight: Already strong market ge...",
-      "summary": "**中文摘要：**\n\nState of Freight网络研讨会三月议题聚焦伊朗战争，货运市场遭受战时冲击，卡车运输成本显著上升。此前货运市场本就强劲，研讨会已连续数月应对新挑战：先是需求骤升，后有监管变化。对跨境卖家而言，运价波动风险上升。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "伊朗战争风险溢价已传导至主干航线， trucking 成本显著上涨，卖家物流费用预计增加 15-30%。海空运力收紧将延长备货周期，依赖即时补货的爆款面临断货风险。运价波动叠加旺季预期，卖家利润空间进一步承压。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "启动运费成本重核算，同步调整 SKU 定价策略",
-      "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/five-takeaways-from-state-of-freight-already-strong-market-gets-a-wartime-jolt"
-      },
-      "timestamp": "Fri, 20 Mar 2026 12:51:01 +0000",
-      "brief_rank": 12,
-      "ranking_score": 76
-    },
-    {
-      "id": "全球最大集装箱航运公司进军油轮市场",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 13,
-      "title": "全球最大集装箱航运公司进军油轮市场",
-      "raw_title": "全球最大集装箱航运公司进军油轮市场",
-      "summary": "世界最大集装箱航运公司地中海航运（MSC）收购油轮船队joint ownership stake，正式进军油轮市场。此举将拓展其海运业务版图，或对跨境物流运费产生影响。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "MSC战略重心可能向油轮倾斜，导致亚欧/跨太平洋航线集装箱舱位收紧和服务波动风险上升。若头部船司集体多元化，将削弱传统集运运价战动力，2025年旺季运价上涨压力将直接侵蚀跨境卖家3%-8%的利润空间。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "核查与MSC签约的2025年年度合同是否有服务等级保障条款",
-      "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/largest-container-line-makes-major-move-into-tanker-market"
-      },
-      "timestamp": "Fri, 20 Mar 2026 11:00:00 +0000",
-      "brief_rank": 13,
-      "ranking_score": 76
-    },
-    {
-      "id": "USPS亏损威胁电商物流配送",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 14,
-      "title": "USPS亏损威胁电商物流配送",
-      "raw_title": "USPS亏损威胁电商物流配送",
-      "summary": "**摘要：** USPS（美国邮政）持续亏损，若服务变慢、涨价或可靠性下降，将直接冲击跨境卖家最后一公里配送。建议关注替代方案如UPS、FedEx或本土邮局合作。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "USPS若提价或降速，跨境直邮卖家的物流成本将上涨15%-30%，平均配送时效延长3-5个工作日，退款纠纷率预计上升。依赖USPS完成最后一公里的FBA和海外仓路径将面临入库延迟、库存周转紊乱等连锁风险，严重时可能触发平台绩效处罚。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "清点近30天USPS承运包裹占比，超40%需立即启动渠道迁移",
-      "source": {
-        "name": "Practical Ecommerce",
-        "url": "https://www.practicalecommerce.com/usps-losses-threaten-ecommerce-shipping"
-      },
-      "timestamp": "Sun, 22 Mar 2026 13:06:05 +0000",
-      "brief_rank": 14,
-      "ranking_score": 75
-    },
-    {
-      "id": "亚马逊将向波兰投资超过50亿欧元",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 15,
-      "title": "亚马逊将向波兰投资超过50亿欧元",
-      "raw_title": "亚马逊将向波兰投资超过50亿欧元",
-      "summary": "亚马逊计划2024至2028年间向波兰投资超50亿欧元此前2012至2025年间已投资100亿欧元部分资金将用于新建Fulfillment Center。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 其他地区 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "增加履约和补货缓冲时间",
-      "source": {
-        "name": "Ecommerce News EU",
-        "url": "https://ecommercenews.eu/amazon-to-invest-over-5-billion-euros-in-poland/"
-      },
-      "timestamp": "Thu, 19 Mar 2026 15:31:45 +0000",
-      "brief_rank": 15,
-      "ranking_score": 70
+      "timestamp": null,
+      "brief_rank": 3,
+      "ranking_score": 71
     }
   ],
   "macro_events": [
@@ -959,37 +491,6 @@ window.RADAR_UI_DATA = {
   ],
   "urgent_events": [
     {
-      "id": "2026年2月28日起OTDR列表停用流程更新",
-      "category": "urgent",
-      "scope": "platform",
-      "display_order": 1,
-      "title": "2026年2月28日起OTDR列表停用流程更新",
-      "raw_title": "2026年2月28日起OTDR列表停用流程更新",
-      "summary": "亚马逊更新OTDR listing停用规则，2026年2月28日起，准时交货率低于90%时，将仅停用对评分影响最大的特定listing，而非全部seller-fulfilled listing，并提供恢复指导。",
-      "level": "high",
-      "type": "platform",
-      "typeLabel": "平台动态",
-      "platforms": [
-        "Amazon"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "official-content",
-      "source_type": "platform-official",
-      "source_priority": "P0",
-      "impact": "【雷达研判】该事件将从 目标市场消费端转化率下挫, 前端售价与利润空间压缩, 强合规门槛导致商品无预警下架 维度冲击 general 业务。关键细节提示：已监测到 其他地区 平台动态 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "关注平台功能变更对流量和转化的影响",
-      "source": {
-        "name": "Amazon Seller Forums - News and Announcements Content",
-        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/bb76566a-c8a4-468d-bb94-d49402c83023"
-      },
-      "timestamp": "2026-03-22T19:48:02.780Z",
-      "brief_rank": 1,
-      "ranking_score": 205
-    },
-    {
       "id": "temu-us-deminimis-impact",
       "category": "urgent",
       "scope": "platform",
@@ -1021,37 +522,6 @@ window.RADAR_UI_DATA = {
       "monitor_until": null,
       "brief_rank": 2,
       "ranking_score": null
-    },
-    {
-      "id": "Amazon Big Spring Sale 清库存窗口期即将开启",
-      "category": "urgent",
-      "scope": "platform",
-      "display_order": 2,
-      "title": "亚马逊将在3月25-31日推出大型清仓促销活动",
-      "raw_title": "Amazon Big Spring Sale 清库存窗口期即将开启",
-      "summary": "2026年Big Spring Sale将于3月25-31日举行，7天内覆盖35+类目。作为亚马逊最大清仓活动，卖家可通过提交Outlet deals清理FBA过剩库存，提升库存周转率、改善现金流、优化库容并降低仓储费，活动期间还可获得额外推广曝光。",
-      "level": "medium",
-      "type": "platform",
-      "typeLabel": "平台动态",
-      "platforms": [
-        "Amazon"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "official-content",
-      "source_type": "platform-official",
-      "source_priority": "P0",
-      "impact": "亚马逊将在3月25-31日推出大型清仓促销活动，为冗余FBA库存提供额外曝光机会。若错过3月20日提交截止日期，将无法享受活动期间的促销流量，导致仓储费持续累积。Outlet Deal价格要求不高于最高限价，可能压缩利润空间，但对于长期滞销库存，清仓收益仍优于长期仓储成本。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即登录FBA Inventory后台，筛选Create Outlet deal推荐商品",
-      "source": {
-        "name": "Amazon Seller Forums - News and Announcements Content",
-        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/912589ea-a61d-41e9-ab87-fea55be45804"
-      },
-      "timestamp": "2026-03-23T19:45:09.868Z",
-      "brief_rank": 2,
-      "ranking_score": 183
     },
     {
       "id": "tiktok-fbt-mandate-us-seed",
@@ -1087,37 +557,6 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
-      "id": "Amazon 要求高货值商品使用预付退货标签",
-      "category": "urgent",
-      "scope": "platform",
-      "display_order": 3,
-      "title": "高价值商品退货成本将大幅增加",
-      "raw_title": "Amazon 要求高货值商品使用预付退货标签",
-      "summary": "2026年2月8日起，所有美国卖家须使用亚马逊预付费退货标签（APRL）处理客户退货，不再区分商品价值。APRL通过Buy Shipping Services自动提供预付费退货标签，将退款周期从14天缩短至7天，无需买卖双方消息往来。Handmade手工艺品、认证二手商品等品类的",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "Amazon"
-      ],
-      "regions": [
-        "US"
-      ],
-      "source_layer": "official-content",
-      "source_type": "platform-official",
-      "source_priority": "P0",
-      "impact": "高价值商品退货成本将大幅增加，此前豁免标签费现在需由卖家承担，直接压缩高客单价商品利润空间。退款周期从14天缩短至7天，加速资金回笼但也要求更快完成库存核销与再上架决策。平台强制接入APRL程序，未合规卖家将面临退货流程中断风险。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "核查店铺中高价值商品（>$100）占比与月均退货量，测算新增退货标签成本对利润率的影响",
-      "source": {
-        "name": "Amazon Seller Forums - News and Announcements Content",
-        "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/c1eae42b-ead4-4c63-a007-aefbca44a867"
-      },
-      "timestamp": "2026-03-20T20:34:04.294Z",
-      "brief_rank": 3,
-      "ranking_score": 180
-    },
-    {
       "id": "tiktok-europe-expansion-seed",
       "category": "urgent",
       "scope": "platform",
@@ -1149,37 +588,6 @@ window.RADAR_UI_DATA = {
       "monitor_until": null,
       "brief_rank": 4,
       "ranking_score": null
-    },
-    {
-      "id": "Amazon FBA 捐赠计划开放捐赠凭证下载",
-      "category": "urgent",
-      "scope": "platform",
-      "display_order": 4,
-      "title": "捐赠证书涉及税务申报抵扣",
-      "raw_title": "Amazon FBA 捐赠计划开放捐赠凭证下载",
-      "summary": "使用FBA Donations的卖家现在可以获取捐赠证书。2025年通过FBA Donations计划捐赠过产品的卖家，现可从非营利组织合作伙伴处获取捐赠证书，查看上一年度的捐赠库存记录。",
-      "level": "medium",
-      "type": "platform",
-      "typeLabel": "平台动态",
-      "platforms": [
-        "Amazon"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "official-content",
-      "source_type": "platform-official",
-      "source_priority": "P0",
-      "impact": "捐赠证书涉及税务申报抵扣，错误信息可能导致合规处罚或收益少报。库存捐赠记录需与财务报表精确匹配，否则可能引发审计风险。跨境卖家需确认各销售区域对捐赠抵扣的法规差异，避免申报不当。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "核对2025年捐赠记录与FBA库存报告的一致性",
-      "source": {
-        "name": "Amazon Seller News / Announcements Content",
-        "url": "https://sell.amazon.com/blog/announcements/fba-donation-certificate"
-      },
-      "timestamp": "2026-03-09T17:36:00",
-      "brief_rank": 4,
-      "ranking_score": 169
     },
     {
       "id": "tiktok-creator-commission-seed",
@@ -1250,37 +658,6 @@ window.RADAR_UI_DATA = {
       "ranking_score": null
     },
     {
-      "id": "USPS 国际线路服务告警",
-      "category": "urgent",
-      "scope": "global",
-      "display_order": 6,
-      "title": "USPS 国际线路服务告警",
-      "raw_title": "USPS 国际线路服务告警",
-      "summary": "**USPS国际邮件暂停预警（2026年3月20日）**：美国邮政因运输条件不足或目的国服务中断，暂停接收发往以下目的地的国际邮件：百慕大（邮政服务暂停）、阿富汗、伊拉克、塞舌尔、巴林、以色列、南苏丹、白俄罗斯、科威特、苏丹。请跨境卖家暂停向上述地区发货，直至通知。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "official-content",
-      "source_type": "carrier-official",
-      "source_priority": "P1",
-      "impact": "USPS暂停接受发往百慕大、阿富汗、伊拉克、塞舌尔、巴林、以色列、南苏丹、白俄罗斯、科威特、苏丹共10国的国际邮件，跨境直邮链路直接中断。依赖USPS小包的卖家将面临订单积压、库存周转停滞，替代物流成本将侵蚀轻小件商品利润空间，部分卖家可能因无法履约触发平台处罚。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即排查受影响10国订单并通知买家",
-      "source": {
-        "name": "USPS International Service Alerts Content",
-        "url": "https://about.usps.com/newsroom/service-alerts/international/"
-      },
-      "timestamp": "2026-03-20T00:00:00Z",
-      "brief_rank": 6,
-      "ranking_score": 134
-    },
-    {
       "id": "temu-semi-managed-expansion-seed",
       "category": "urgent",
       "scope": "platform",
@@ -1317,314 +694,97 @@ window.RADAR_UI_DATA = {
   ],
   "daily_events": [
     {
-      "id": "EU电商合规指南+链接",
+      "id": "欧盟包装可回收强制新规：涉欧卖家面临材料换代与成本飙升",
       "category": "daily",
-      "scope": "global",
-      "display_order": 5,
-      "title": "EU电商合规指南",
-      "raw_title": "EU电商合规指南+链接",
-      "summary": "欧盟电商合规指南+链接。在欧盟内部开展在线销售不仅仅是开店、添加支付方式和发货那么简单。想在欧盟合法运营的品牌必须满足一系列法规要求，包括VAT合规、产品安全标准、消费者权益保护、隐私政策（GDPR）等。建议跨境卖家提前了解各成员国的具体要求，建立合规体系以避免法律风险。",
+      "scope": "platform",
+      "display_order": 1,
+      "title": "欧盟包装可回收强制新规：涉欧卖家面临材料换代与成本飙升",
+      "raw_title": "欧盟包装可回收强制新规：涉欧卖家面临材料换代与成本飙升",
+      "summary": "潜在 欧洲 环保 事件，可能会影响当前的跨境履约、利润或合规操作。",
       "level": "medium",
-      "type": "compliance",
+      "type": "environment",
       "typeLabel": "合规标准",
       "platforms": [
-        "跨境通用"
+        "多平台波及"
       ],
       "regions": [
         "EU"
       ],
-      "source_layer": "base-feed",
+      "source_layer": "",
       "source_type": "",
       "source_priority": "",
-      "impact": "欧盟新合规要求将增加卖家在VAT注册、产品认证、数据保护等方面的合规成本，预计整体运营成本上涨5-15%。未完成合规整改的卖家可能面临listing下架或账户暂停风险，尤其影响轻小件直发商品的价格竞争力。",
+      "impact": "不符合新规的包装材料将被限制进入欧盟市场，已有库存面临强制报废或退运风险。使用可回收/可降解材料将推高单件包装成本15%-30%，利润空间进一步承压。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "立即启动欧盟合规自查，优先核查VAT、产品安全、隐私政策三项核心要求",
+      "action": "立即审计在欧库存产品的包装材料类型与合规状态",
       "source": {
-        "name": "Cross-Border Magazine",
-        "url": "https://cross-border-magazine.com/eu-e-commerce-compliance-guide/"
+        "name": "user-provided",
+        "url": "https://example.com/eu-packaging-rule"
       },
-      "timestamp": "Thu, 12 Mar 2026 08:59:10 +0000",
-      "brief_rank": 5,
-      "ranking_score": 140
+      "timestamp": null,
+      "brief_rank": 1,
+      "ranking_score": 114
     },
     {
-      "id": "关税与近岸外包重塑供应链，拖车存储需求上升",
+      "id": "欧盟取消低价值包裹免税政策，低客单价直邮卖家成本承压",
       "category": "daily",
-      "scope": "global",
-      "display_order": 7,
-      "title": "关税与近岸外包重塑供应链，拖车存储需求上升",
-      "raw_title": "关税与近岸外包重塑供应链，拖车存储需求上升",
-      "summary": "受关税政策和近岸外包趋势影响，制造商和零售商正越来越多地租用存储拖车，以应对库存激增、跨境货运流量增加和仓储成本上升的问题。这一趋势正在重塑全球供应链格局。",
+      "scope": "platform",
+      "display_order": 2,
+      "title": "欧盟取消低价值包裹免税政策，低客单价直邮卖家成本承压",
+      "raw_title": "欧盟取消低价值包裹免税政策，低客单价直邮卖家成本承压",
+      "summary": "潜在 欧洲 关税 事件，可能会影响当前的跨境履约、利润或合规操作。",
+      "level": "low",
+      "type": "tariff",
+      "typeLabel": "关税与税务",
+      "platforms": [
+        "多平台波及"
+      ],
+      "regions": [
+        "EU"
+      ],
+      "source_layer": "",
+      "source_type": "",
+      "source_priority": "",
+      "impact": "取消€150以下免税后，直邮小包成本将增加15-25%，低客单价商品利润空间被侵蚀甚至亏损。同时清关流程复杂化，通关时效延长，税务合规风险上升。已使用海外仓或平台仓的卖家可维持竞争力，但需应对随之而来的价格内卷压力。",
+      "subject": "布局 EU 市场的 general mixed 卖家",
+      "action": "核算取消免税后的商品毛利，筛选利润可覆盖新增税费的SKU",
+      "source": {
+        "name": "user-provided",
+        "url": "https://example.com/eu-small-parcel-tax"
+      },
+      "timestamp": null,
+      "brief_rank": 2,
+      "ranking_score": 94
+    },
+    {
+      "id": "欧洲港口罢工预警：物流时效或将延误，卖家需提前备货应对",
+      "category": "daily",
+      "scope": "platform",
+      "display_order": 3,
+      "title": "欧洲港口罢工预警：物流时效或将延误，卖家需提前备货应对",
+      "raw_title": "欧洲港口罢工预警：物流时效或将延误，卖家需提前备货应对",
+      "summary": "潜在 欧洲 物流 事件，可能会影响当前的跨境履约、利润或合规操作。",
       "level": "medium",
       "type": "logistics",
       "typeLabel": "物流运输",
       "platforms": [
-        "跨境通用"
+        "多平台波及"
       ],
       "regions": [
-        "Other"
+        "EU"
       ],
-      "source_layer": "base-feed",
+      "source_layer": "",
       "source_type": "",
       "source_priority": "",
-      "impact": "关税政策和近岸外包趋势推动跨境货运量激增，拖车仓储租金持续上涨，直接压缩跨境卖家利润空间。库存波动性增大导致预测难度上升，错配风险向履约全链路传导。",
+      "impact": "港口罢工将导致集装箱滞港、清关延迟，跨境直邮小包平均时效可能延长5-10个工作日；FBA补货周期拉长将增加长期仓储费风险，断货Listing权重下滑不可逆；自发货卖家可能面临高额滞留费及买家差评压力。",
       "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "重新测算含拖车租金的履约成本，动态调整定价策略",
+      "action": "紧急排查近30天入欧货物，预留2-3周安全库存缓冲",
       "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/trailer-storage-demand-rises-as-tariffs-nearshoring-reshape-supply-chains"
+        "name": "user-provided",
+        "url": "https://example.com/port-union-vote"
       },
-      "timestamp": "Mon, 23 Mar 2026 11:30:00 +0000",
-      "brief_rank": 7,
-      "ranking_score": 95
-    },
-    {
-      "id": "FMC主席DiBella：港口是美国经济安全与稳定的关键",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 8,
-      "title": "特朗普政府强化国内航运业支持",
-      "raw_title": "FMC主席DiBella：港口是美国经济安全与稳定的关键",
-      "summary": "**摘要：**\n\nFMC新任主席Laura DiBella表示，港口对美国经济安全和稳定至关重要，特朗普政府正推动数十年来对本土航运业最强力的支持政策。此举预计将影响中美航线及跨境物流格局，卖家需关注政策变化对运输成本和时效的影响。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "US"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "特朗普政府强化国内航运业支持，可能推动港口费用上调和监管收紧，增加跨境卖家的物流合规成本；航运公司议价能力提升，运价波动风险加大；清关时效和港口拥堵问题可能反复出现，影响库存周转计划。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "建立FMC政策追踪机制，关注新规发布动态",
-      "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/fmcs-dibella-ports-are-key-to-u-s-economic-security-and-stability"
-      },
-      "timestamp": "Tue, 24 Mar 2026 11:00:00 +0000",
-      "brief_rank": 8,
-      "ranking_score": 86
-    },
-    {
-      "id": "Parcelhero 推出业界领先实时追踪及简化预订功能",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 9,
-      "title": "AI追踪功能可降低客户物流咨询量20%-30%",
-      "raw_title": "Parcelhero 推出业界领先实时追踪及简化预订功能",
-      "summary": "英国领先快递比价及物流平台Parcelhero推出重大平台升级第一阶段功能，包括AI驱动追踪、最快预订界面及多项智能功能，旨在提升用户掌控体验。这是系列技术升级的首发。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "UK"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "AI追踪功能可降低客户物流咨询量20%-30%，减少售后人力成本；快速预订界面缩短发货准备时间，提升订单处理效率；英国物流市场数字化加速，竞争门槛提高，卖家需及时适配新技术保持竞争力。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "对比Parcelhero新功能与现有物流方案的成本时效差异",
-      "source": {
-        "name": "Tamebay",
-        "url": "https://channelx.world/2026/03/parcelhero-launches-market-leading-live-tracking-and-streamlined-booking-features/"
-      },
-      "timestamp": "Mon, 23 Mar 2026 14:50:48 +0000",
-      "brief_rank": 9,
-      "ranking_score": 84
-    },
-    {
-      "id": "变革浪潮冲击海运行业",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 10,
-      "title": "变革浪潮冲击海运行业",
-      "raw_title": "变革浪潮冲击海运行业",
-      "summary": "海运变革浪潮涌动。在物流供应商寻求春季业务复苏迹象之际，海洋航运正经历一系列影响海运供应链前景的变化。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "海运市场正经历多重变化，跨境卖家的物流成本将面临显著波动压力。海洋供应链的不确定性可能导致交付时效延长，库存管理难度加大。低价舱位可能快速售罄，建议提前锁定运力和合理备货。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "监测主要航线运价走势，与货代建立动态报价沟通机制",
-      "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/rip-tide-of-change-roils-ocean-shipping"
-      },
-      "timestamp": "Mon, 23 Mar 2026 13:04:44 +0000",
-      "brief_rank": 10,
-      "ranking_score": 83
-    },
-    {
-      "id": "特朗普暂停航运法可能损害美国船旗承运人与安全",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 11,
-      "title": "特朗普暂停航运法可能损害美国船旗承运人与安全",
-      "raw_title": "特朗普暂停航运法可能损害美国船旗承运人与安全",
-      "summary": "特朗普暂停琼斯法案，允许外国船舶运输美国港口间货物。美线航运商称此举将损害美国籍船舶运营商利益及其长期承诺，同时引发国家安全担忧。此政策变化可能影响中美航线货运格局，跨境卖家需关注后续政策走向。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "US"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "美国国旗船舶运营商将直面外国竞争者的价格战冲击，长期稳定的货运承诺体系面临瓦解风险。对于依赖本国船舶运力的跨境卖家，美国国内段物流成本可能出现异常波动，供应链稳定性存疑。同时，战时或紧急状态下可调用的美国船舶运力可能萎缩，国防和安全供应链韧性面临考验。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "梳理现有物流合同中的运力保障条款，评估船东资质变化风险",
-      "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/how-trumps-pause-of-shipping-law-could-hurt-u-s-flag-carriers"
-      },
-      "timestamp": "Fri, 20 Mar 2026 15:00:00 +0000",
-      "brief_rank": 11,
-      "ranking_score": 76
-    },
-    {
-      "id": "Five takeaways from State of Freight: Already strong market ge...",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 12,
-      "title": "伊朗战争风险溢价已传导至主干航线",
-      "raw_title": "Five takeaways from State of Freight: Already strong market ge...",
-      "summary": "**中文摘要：**\n\nState of Freight网络研讨会三月议题聚焦伊朗战争，货运市场遭受战时冲击，卡车运输成本显著上升。此前货运市场本就强劲，研讨会已连续数月应对新挑战：先是需求骤升，后有监管变化。对跨境卖家而言，运价波动风险上升。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "伊朗战争风险溢价已传导至主干航线， trucking 成本显著上涨，卖家物流费用预计增加 15-30%。海空运力收紧将延长备货周期，依赖即时补货的爆款面临断货风险。运价波动叠加旺季预期，卖家利润空间进一步承压。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "启动运费成本重核算，同步调整 SKU 定价策略",
-      "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/five-takeaways-from-state-of-freight-already-strong-market-gets-a-wartime-jolt"
-      },
-      "timestamp": "Fri, 20 Mar 2026 12:51:01 +0000",
-      "brief_rank": 12,
-      "ranking_score": 76
-    },
-    {
-      "id": "全球最大集装箱航运公司进军油轮市场",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 13,
-      "title": "全球最大集装箱航运公司进军油轮市场",
-      "raw_title": "全球最大集装箱航运公司进军油轮市场",
-      "summary": "世界最大集装箱航运公司地中海航运（MSC）收购油轮船队joint ownership stake，正式进军油轮市场。此举将拓展其海运业务版图，或对跨境物流运费产生影响。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "MSC战略重心可能向油轮倾斜，导致亚欧/跨太平洋航线集装箱舱位收紧和服务波动风险上升。若头部船司集体多元化，将削弱传统集运运价战动力，2025年旺季运价上涨压力将直接侵蚀跨境卖家3%-8%的利润空间。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "核查与MSC签约的2025年年度合同是否有服务等级保障条款",
-      "source": {
-        "name": "FreightWaves",
-        "url": "https://www.freightwaves.com/news/largest-container-line-makes-major-move-into-tanker-market"
-      },
-      "timestamp": "Fri, 20 Mar 2026 11:00:00 +0000",
-      "brief_rank": 13,
-      "ranking_score": 76
-    },
-    {
-      "id": "USPS亏损威胁电商物流配送",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 14,
-      "title": "USPS亏损威胁电商物流配送",
-      "raw_title": "USPS亏损威胁电商物流配送",
-      "summary": "**摘要：** USPS（美国邮政）持续亏损，若服务变慢、涨价或可靠性下降，将直接冲击跨境卖家最后一公里配送。建议关注替代方案如UPS、FedEx或本土邮局合作。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "USPS若提价或降速，跨境直邮卖家的物流成本将上涨15%-30%，平均配送时效延长3-5个工作日，退款纠纷率预计上升。依赖USPS完成最后一公里的FBA和海外仓路径将面临入库延迟、库存周转紊乱等连锁风险，严重时可能触发平台绩效处罚。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "清点近30天USPS承运包裹占比，超40%需立即启动渠道迁移",
-      "source": {
-        "name": "Practical Ecommerce",
-        "url": "https://www.practicalecommerce.com/usps-losses-threaten-ecommerce-shipping"
-      },
-      "timestamp": "Sun, 22 Mar 2026 13:06:05 +0000",
-      "brief_rank": 14,
-      "ranking_score": 75
-    },
-    {
-      "id": "亚马逊将向波兰投资超过50亿欧元",
-      "category": "daily",
-      "scope": "global",
-      "display_order": 15,
-      "title": "亚马逊将向波兰投资超过50亿欧元",
-      "raw_title": "亚马逊将向波兰投资超过50亿欧元",
-      "summary": "亚马逊计划2024至2028年间向波兰投资超50亿欧元此前2012至2025年间已投资100亿欧元部分资金将用于新建Fulfillment Center。",
-      "level": "medium",
-      "type": "logistics",
-      "typeLabel": "物流运输",
-      "platforms": [
-        "跨境通用"
-      ],
-      "regions": [
-        "Other"
-      ],
-      "source_layer": "base-feed",
-      "source_type": "",
-      "source_priority": "",
-      "impact": "【雷达研判】该事件将从 全链路清关与尾程交付受阻, 在库积压或库容流转断裂 维度冲击 general 业务。关键细节提示：已监测到 其他地区 物流 事件，可能会影响当前的跨境履约、利润或合规操作。这将直接导致 mixed 链路的稳定性受挫，建议立即启动 SOP 响应。",
-      "subject": "布局 EU 市场的 general mixed 卖家",
-      "action": "增加履约和补货缓冲时间",
-      "source": {
-        "name": "Ecommerce News EU",
-        "url": "https://ecommercenews.eu/amazon-to-invest-over-5-billion-euros-in-poland/"
-      },
-      "timestamp": "Thu, 19 Mar 2026 15:31:45 +0000",
-      "brief_rank": 15,
-      "ranking_score": 70
+      "timestamp": null,
+      "brief_rank": 3,
+      "ranking_score": 71
     }
   ]
 };
