@@ -1,7 +1,7 @@
 window.RADAR_UI_DATA = {
   "meta": {
-    "run_id": "radar-20260405-054644-32fbe6bd",
-    "generated_at": "2026-04-05T05:46:44Z",
+    "run_id": "radar-20260406-023613-0f03770c",
+    "generated_at": "2026-04-06T02:36:13Z",
     "source_mode": "seed",
     "snapshot_reason": "stale",
     "snapshot_usable": false,
